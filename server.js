@@ -12,7 +12,7 @@ require("./services/passport");
 require("./routes/authRoutes")(app);
 
 // Set the express-session secret key to the CookieKey env variable
-const sessionKey = process.env.CookieKey;
+const sessionKey = "ilikecookies";
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 // const secret = process.env.SESSION_SECRET || "testsecret";
