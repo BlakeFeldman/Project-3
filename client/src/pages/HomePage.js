@@ -4,7 +4,7 @@ import LpNav from "../components/LandingPage/LpNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import Button from "../components/LandingPage/LpButton";
 import Styled from "styled-components";
-import Image from "../components/LandingPage/assets/dog.jpg";
+import Image from "../components/LandingPage/assets/jacquie_in_car.jpeg";
 import BottomNav from "../components/Nav/BottomNav";
 import SignInModal from "../components/LandingPage/SignIn/SignInModal";
 import SignUpModal from "../components/LandingPage/SignUp/SignUpModal";
@@ -71,8 +71,10 @@ class HomePage extends Component {
         <div>
           <LpNav />
           <Wrapper>
-            Share your lawnmower, host a cookout, give a ride.
-            <h1>Be Neighborly.</h1>
+          Resources that turn helpless to hopeful. Find support and unity when dealing with children with special needs.
+           We're there when you need us.
+
+            <h1>Special Needs United.</h1>
             <Button SUOpen={this.SUOpen} />
             <span>
               <p>
