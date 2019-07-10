@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import SkillsCard from "./SkillsCard";
+import ServicesCard from "./ServicesCard";
 import LoadingCircle from "./LoadingCircle";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
@@ -45,15 +45,15 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseSkillsCard extends Component {
+class BaseServicesCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Skills/Services")
+      .filter(post => post.category === "Services")
       .slice(0, 10)
       .map((post, index) => {
         return (
-          <SkillsCard
+          <ServicesCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -79,7 +79,7 @@ class BaseSkillsCard extends Component {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Link to="/skills" style={linkStyle}>
+          <Link to="/services" style={linkStyle}>
             <Button color="default" className={classes.button} size="large">
               {this.props.category}
             </Button>
@@ -94,8 +94,8 @@ class BaseSkillsCard extends Component {
   }
 }
 
-BaseSkillsCard.propTypes = {
+BaseServicesCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseSkillsCard);
+export default withStyles(styles)(BaseServicesCard);

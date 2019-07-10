@@ -30,7 +30,7 @@ const PostSchema = new Schema({
   category: {
     type: String,
     trim: true,
-    default: "General",
+    default: "HowToHelp",
   },
   createdAt: {
     type: Date,

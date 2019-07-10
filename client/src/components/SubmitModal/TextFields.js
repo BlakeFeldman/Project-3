@@ -39,19 +39,19 @@ const categories = [
     value: "Community Needs",
   },
   {
-    value: "Events",
+    value: "Education",
   },
   {
-    value: "Carpool",
+    value: "Advocacy",
   },
   {
-    value: "General",
+    value: "HowToHelp",
   },
   {
-    value: "Equipment/Tools",
+    value: "Community",
   },
   {
-    value: "Skills/Services",
+    value: "Services",
   },
 ];
 

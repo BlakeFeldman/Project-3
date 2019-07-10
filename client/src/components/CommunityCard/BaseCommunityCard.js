@@ -5,10 +5,10 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import EventCard from "./EventCard";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
+import CommunityCard from "./CommunityCard.js";
 import { Link } from "react-router-dom";
 
 const styles = theme => ({
@@ -24,7 +24,7 @@ const styles = theme => ({
     transform: "scale(0.8)",
   },
   title: {
-    fontSize: 14,
+    fontSize: 18,
   },
   pos: {
     marginBottom: 12,
@@ -33,7 +33,7 @@ const styles = theme => ({
 
 const linkStyle = {
   textDecoration: "none",
-  backgroundColor:"white",
+  backgroundColor: "white",
   borderRadius: "10px"
 };
 
@@ -45,17 +45,15 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseEventCard extends Component {
+class BaseCommunityCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Events")
+      .filter(post => post.category === "Community")
       .slice(0, 9)
       .map((post, index) => {
-        console.log(post.userId);
-        console.log("posts");
         return (
-          <EventCard
+          <CommunityCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -81,8 +79,8 @@ class BaseEventCard extends Component {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Link to="/events" style={linkStyle}>
-            <Button color="default" className={classes.button} size="large">
+          <Link to="/community" style={linkStyle}>
+            <Button variant="text" color="default" className={classes.button} size="large">
               {this.props.category}
             </Button>
           </Link>
@@ -96,8 +94,8 @@ class BaseEventCard extends Component {
   }
 }
 
-BaseEventCard.propTypes = {
+BaseCommunityCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseEventCard);
+export default withStyles(styles)(BaseCommunityCard);

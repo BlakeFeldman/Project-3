@@ -5,7 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import BaseGeneralCard from "../GeneralCard/BaseGeneralCard";
+import BaseServicesCard from "../ServicesCard/BaseServicesCard";
 
 function TabContainer(props) {
   return (
@@ -64,8 +64,8 @@ class PageTabs extends React.Component {
         </AppBar>
         {value === 0 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index < 9;
               })}
@@ -75,8 +75,8 @@ class PageTabs extends React.Component {
         )}
         {value === 1 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 9 && index <= 19;
               })}
@@ -86,8 +86,8 @@ class PageTabs extends React.Component {
         )}
         {value === 2 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 19 && index <= 29;
               })}
@@ -97,8 +97,8 @@ class PageTabs extends React.Component {
         )}
         {value === 3 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 29 && index <= 39;
               })}
@@ -108,8 +108,8 @@ class PageTabs extends React.Component {
         )}
         {value === 4 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 39;
               })}
