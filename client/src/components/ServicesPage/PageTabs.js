@@ -45,20 +45,20 @@ class PageTabs extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" style={{ backgroundColor: "#4caf50" }}>
+        <AppBar position="static" style={{ backgroundColor: "red" }}>
           <Tabs value={value} onChange={this.handleChange}>
-            <Tab label="Page 1" style={{ color: "#fafafa" }} />
+            <Tab label="Page 1" style={{ color: "white" }} />
             {this.props.posts.length > 10 ? (
-              <Tab label="Page 2" style={{ color: "#fafafa" }} />
+              <Tab label="Page 2" style={{ color: "white" }} />
             ) : null}
             {this.props.posts.length > 20 ? (
-              <Tab label="Page 3" style={{ color: "#fafafa" }} />
+              <Tab label="Page 3" style={{ color: "white" }} />
             ) : null}
             {this.props.posts.length > 30 ? (
-              <Tab label="Page 4" style={{ color: "#fafafa" }} />
+              <Tab label="Page 4" style={{ color: "white" }} />
             ) : null}
             {this.props.posts.length > 40 ? (
-              <Tab label="Page 5" style={{ color: "#fafafa" }} />
+              <Tab label="Page 5" style={{ color: "white" }} />
             ) : null}
           </Tabs>
         </AppBar>
