@@ -17,6 +17,7 @@ import Advocacy from "./pages/Advocacy";
 import Services from "./pages/Services";
 import Community from "./pages/Community";
 import Education from "./pages/Education";
+import GoFundMe from "./pages/GoFundMe";
 
 const theme = createMuiTheme({
   palette: {
@@ -102,6 +103,7 @@ class App extends Component {
                 <Route exact path="/contact-us" component={ContactUs} />
                 <Route exact path="/thank-you" component={ThankYou} />
                 <Route exact path="/aboutus" component={AboutUs} />
+                <Route exact path="/how-to-help" component={GoFundMe} />
                 <Route component={NoMatch} />
               </Switch>
             </div>
