@@ -1,7 +1,8 @@
-import { Mail, BusinessCenter,Face } from "@material-ui/icons";
+import { Mail, BusinessCenter,Face, AttachMoney } from "@material-ui/icons";
 import TermsOfService from "../../../pages/TermsOfService";
 import ContactUs from "../../../pages/ContactUs";
 import AboutUS from "../../../pages/AboutUs";
+import GoFundMe from "../../../pages/GoFundMe";
 
 const AltRoutes = [
   {
@@ -24,6 +25,13 @@ const AltRoutes = [
     navbarName: "About Us",
     icon: Face,
     component: AboutUS,
+  }, 
+  {
+    path: "/how-to-help",
+    sidebarName: "How To Help",
+    navbarName: "How To Help",
+    icon: AttachMoney,
+    component: GoFundMe,
   }, 
 ];
 

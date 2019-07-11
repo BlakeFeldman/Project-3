@@ -17,6 +17,7 @@ import CarPool from "./pages/CarPool";
 import Skills from "./pages/Skills";
 import Equipment from "./pages/Equipment";
 import Events from "./pages/Events";
+import GoFundMe from "./pages/GoFundMe";
 
 const theme = createMuiTheme({
   palette: {
@@ -98,6 +99,7 @@ class App extends Component {
                 <Route exact path="/contact-us" component={ContactUs} />
                 <Route exact path="/thank-you" component={ThankYou} />
                 <Route exact path="/aboutus" component={AboutUs} />
+                <Route exact path="/how-to-help" component={GoFundMe} />
                 <Route component={NoMatch} />
               </Switch>
             </div>
