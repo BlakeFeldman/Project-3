@@ -5,6 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import Collapse from "@material-ui/core/Collapse";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
@@ -12,7 +13,8 @@ import Reply from "@material-ui/icons/Reply";
 
 const styles = theme => ({
   card: {
-    minWidth: "100%",
+    maxWidth: "100%",
+    width: "100%",
     margin: "5px",
     backgroundColor: "white",
   },
@@ -38,10 +40,8 @@ const styles = theme => ({
   },
 });
 
-class EventCard extends React.Component {
-  state = {
-    expanded: false,
-  };
+class CommunityCard extends React.Component {
+  state = { expanded: false };
 
   handleExpandClick = () => {
     this.setState(state => ({ expanded: !state.expanded }));
@@ -63,31 +63,28 @@ class EventCard extends React.Component {
               onClick={() => {
                 this.props.updateReply(this.props.name, this.props.id);
                 this.props.openModal();
-              }
-              }
+              }}
             >
               <Reply />
             </IconButton>
           }
-          title={this.props.name}
-          subheader={this.props.title}
+          title={this.props.title}
+          subheader={this.props.name}
         />
-        {/* <CardMedia
-          className={classes.media}
-          image="/static/images/cards/paella.jpg"
-          title="Paella dish"
-        /> */}
         <CardContent>
           <Typography component="p">{this.props.content}</Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing />
+        <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+          <CardContent />
+        </Collapse>
       </Card>
     );
   }
 }
 
-EventCard.propTypes = {
+CommunityCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(EventCard);
+export default withStyles(styles)(CommunityCard);

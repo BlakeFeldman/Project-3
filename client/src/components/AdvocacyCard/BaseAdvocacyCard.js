@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import CarPoolCard from "./CarPoolCard";
+import AdvocacyCard from "./AdvocacyCard";
 import LoadingCircle from "./LoadingCircle";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
@@ -45,15 +45,15 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseCarPoolCard extends Component {
+class BaseAdvocacyCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Carpool")
+      .filter(post => post.category === "Advocacy")
       .slice(0, 9)
       .map((post, index) => {
         return (
-          <CarPoolCard
+          <AdvocacyCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -79,7 +79,7 @@ class BaseCarPoolCard extends Component {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Link to="/carpool" style={linkStyle}>
+          <Link to="/advocacy" style={linkStyle}>
             <Button color="default" className={classes.button} size="large">
               {this.props.category}
             </Button>
@@ -94,8 +94,8 @@ class BaseCarPoolCard extends Component {
   }
 }
 
-BaseCarPoolCard.propTypes = {
+BaseAdvocacyCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseCarPoolCard);
+export default withStyles(styles)(BaseAdvocacyCard);

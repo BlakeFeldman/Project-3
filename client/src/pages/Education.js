@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/EventPage/PageTabs";
+import PageTabs from "../components/EducationPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -50,7 +50,7 @@ const BottomNavSpacer = Styled.div`
   margin-top: 20px;
 `;
 
-class Events extends Component {
+class Education extends Component {
   state = {
     id: "",
     location: "",
@@ -106,7 +106,7 @@ class Events extends Component {
         result => {
           console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "Events";
+            return post.category === "Education";
           });
           this.setState({
             posts: filteredPosts,
@@ -164,4 +164,4 @@ class Events extends Component {
   }
 }
 
-export default Events;
+export default Education;

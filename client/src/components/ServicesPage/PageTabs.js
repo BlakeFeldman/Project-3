@@ -5,7 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import BaseSkillsCard from "../SkillsCard/BaseSkillsCard";
+import BaseServicesCard from "../ServicesCard/BaseServicesCard";
 
 function TabContainer(props) {
   return (
@@ -45,7 +45,7 @@ class PageTabs extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" style={{ backgroundColor: "purple" }}>
+        <AppBar position="static" style={{ backgroundColor: "red" }}>
           <Tabs value={value} onChange={this.handleChange}>
             <Tab label="Page 1" style={{ color: "white" }} />
             {this.props.posts.length > 10 ? (
@@ -64,8 +64,8 @@ class PageTabs extends React.Component {
         </AppBar>
         {value === 0 && (
           <TabContainer>
-            <BaseSkillsCard
-              category="Skills/Services"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index < 9;
               })}
@@ -75,8 +75,8 @@ class PageTabs extends React.Component {
         )}
         {value === 1 && (
           <TabContainer>
-            <BaseSkillsCard
-              category="Skills/Services"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 9 && index <= 19;
               })}
@@ -86,8 +86,8 @@ class PageTabs extends React.Component {
         )}
         {value === 2 && (
           <TabContainer>
-            <BaseSkillsCard
-              category="Skills/Services"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 19 && index <= 29;
               })}
@@ -97,8 +97,8 @@ class PageTabs extends React.Component {
         )}
         {value === 3 && (
           <TabContainer>
-            <BaseSkillsCard
-              category="Skills/Services"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 29 && index <= 39;
               })}
@@ -108,8 +108,8 @@ class PageTabs extends React.Component {
         )}
         {value === 4 && (
           <TabContainer>
-            <BaseSkillsCard
-              category="Skills/Services"
+            <BaseServicesCard
+              category="Services"
               posts={this.props.posts.filter((post, index) => {
                 return index > 39;
               })}

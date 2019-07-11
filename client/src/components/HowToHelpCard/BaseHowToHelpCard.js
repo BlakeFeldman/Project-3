@@ -5,17 +5,17 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import SkillsCard from "./SkillsCard";
-import LoadingCircle from "./LoadingCircle";
+import HowToHelpCard from "./HowToHelpCard";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
+import LoadingCircle from "../LoadingCircle/LoadingCircle";
 import { Link } from "react-router-dom";
 
-const styles = theme => ({
+const styles = {
   card: {
-    minWidth: 600,
+    minWidth: 275,
     width: "100%",
-    backgroundColor: "purple",
+    backgroundColor: "red",
     borderRadius: "10px",
   },
   bullet: {
@@ -23,18 +23,16 @@ const styles = theme => ({
     margin: "0 2px",
     transform: "scale(0.8)",
   },
-  title: {
-    fontSize: 14,
-  },
   pos: {
     marginBottom: 12,
   },
-});
+};
 
 const linkStyle = {
   textDecoration: "none",
-  backgroundColor:"white",
-  borderRadius: "10px"
+  backgroundColor: "white",
+  borderRadius: "10px",
+  marginBottom: "10px",
 };
 
 const ImageWrapper = Styled.div`
@@ -45,15 +43,15 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseSkillsCard extends Component {
+class BaseHowToHelpCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Skills/Services")
-      .slice(0, 10)
+      .filter(post => post.category === "HowToHelp")
+      .slice(0, 9)
       .map((post, index) => {
         return (
-          <SkillsCard
+          <HowToHelpCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -68,24 +66,26 @@ class BaseSkillsCard extends Component {
 
   render() {
     const { classes } = this.props;
+    // const bull = <span className={classes.bullet}>•</span>;
     return (
       <Card className={classes.card} square>
-        <ImageWrapper>
-          <img
-            className={classes.tack}
-            alt=""
-            src={thumbtackRed}
-            width="50px"
-          />
-        </ImageWrapper>
-        <ImageWrapper>
-          <Link to="/skills" style={linkStyle}>
-            <Button color="default" className={classes.button} size="large">
-              {this.props.category}
-            </Button>
-          </Link>
-        </ImageWrapper>
         <CardContent>
+          <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="50px"
+            />
+          </ImageWrapper>
+          <ImageWrapper>
+            <Link to="/howtohelp" style={linkStyle}>
+              <Button color="default" className={classes.button} size="large">
+                {this.props.category}
+              </Button>
+            </Link>
+          </ImageWrapper>
+
           {this.props.posts.length ? this.renderCards() : <LoadingCircle />}
         </CardContent>
         <CardActions />
@@ -94,8 +94,8 @@ class BaseSkillsCard extends Component {
   }
 }
 
-BaseSkillsCard.propTypes = {
+BaseHowToHelpCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseSkillsCard);
+export default withStyles(styles)(BaseHowToHelpCard);

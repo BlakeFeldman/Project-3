@@ -11,12 +11,12 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import TermsOfService from "./pages/TermsOfService";
 import ContactUs from "./pages/ContactUs";
 import ThankYou from "./pages/ThankYou";
-import General from "./pages/General";
+import HowToHelp from "./pages/HowToHelp";
 import AboutUs from "./pages/AboutUs";
-import CarPool from "./pages/CarPool";
-import Skills from "./pages/Skills";
-import Equipment from "./pages/Equipment";
-import Events from "./pages/Events";
+import Advocacy from "./pages/Advocacy";
+import Services from "./pages/Services";
+import Community from "./pages/Community";
+import Education from "./pages/Education";
 import GoFundMe from "./pages/GoFundMe";
 
 const theme = createMuiTheme({
@@ -82,20 +82,24 @@ class App extends Component {
           <Router>
             <div>
               <Switch>
+                {/* login page */}
                 <Route exact path="/" component={HomePage} />
+
                 <Route exact path="/profile" component={Dashboard} />
+                {/* discard^ */}
+
+                {/* true homepage */}
                 <Route exact path="/bulletin" component={Bulletin} />
+                
                 <Route exact path="/inbox" component={InboxPage} />
-                <Route exact path="/general" component={General} />
-                <Route exact path="/carpool" component={CarPool} />
-                <Route exact path="/equipment" component={Equipment} />
-                <Route exact path="/skills" component={Skills} />
-                <Route exact path="/events" component={Events} />
-                <Route
-                  exact
-                  path="/termsofservice"
-                  component={TermsOfService}
-                />
+                {/* discard^ */}
+
+                <Route exact path="/howtohelp" component={HowToHelp} />
+                <Route exact path="/advocacy" component={Advocacy} />
+                <Route exact path="/community" component={Community} />
+                <Route exact path="/services" component={Services} />
+                <Route exact path="/education" component={Education} />
+                <Route exact path="/termsofservice" component={TermsOfService} />
                 <Route exact path="/contact-us" component={ContactUs} />
                 <Route exact path="/thank-you" component={ThankYou} />
                 <Route exact path="/aboutus" component={AboutUs} />

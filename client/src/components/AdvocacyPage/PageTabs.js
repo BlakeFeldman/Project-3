@@ -5,7 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import BaseGeneralCard from "../GeneralCard/BaseGeneralCard";
+import BaseAdvocacyCard from "../AdvocacyCard/BaseAdvocacyCard";
 
 function TabContainer(props) {
   return (
@@ -35,37 +35,33 @@ class PageTabs extends React.Component {
     this.setState({ value });
   };
 
-  pageOne = () => {
-    return;
-  };
-
   render() {
     const { classes } = this.props;
     const { value } = this.state;
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" style={{ backgroundColor: "red" }}>
+        <AppBar position="static" style={{ backgroundColor: "orange" }}>
           <Tabs value={value} onChange={this.handleChange}>
-            <Tab label="Page 1" style={{ color: "white" }} />
+            <Tab label="Page 1" style={{ color: "black" }} />
             {this.props.posts.length > 10 ? (
-              <Tab label="Page 2" style={{ color: "white" }} />
+              <Tab label="Page 2" style={{ color: "black" }} />
             ) : null}
             {this.props.posts.length > 20 ? (
-              <Tab label="Page 3" style={{ color: "white" }} />
+              <Tab label="Page 3" style={{ color: "black" }} />
             ) : null}
             {this.props.posts.length > 30 ? (
-              <Tab label="Page 4" style={{ color: "white" }} />
+              <Tab label="Page 4" style={{ color: "black" }} />
             ) : null}
             {this.props.posts.length > 40 ? (
-              <Tab label="Page 5" style={{ color: "white" }} />
+              <Tab label="Page 5" style={{ color: "black" }} />
             ) : null}
           </Tabs>
         </AppBar>
         {value === 0 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseAdvocacyCard
+              category="Advocacy"
               posts={this.props.posts.filter((post, index) => {
                 return index < 9;
               })}
@@ -75,8 +71,8 @@ class PageTabs extends React.Component {
         )}
         {value === 1 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseAdvocacyCard
+              category="Advocacy"
               posts={this.props.posts.filter((post, index) => {
                 return index > 9 && index <= 19;
               })}
@@ -86,8 +82,8 @@ class PageTabs extends React.Component {
         )}
         {value === 2 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseAdvocacyCard
+              category="Advocacy"
               posts={this.props.posts.filter((post, index) => {
                 return index > 19 && index <= 29;
               })}
@@ -97,8 +93,8 @@ class PageTabs extends React.Component {
         )}
         {value === 3 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseAdvocacyCard
+              category="Advocacy"
               posts={this.props.posts.filter((post, index) => {
                 return index > 29 && index <= 39;
               })}
@@ -108,8 +104,8 @@ class PageTabs extends React.Component {
         )}
         {value === 4 && (
           <TabContainer>
-            <BaseGeneralCard
-              category="General"
+            <BaseAdvocacyCard
+              category="Advocacy"
               posts={this.props.posts.filter((post, index) => {
                 return index > 39;
               })}

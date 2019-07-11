@@ -5,7 +5,6 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
@@ -13,7 +12,7 @@ import Reply from "@material-ui/icons/Reply";
 
 const styles = theme => ({
   card: {
-    minWidth: "90%",
+    minWidth: "100%",
     margin: "5px",
     backgroundColor: "white",
   },
@@ -39,8 +38,10 @@ const styles = theme => ({
   },
 });
 
-class GeneralCard extends React.Component {
-  state = { expanded: false };
+class EducationCard extends React.Component {
+  state = {
+    expanded: false,
+  };
 
   handleExpandClick = () => {
     this.setState(state => ({ expanded: !state.expanded }));
@@ -62,7 +63,8 @@ class GeneralCard extends React.Component {
               onClick={() => {
                 this.props.updateReply(this.props.name, this.props.id);
                 this.props.openModal();
-              }}
+              }
+              }
             >
               <Reply />
             </IconButton>
@@ -70,23 +72,22 @@ class GeneralCard extends React.Component {
           title={this.props.name}
           subheader={this.props.title}
         />
+        {/* <CardMedia
+          className={classes.media}
+          image="/static/images/cards/paella.jpg"
+          title="Paella dish"
+        /> */}
         <CardContent>
           <Typography component="p">{this.props.content}</Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing />
-        <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-          <CardContent>
-            <Typography paragraph>Body:</Typography>
-            <Typography paragraph>{this.props.content}</Typography>
-          </CardContent>
-        </Collapse>
       </Card>
     );
   }
 }
 
-GeneralCard.propTypes = {
+EducationCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(GeneralCard);
+export default withStyles(styles)(EducationCard);

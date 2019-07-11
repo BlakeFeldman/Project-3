@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import EventCard from "./EventCard";
+import EducationCard from "./EducationCard";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
@@ -45,17 +45,17 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseEventCard extends Component {
+class BaseEducationCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Events")
+      .filter(post => post.category === "Education")
       .slice(0, 9)
       .map((post, index) => {
         console.log(post.userId);
         console.log("posts");
         return (
-          <EventCard
+          <EducationCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -81,7 +81,7 @@ class BaseEventCard extends Component {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Link to="/events" style={linkStyle}>
+          <Link to="/education" style={linkStyle}>
             <Button color="default" className={classes.button} size="large">
               {this.props.category}
             </Button>
@@ -96,8 +96,8 @@ class BaseEventCard extends Component {
   }
 }
 
-BaseEventCard.propTypes = {
+BaseEducationCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseEventCard);
+export default withStyles(styles)(BaseEducationCard);

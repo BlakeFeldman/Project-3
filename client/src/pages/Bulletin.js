@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import { withStyles } from "@material-ui/core/styles";
 import Styled from "styled-components";
-import BaseToolCard from "../components/ToolCard/BaseToolCard";
-import BaseEventCard from "../components/EventCard/BaseEventCard";
-import BaseGeneralCard from "../components/GeneralCard/BaseGeneralCard";
-import BaseSkillsCard from "../components/SkillsCard/BaseSkillsCard.js";
-import BaseCarPoolCard from "../components/CarPoolCard/BaseCarPoolCard";
+import BaseCommunityCard from "../components/CommunityCard/BaseCommunityCard";
+import BaseEducationCard from "../components/EducationCard/BaseEducationCard";
+import BaseHowToHelpCard from "../components/HowToHelpCard/BaseHowToHelpCard";
+import BaseServicesCard from "../components/ServicesCard/BaseServicesCard.js";
+import BaseAdvocacyCard from "../components/AdvocacyCard/BaseAdvocacyCard";
 import BottomNav from "../components/Nav/BottomNav";
 import MapCard from "../components/Map/MapCard";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
@@ -64,7 +64,7 @@ const BottomNavSpacer = Styled.div`
   margin-top: 100px;
 `;
 
-const ToolItem = Styled.div`
+const CommunityItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: col-2;
   grid-row-start: row-1;
@@ -72,7 +72,7 @@ const ToolItem = Styled.div`
   margin: 0 5px 10px 0;
 `;
 
-const CarPoolItem = Styled.div`
+const AdvocacyItem = Styled.div`
   grid-column-start: col-3;
   grid-column-end: col-3;
   grid-row-start: row-1;
@@ -80,7 +80,7 @@ const CarPoolItem = Styled.div`
   margin: 0 0 10px 5px;
 `;
 
-const GeneralItem = Styled.div`
+const HowToHelpItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: span col-3;
   grid-row-start: row-2;
@@ -89,7 +89,7 @@ const GeneralItem = Styled.div`
   width: 199%;
 `;
 
-const EventItem = Styled.div`
+const EducationItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: col-2;
   grid-row-start: row-3;
@@ -97,7 +97,7 @@ const EventItem = Styled.div`
   margin: 0 5px 10px 0;
 `;
 
-const SkillsItem = Styled.div`
+const ServicesItem = Styled.div`
   grid-column-start: col-3;
   grid-column-end: col-3;
   grid-row-start: row-3;
@@ -308,52 +308,52 @@ class Bulletin extends Component {
             </SubmitItem>
             <WeatherPanel />
           </SideBarItem>
-          <ToolItem>
-            <BaseToolCard
-              category="Equipment/Tools"
+          <CommunityItem>
+            <BaseCommunityCard
+              category="Community"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
               openModal={this.handleOpen}
               style={{borderRadius: "30px"}}
             />
-          </ToolItem>
-          <CarPoolItem>
-            <BaseCarPoolCard
-              category="Carpool"
+          </CommunityItem>
+          <AdvocacyItem>
+            <BaseAdvocacyCard
+              category="Advocacy"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
               openModal={this.handleOpen}
             />
-          </CarPoolItem>
-          <GeneralItem>
-            <BaseGeneralCard
-              category="General"
+          </AdvocacyItem>
+          <HowToHelpItem>
+            <BaseHowToHelpCard
+              category="HowToHelp"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
               openModal={this.handleOpen}
             />
-          </GeneralItem>
-          <EventItem>
-            <BaseEventCard
-              category="Events"
+          </HowToHelpItem>
+          <EducationItem>
+            <BaseEducationCard
+              category="Education"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
               openModal={this.handleOpen}
             />
-          </EventItem>
-          <SkillsItem>
-            <BaseSkillsCard
-              category="Skills/Services"
+          </EducationItem>
+          <ServicesItem>
+            <BaseServicesCard
+              category="Services"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
               openModal={this.handleOpen}
             />
-          </SkillsItem>
+          </ServicesItem>
         </Grid>
         <Modal
           aria-labelledby="simple-modal-title"

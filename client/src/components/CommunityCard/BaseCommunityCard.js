@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
-import ToolCard from "./ToolCard.js";
+import CommunityCard from "./CommunityCard.js";
 import { Link } from "react-router-dom";
 
 const styles = theme => ({
@@ -45,15 +45,15 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseToolCard extends Component {
+class BaseCommunityCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Equipment/Tools")
+      .filter(post => post.category === "Community")
       .slice(0, 9)
       .map((post, index) => {
         return (
-          <ToolCard
+          <CommunityCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -79,7 +79,7 @@ class BaseToolCard extends Component {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Link to="/equipment" style={linkStyle}>
+          <Link to="/community" style={linkStyle}>
             <Button variant="text" color="default" className={classes.button} size="large">
               {this.props.category}
             </Button>
@@ -94,8 +94,8 @@ class BaseToolCard extends Component {
   }
 }
 
-BaseToolCard.propTypes = {
+BaseCommunityCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseToolCard);
+export default withStyles(styles)(BaseCommunityCard);

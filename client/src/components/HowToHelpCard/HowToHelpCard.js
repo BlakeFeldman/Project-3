@@ -13,8 +13,7 @@ import Reply from "@material-ui/icons/Reply";
 
 const styles = theme => ({
   card: {
-    maxWidth: "100%",
-    width: "100%",
+    minWidth: "90%",
     margin: "5px",
     backgroundColor: "white",
   },
@@ -40,7 +39,7 @@ const styles = theme => ({
   },
 });
 
-class ToolCard extends React.Component {
+class HowToHelpCard extends React.Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -68,23 +67,26 @@ class ToolCard extends React.Component {
               <Reply />
             </IconButton>
           }
-          title={this.props.title}
-          subheader={this.props.name}
+          title={this.props.name}
+          subheader={this.props.title}
         />
         <CardContent>
           <Typography component="p">{this.props.content}</Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing />
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-          <CardContent />
+          <CardContent>
+            <Typography paragraph>Body:</Typography>
+            <Typography paragraph>{this.props.content}</Typography>
+          </CardContent>
         </Collapse>
       </Card>
     );
   }
 }
 
-ToolCard.propTypes = {
+HowToHelpCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ToolCard);
+export default withStyles(styles)(HowToHelpCard);

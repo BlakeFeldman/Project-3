@@ -5,47 +5,47 @@ import {
   School,
   Public,
 } from "@material-ui/icons";
-import General from "../../../pages/General";
-import Events from "../../../pages/Events";
-import Carpool from "../../../pages/CarPool";
-import Equipment from "../../../pages/Equipment";
-import Skills from "../../../pages/Skills";
+import HowToHelp from "../../../pages/HowToHelp";
+import Education from "../../../pages/Education";
+import Advocacy from "../../../pages/Advocacy";
+import Community from "../../../pages/Community";
+import Services from "../../../pages/Services";
 
 const PageRoutes = [
   {
-    path: "/general",
-    sidebarName: "General",
-    navbarName: "General",
+    path: "/howtohelp",
+    sidebarName: "HowToHelp",
+    navbarName: "HowToHelp",
     icon: Public,
-    component: General,
+    component: HowToHelp,
   },
   {
-    path: "/events",
-    sidebarName: "Events",
-    navbarName: "Events",
+    path: "/education",
+    sidebarName: "Education",
+    navbarName: "Education",
     icon: DateRange,
-    component: Events,
+    component: Education,
   },
   {
-    path: "/carpool",
-    sidebarName: "Car Pool",
-    navbarName: "Car Pool",
+    path: "/advocacy",
+    sidebarName: "Advocacy",
+    navbarName: "Advocacy",
     icon: DirectionsCar,
-    component: Carpool,
+    component: Advocacy,
   },
   {
-    path: "/equipment",
-    sidebarName: "Equipment & Tools",
-    navbarName: "Equipment & Tools",
+    path: "/community",
+    sidebarName: "Community",
+    navbarName: "Community",
     icon: Build,
-    component: Equipment,
+    component: Community,
   },
   {
-    path: "/skills",
-    sidebarName: "Skills & Services",
-    navbarName: "Skills & Services",
+    path: "/services",
+    sidebarName: "Services",
+    navbarName: "Services",
     icon: School,
-    component: Skills,
+    component: Services,
   },
 ];
 

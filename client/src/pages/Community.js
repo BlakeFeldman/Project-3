@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/GeneralPage/PageTabs";
+import PageTabs from "../components/CommunityPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -50,7 +50,7 @@ const BottomNavSpacer = Styled.div`
   margin-top: 20px;
 `;
 
-class General extends Component {
+class Community extends Component {
   state = {
     id: "",
     location: "",
@@ -91,23 +91,21 @@ class General extends Component {
 
   updatePosts = () => {
     fetch(`/api/posts/50/${this.state.location}`, {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+      redirect: "follow",
+      referrer: "client",
     })
       .then(res => res.json())
       .then(
         result => {
-          console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "General";
+            return post.category === "Community";
           });
           this.setState({
             posts: filteredPosts,
@@ -148,11 +146,11 @@ class General extends Component {
               />
             </SubmitItem>
             <WeatherPanel />
-            <div style={{height: "10%"}}></div>
+            <div style={{ height: "10%" }} />
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="General"
+              category="Community"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />
@@ -165,4 +163,4 @@ class General extends Component {
   }
 }
 
-export default General;
+export default Community;
