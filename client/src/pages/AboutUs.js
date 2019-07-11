@@ -53,7 +53,7 @@ const AboutUs = (props) => {
           <h3>Our Project</h3>
 
           <p>
-          Neighborly is a dynamic web application that encourages 
+          Neighborlys is a dynamic web application that encourages 
           relationships between neighbors. By geo-targeting local 
           and private communities, Neighborly provides an outlet to express 
           personal and familial needs such as shoveling a driveway, 
