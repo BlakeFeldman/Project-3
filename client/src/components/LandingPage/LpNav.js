@@ -63,11 +63,11 @@ function LpNav(props) {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             Menu
           </Typography> */}
-          <Typography align="center" variant="h6" color="inherit" className={classes.grow}>
+          <Typography align="center" variant="h6" color="blue" className={classes.grow}>
             <img alt="" src={Image} width="20%" />
           </Typography>
           <div className={classes.signin}>
-            <Typography align="right" variant="h6" color="inherit" className={classes.grow} >
+            <Typography align="right" variant="h6" color="danger" className={classes.grow} >
               {/* <a href="/sign-in">Sign In</a> */}
               
             </Typography>

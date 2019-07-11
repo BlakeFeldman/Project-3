@@ -15,7 +15,7 @@ const styles = {
   card: {
     minWidth: 275,
     width: "100%",
-    backgroundColor: "#81c784",
+    backgroundColor: "red",
     borderRadius: "10px",
   },
   bullet: {
