@@ -47,7 +47,7 @@ function LpNav(props) {
             <img alt="" src={Image} width="20%" />
           </Typography>
           <div className={classes.signin}>
-            <Typography align="right" variant="h6" color="danger" className={classes.grow} >
+            <Typography align="right" variant="h6" color="primary" className={classes.grow} >
               {/* <a href="/sign-in">Sign In</a> */}
               
             </Typography>
