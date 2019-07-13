@@ -41,7 +41,7 @@ class WeatherPanel extends Component {
     // Current api request is hardcoded for portsmouth NH
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?zip=03801,us&APPID=a0e8c6ce4e039dfb38fd4b809082c416`
+        `http://api.openweathermap.org/data/2.5/weather?zip=66104,us&APPID=a0e8c6ce4e039dfb38fd4b809082c416`
       )
       .then(response => {
         console.log(response);
