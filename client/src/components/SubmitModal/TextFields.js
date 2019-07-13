@@ -36,9 +36,6 @@ const ButtonWrapper = Styled.div`
 
 const categories = [
   {
-    value: "Community Needs",
-  },
-  {
     value: "Education",
   },
   {
