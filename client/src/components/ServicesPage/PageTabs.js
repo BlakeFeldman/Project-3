@@ -45,7 +45,7 @@ class PageTabs extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" style={{ backgroundColor: "red" }}>
+        <AppBar position="static" style={{ backgroundColor: "purple" }}>
           <Tabs value={value} onChange={this.handleChange}>
             <Tab label="Page 1" style={{ color: "white" }} />
             {this.props.posts.length > 10 ? (
