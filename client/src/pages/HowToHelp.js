@@ -5,7 +5,6 @@ import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
-import WeatherPanel from "../components/WeatherPanel/WeatherPanel";
 
 const Grid = Styled.div`
   display: grid;
@@ -141,7 +140,6 @@ class HowToHelp extends Component {
                 location={this.state.location}
               />
             </SubmitItem>
-            <WeatherPanel />
             <div style={{height: "10%"}}></div>
           </SideBarItem>
           <TabItem>
