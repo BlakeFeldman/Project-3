@@ -5,7 +5,6 @@ import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
-import MapCard from "../components/Map/MapCard";
 import WeatherPanel from "../components/WeatherPanel/WeatherPanel";
 
 const Grid = Styled.div`
@@ -127,11 +126,6 @@ class HowToHelp extends Component {
         </NavWrapperDiv>
         <Grid>
           <SideBarItem style={{ textAlign: "center" }}>
-            <MapCard
-              location={this.state.location}
-              name={this.state.name}
-              id={this.state.id}
-            />
             <SubmitItem>
               <SubmitTextWrapper>
                 <Typography color="black">
