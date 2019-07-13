@@ -10,7 +10,7 @@ import { withStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 // import Styled from "styled-components";
-import Image from "../LandingPage/assets/neighborlyFinal.png";
+import Image from "../LandingPage/assets/special_needs_united_logo.png";
 
 const styles = theme => ({
   root: {
