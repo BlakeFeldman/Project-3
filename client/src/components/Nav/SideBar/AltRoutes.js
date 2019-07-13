@@ -27,7 +27,7 @@ const AltRoutes = [
     component: AboutUS,
   }, 
   {
-    path: "/how-to-help",
+    path: "/donate",
     sidebarName: "How To Help",
     navbarName: "How To Help",
     icon: AttachMoney,
