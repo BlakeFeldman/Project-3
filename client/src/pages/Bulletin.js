@@ -8,7 +8,6 @@ import BaseHowToHelpCard from "../components/HowToHelpCard/BaseHowToHelpCard";
 import BaseServicesCard from "../components/ServicesCard/BaseServicesCard.js";
 import BaseAdvocacyCard from "../components/AdvocacyCard/BaseAdvocacyCard";
 import BottomNav from "../components/Nav/BottomNav";
-import MapCard from "../components/Map/MapCard";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
@@ -286,11 +285,6 @@ class Bulletin extends Component {
 
         <Grid>
           <SideBarItem style={{textAlign: "center"}}>
-            <MapCard
-              location={this.state.location}
-              name={this.state.name}
-              id={this.state.id}
-            />
             <SubmitItem>
               <SubmitTextWrapper>
                 <Typography color= "black" >
