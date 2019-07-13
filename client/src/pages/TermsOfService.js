@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import Styled from "styled-components";
-import Image from "../components/LandingPage/assets/overhead.jpg";
+import Image from "../components/LandingPage/assets/jacquie_in_tutu.jpg";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { withStyles } from "@material-ui/core/styles";
@@ -73,15 +73,15 @@ const TermsOfService = props => {
             <CardContent>
               <h3>Terms and Conditions</h3>
 
-              <p>Last updated: 3/1/2019</p>
+              <p>Last updated: 7/12/2019</p>
 
               <p>
                 Please read these Terms and Conditionsn carefully before using
-                the http://www.Neighborly.com website operated by Neighborly
-                (us, we, or our). Your access to and use of the Neighborly is
+                the https://kued-project3.herokuapp.com/ website operated by Special Needs United
+                (us, we, or our). Your access to and use of the Special Needs United is
                 conditioned on your acceptance of and compliance with these
                 Terms. These Terms apply to all visitors, users and others who
-                access or use Neighborly. By accessing or using Neighborly you
+                access or use Neighborly. By accessing or using Special Needs United you
                 agree to be bound by these Terms. If you disagree with any part
                 of the terms then you may not access Neighborly.
               </p>
@@ -89,7 +89,7 @@ const TermsOfService = props => {
               <h3>Content</h3>
 
               <p>
-                Neighborly allows you to post, link, store, share and otherwise
+                Special Needs United allows you to post, link, store, share and otherwise
                 make available certain information, text, graphics, videos, or
                 other material ("Content").{" "}
               </p>
@@ -97,12 +97,12 @@ const TermsOfService = props => {
               <h3>Links To Other Web Sites</h3>
 
               <p>
-                Neighborly may contain links to third-party web sites or
-                services that are not owned or controlled by Neighborly.
-                Neighborly has no control over, and assumes no responsibility
+                Special Needs United may contain links to third-party web sites or
+                services that are not owned or controlled by Special Needs United.
+                Special Needs United has no control over, and assumes no responsibility
                 for, the content, privacy policies, or practices of any third
                 party web sites or services. You further acknowledge and agree
-                that Neighborly shall not be responsible or liable, directly or
+                that Special Needs United shall not be responsible or liable, directly or
                 indirectly, for any damage or loss caused or alleged to be
                 caused by or in connection with use of or reliance on any such
                 content, goods or services available on or through any such web
