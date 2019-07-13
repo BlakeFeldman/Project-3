@@ -39,7 +39,7 @@ const styles = theme => ({
   },
 });
 
-class SkillsCard extends React.Component {
+class AdvocacyCard extends React.Component {
   state = {
     expanded: false,
   };
@@ -92,8 +92,8 @@ class SkillsCard extends React.Component {
   }
 }
 
-SkillsCard.propTypes = {
+AdvocacyCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SkillsCard);
+export default withStyles(styles)(AdvocacyCard);

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/SkillsPage/PageTabs";
+import PageTabs from "../components/HowToHelpPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -50,7 +50,7 @@ const BottomNavSpacer = Styled.div`
   margin-top: 20px;
 `;
 
-class Skills extends Component {
+class HowToHelp extends Component {
   state = {
     id: "",
     location: "",
@@ -91,22 +91,23 @@ class Skills extends Component {
 
   updatePosts = () => {
     fetch(`/api/posts/50/${this.state.location}`, {
-      method: "Get",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "include",
+      method: "Get", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, cors, *same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "include", // include, *same-origin, omit
       headers: {
         "Content-Type": "application/json",
+        // "Content-Type": "application/x-www-form-urlencoded",
       },
-      redirect: "follow",
-      referrer: "client",
+      redirect: "follow", // manual, *follow, error
+      referrer: "client", // no-referrer, *client
     })
       .then(res => res.json())
       .then(
         result => {
           console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "Skills/Services";
+            return post.category === "HowToHelp";
           });
           this.setState({
             posts: filteredPosts,
@@ -147,11 +148,11 @@ class Skills extends Component {
               />
             </SubmitItem>
             <WeatherPanel />
-            <div style={{ height: "10%" }} />
+            <div style={{height: "10%"}}></div>
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="Skills"
+              category="HowToHelp"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />
@@ -164,4 +165,4 @@ class Skills extends Component {
   }
 }
 
-export default Skills;
+export default HowToHelp;

@@ -109,7 +109,7 @@ class SIModal extends React.Component {
       >
         <div style={getModalStyle()} className={classes.paper}>
           <Typography component="h1" variant="h5" align="center">
-            Sign into your Neighborly account
+            Sign into your Special Needs United account
           </Typography>
           <form onSubmit={this.getUser}>
             <FormControl margin="normal" required fullWidth>

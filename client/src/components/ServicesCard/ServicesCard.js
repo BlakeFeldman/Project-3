@@ -39,7 +39,7 @@ const styles = theme => ({
   },
 });
 
-class CarPoolCard extends React.Component {
+class ServicesCard extends React.Component {
   state = {
     expanded: false,
   };
@@ -92,8 +92,8 @@ class CarPoolCard extends React.Component {
   }
 }
 
-CarPoolCard.propTypes = {
+ServicesCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CarPoolCard);
+export default withStyles(styles)(ServicesCard);

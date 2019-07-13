@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/EquipmentPage/PageTabs";
+import PageTabs from "../components/AdvocacyPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -50,7 +50,7 @@ const BottomNavSpacer = Styled.div`
   margin-top: 20px;
 `;
 
-class Equipment extends Component {
+class Community extends Component {
   state = {
     id: "",
     location: "",
@@ -104,8 +104,9 @@ class Equipment extends Component {
       .then(res => res.json())
       .then(
         result => {
+          console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "Equipment/Tools";
+            return post.category === "Advocacy";
           });
           this.setState({
             posts: filteredPosts,
@@ -150,7 +151,7 @@ class Equipment extends Component {
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="Equipment/Tools"
+              category="Advocacy"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />
@@ -163,4 +164,4 @@ class Equipment extends Component {
   }
 }
 
-export default Equipment;
+export default Community;
