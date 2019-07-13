@@ -6,13 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 // import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 // import MenuIcon from '@material-ui/icons/Menu';
-import Image from "../LandingPage/assets/neighborlyFinal.png";
+import Image from "../LandingPage/assets/special_needs_united_logo.png";
 // import Button from '@material-ui/core/Button';
-
-
-
-
-
 
 
 const styles = theme => ({
@@ -34,21 +29,6 @@ const styles = theme => ({
   },
 
 });
-
-// const Font = Styled.h1`
-//     font-family: 'Ranchers',cursive;
-//     color: white;
-//     margin:auto;
-// `;
-
-// const Logo = Styled.img`
-//     background: url(${Image}) no-repeat center center fixed;
-// `;
-
-
-
-
-
 
 function LpNav(props) {
   const { classes } = props;
