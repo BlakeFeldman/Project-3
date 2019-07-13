@@ -14,8 +14,8 @@ import Services from "../../../pages/Services";
 const PageRoutes = [
   {
     path: "/howtohelp",
-    sidebarName: "HowToHelp",
-    navbarName: "HowToHelp",
+    sidebarName: "How To Help",
+    navbarName: "How To Help",
     icon: Public,
     component: HowToHelp,
   },

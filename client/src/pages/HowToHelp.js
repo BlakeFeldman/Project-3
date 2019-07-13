@@ -144,7 +144,7 @@ class HowToHelp extends Component {
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="HowToHelp"
+              category="How To Help"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />
