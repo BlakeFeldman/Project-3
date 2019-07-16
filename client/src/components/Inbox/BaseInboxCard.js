@@ -43,16 +43,16 @@ class BaseInboxCard extends Component {
   componentDidMount() {
     // Get session data for user
     fetch("/api/session", {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get", 
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+
+      redirect: "follow", 
+      referrer: "client", 
     })
       .then(res => res.json())
       .then(
@@ -76,16 +76,16 @@ class BaseInboxCard extends Component {
     const id = this.state.id;
     // Query the api for the users inbox messages
     fetch("/api/messages/inbox/" + id, {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "same-origin", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get", 
+      mode: "same-origin", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
-      },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+        },
+
+      redirect: "follow", 
+      referrer: "client",
     })
       .then(res => res.json())
       .then(
@@ -109,16 +109,16 @@ class BaseInboxCard extends Component {
     };
     // Send a message to another user through the api
     fetch("/api/messages", {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "same-origin", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "POST", 
+      mode: "same-origin", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
-      },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+        },
+
+      redirect: "follow", 
+      referrer: "client",
       body: JSON.stringify(message),
     })
       .then(res => res.json())
@@ -150,7 +150,7 @@ class BaseInboxCard extends Component {
 
   render() {
     const { classes } = this.props;
-    // const bull = <span className={classes.bullet}>•</span>;
+    
     return (
       <Card className={classes.card}>
         <CardContent>
@@ -175,9 +175,7 @@ class BaseInboxCard extends Component {
             sendReply={this.sendReply}
           />
         </CardContent>
-        <CardActions>
-          {/* <Button size="small">Learn More</Button> */}
-        </CardActions>
+        
       </Card>
     );
   }

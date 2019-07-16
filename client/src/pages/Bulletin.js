@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import { withStyles } from "@material-ui/core/styles";
 import Styled from "styled-components";
+import BaseGalleryCard from "../components/GalleryCard/BaseGalleryCard";
 import BaseCommunityCard from "../components/CommunityCard/BaseCommunityCard";
 import BaseEducationCard from "../components/EducationCard/BaseEducationCard";
 import BaseHowToHelpCard from "../components/HowToHelpCard/BaseHowToHelpCard";
@@ -103,6 +104,15 @@ const ServicesItem = Styled.div`
   margin: 0 5px 10px 0;
 `;
 
+const GalleryItem = Styled.div`
+  grid-column-start: col-2;
+  grid-column-end: span col-2;
+  grid-row-start: row-4;
+  grid-row-end: row-4;
+  margin: 10px 0 10px 0;
+  width: 100%;
+`;
+
 const ButtonWrapper = Styled.div`
   display: grid;
   grid-template-columns: 120px 120px;
@@ -149,16 +159,16 @@ class Bulletin extends Component {
 
   componentDidMount() {
     fetch("/api/session", {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get", 
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+
+      redirect: "follow",
+      referrer: "client",
     })
       .then(res => res.json())
       .then(
@@ -180,16 +190,17 @@ class Bulletin extends Component {
 
   updatePosts = () => {
     fetch(`/api/posts/50/${this.state.location}`, {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get",
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
+        
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+
+      redirect: "follow",
+      referrer: "client",
     })
       .then(res => res.json())
       .then(
@@ -225,16 +236,17 @@ class Bulletin extends Component {
 
     // Send a message to another user through the api
     fetch("/api/messages", {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "same-origin", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "POST",
+      mode: "same-origin",
+      cache: "no-cache",
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
+        
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+
+      redirect: "follow",
+      referrer: "client",
       body: JSON.stringify(message),
     }).then(
       result => {
@@ -346,6 +358,15 @@ class Bulletin extends Component {
               openModal={this.handleOpen}
             />
           </ServicesItem>
+          <GalleryItem>
+            <BaseGalleryCard
+              category="Gallery"
+              posts={this.state.posts}
+              updatePosts={this.updatePosts}
+              updateReply={this.updateReply}
+              openModal={this.handleOpen}
+            />
+          </GalleryItem>
         </Grid>
         <Modal
           aria-labelledby="simple-modal-title"

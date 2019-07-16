@@ -72,11 +72,7 @@ class ServicesCard extends React.Component {
           title={this.props.name}
           subheader={this.props.title}
         />
-        {/* <CardMedia
-          className={classes.media}
-          image="/static/images/cards/paella.jpg"
-          title="Paella dish"
-        /> */}
+        
         <CardContent>
           <Typography component="p">{this.props.content}</Typography>
         </CardContent>

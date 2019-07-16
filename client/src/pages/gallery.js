@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/HowToHelpPage/PageTabs";
+import PageTabs from "../components/GalleryPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -48,7 +48,7 @@ const BottomNavSpacer = Styled.div`
   margin-top: 20px;
 `;
 
-class HowToHelp extends Component {
+class Gallery extends Component {
   state = {
     id: "",
     location: "",
@@ -97,15 +97,15 @@ class HowToHelp extends Component {
         "Content-Type": "application/json",
         },
 
-      redirect: "follow",
-      referrer: "client",
+      redirect: "follow", 
+      referrer: "client", 
     })
       .then(res => res.json())
       .then(
         result => {
           console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "HowToHelp";
+            return post.category === "Gallery";
           });
           this.setState({
             posts: filteredPosts,
@@ -144,7 +144,7 @@ class HowToHelp extends Component {
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="HowToHelp"
+              category="Gallery"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />
@@ -157,4 +157,4 @@ class HowToHelp extends Component {
   }
 }
 
-export default HowToHelp;
+export default Gallery;

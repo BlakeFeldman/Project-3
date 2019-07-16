@@ -34,10 +34,6 @@ class SimpleSlide extends React.Component {
     checked: false,
   };
 
-//   handleChange = () => {
-//     this.setState(state => ({ checked: !state.checked }));
-//   };
-
   render() {
     const { classes } = this.props;
 

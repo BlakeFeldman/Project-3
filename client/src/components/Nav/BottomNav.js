@@ -14,7 +14,6 @@ const styles = theme => ({
     root: {
         width: "100%",
         background: "#303030",
-        // background: "#66bb6a",
         height: "60px",
         color: "white",
     },

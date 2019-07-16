@@ -1,8 +1,9 @@
-import { Mail, BusinessCenter,Face, AttachMoney } from "@material-ui/icons";
+import { Mail, BusinessCenter,Face, AttachMoney,} from "@material-ui/icons";
 import TermsOfService from "../../../pages/TermsOfService";
 import ContactUs from "../../../pages/ContactUs";
 import AboutUS from "../../../pages/AboutUs";
 import GoFundMe from "../../../pages/GoFundMe";
+
 
 const AltRoutes = [
   {
@@ -28,11 +29,12 @@ const AltRoutes = [
   }, 
   {
     path: "/how-to-help",
-    sidebarName: "How To Help",
-    navbarName: "How To Help",
+    sidebarName: "HowToHelp",
+    navbarName: "HowToHelp",
     icon: AttachMoney,
     component: GoFundMe,
-  }, 
+  },
+  
 ];
 
 export default AltRoutes;

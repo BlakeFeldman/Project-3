@@ -18,6 +18,7 @@ import Services from "./pages/Services";
 import Community from "./pages/Community";
 import Education from "./pages/Education";
 import GoFundMe from "./pages/GoFundMe";
+import Gallery from "./pages/gallery";
 
 const theme = createMuiTheme({
   palette: {
@@ -41,16 +42,16 @@ class App extends Component {
   };
   componentDidUpdate() {
     fetch("/api/session", {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get", 
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
-      },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+        },
+
+      redirect: "follow",
+      referrer: "client",
     })
       .then(res => res.json())
       .then(
@@ -104,6 +105,7 @@ class App extends Component {
                 <Route exact path="/thank-you" component={ThankYou} />
                 <Route exact path="/aboutus" component={AboutUs} />
                 <Route exact path="/how-to-help" component={GoFundMe} />
+                <Route exact path="/gallery" component={Gallery} />
                 <Route component={NoMatch} />
               </Switch>
             </div>

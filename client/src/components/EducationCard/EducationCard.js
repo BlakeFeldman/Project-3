@@ -18,7 +18,7 @@ const styles = theme => ({
   },
   media: {
     height: 0,
-    paddingTop: "56.25%", // 16:9
+    paddingTop: "56.25%",
   },
   actions: {
     display: "flex",
@@ -72,11 +72,6 @@ class EducationCard extends React.Component {
           title={this.props.name}
           subheader={this.props.title}
         />
-        {/* <CardMedia
-          className={classes.media}
-          image="/static/images/cards/paella.jpg"
-          title="Paella dish"
-        /> */}
         <CardContent>
           <Typography component="p">{this.props.content}</Typography>
         </CardContent>

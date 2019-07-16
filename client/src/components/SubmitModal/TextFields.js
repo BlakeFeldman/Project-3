@@ -5,7 +5,6 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Styled from "styled-components";
 import MenuItem from "@material-ui/core/MenuItem";
-// import axios from "axios";
 
 const styles = theme => ({
   container: {
@@ -50,7 +49,9 @@ const categories = [
   {
     value: "Services",
   },
-];
+    {
+      value: "Gallery",
+}];
 
 class TextFields extends React.Component {
   state = {
@@ -64,16 +65,16 @@ class TextFields extends React.Component {
 
   componentDidMount = () => {
     fetch("/api/session", {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get",
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
+        
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+      redirect: "follow", 
+      referrer: "client", 
     })
       .then(res => res.json())
       .then(
@@ -107,17 +108,17 @@ class TextFields extends React.Component {
     };
 
     fetch("/api/posts", {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "POST", 
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
+        
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "no-referrer", // no-referrer, *client
-      body: JSON.stringify(newPost), // body data type must match "Content-Type" header
+      redirect: "follow", 
+      referrer: "no-referrer", 
+      body: JSON.stringify(newPost), 
     }).then(
       result => {
         this.props.updatePosts();
