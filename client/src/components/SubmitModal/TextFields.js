@@ -41,7 +41,7 @@ const categories = [
     value: "Advocacy",
   },
   {
-    value: "HowToHelp",
+    value: "How To Help",
   },
   {
     value: "Community",

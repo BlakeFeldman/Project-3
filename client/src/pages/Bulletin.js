@@ -333,7 +333,7 @@ class Bulletin extends Component {
           </AdvocacyItem>
           <HowToHelpItem>
             <BaseHowToHelpCard
-              category="HowToHelp"
+              category="How To Help"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}

@@ -28,9 +28,15 @@ const AltRoutes = [
     component: AboutUS,
   }, 
   {
+
     path: "/how-to-help",
     sidebarName: "HowToHelp",
     navbarName: "HowToHelp",
+
+    path: "/donate",
+    sidebarName: "How To Help",
+    navbarName: "How To Help",
+
     icon: AttachMoney,
     component: GoFundMe,
   },
