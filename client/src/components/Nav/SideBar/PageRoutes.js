@@ -11,7 +11,7 @@ import Education from "../../../pages/Education";
 import Advocacy from "../../../pages/Advocacy";
 import Community from "../../../pages/Community";
 import Services from "../../../pages/Services";
-import gallery from "../../../pages/gallery";
+import Gallery from "../../../pages/Gallery";
 
 const PageRoutes = [
   {
@@ -51,10 +51,10 @@ const PageRoutes = [
   },
   {
     path: "/gallery",
-    sidebarName: "gallery",
-    navbarName: "gallery",
+    sidebarName: "Gallery",
+    navbarName: "Gallery",
     icon: Camera,
-    component: gallery,
+    component: Gallery,
   },
 ];
 

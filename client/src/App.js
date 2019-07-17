@@ -18,7 +18,7 @@ import Services from "./pages/Services";
 import Community from "./pages/Community";
 import Education from "./pages/Education";
 import GoFundMe from "./pages/GoFundMe";
-import Gallery from "./pages/gallery";
+import Gallery from "./pages/Gallery";
 
 const theme = createMuiTheme({
   palette: {
