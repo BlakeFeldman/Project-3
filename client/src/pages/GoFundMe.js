@@ -16,7 +16,10 @@ export default class GoFundMe extends Component {
             <div>
                 {this.state.campaigns.map(function (campaign) {
                     return (
+                        <>
                         <p key={campaign.id}>{campaign.title}</p>
+                        <a href={campaign.link}><img src= {campaign.image} /></a>
+                        </>
                     );
                 })}
             </div>

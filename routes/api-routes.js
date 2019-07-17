@@ -28,8 +28,10 @@ module.exports = function (app) {
         var result = {};
         result.id = uuid();
 
-        result.title = $(this).find(".fund-title").text();
+        result.title = $(element).find(".fund-title").text();
         //   result.link = $(this).children("a").attr("href");
+        result.image = $(element).find("a").attr("data-original");
+        result.link = $(element).find("a").attr("href");
 
         results.push(result);
 

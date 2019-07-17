@@ -34,8 +34,8 @@ const AltRoutes = [
     navbarName: "HowToHelp",
 
     path: "/donate",
-    sidebarName: "How To Help",
-    navbarName: "How To Help",
+    sidebarName: "Donate",
+    navbarName: "Donate",
 
     icon: AttachMoney,
     component: GoFundMe,

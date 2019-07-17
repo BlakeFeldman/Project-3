@@ -1,160 +1,150 @@
-import React, { Component } from "react";
-import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/GalleryPage/PageTabs";
-import Styled from "styled-components";
-import BottomNav from "../components/Nav/BottomNav";
-import Typography from "@material-ui/core/Typography";
-import SubmitModal from "../components/SubmitModal/SubmitModal";
+import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import CameraIcon from '@material-ui/icons/PhotoCamera';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
-const Grid = Styled.div`
-  display: grid;
-  grid-template-columns: [col-1] 20% [col-2] 80% ;
-  grid-template-rows: [row-1] auto [row-2] auto [row-3] auto [row-4] auto;
-  justify-content: start;
-`;
-
-const NavWrapperDiv = Styled.div`
-  margin-bottom: 100px;
-`;
-
-const SideBarItem = Styled.div`
-  grid-column-start: col-1;
-  grid-column-end: col-1;
-  grid-row-start: row-1
-  grid-row-end: span row-4
-  margin-right: 10px;
-  padding-right: 20px;
-  border-right: solid rgba(189, 195, 199, 0.7) 1px;
-`;
-
-const TabItem = Styled.div`
-  grid-column-start: col-2;
-  grid-column-end: span col-2;
-  grid-row-start: row-1;
-  grid-row-end: row-3;
-`;
-
-const SubmitItem = Styled.div`
-  margin: 200pt 0 30pt 10pt;
-  padding-top: 15pt;
-  border: 1px dashed #66bb6a;
-`;
-
-const SubmitTextWrapper = Styled.div`
-  margin-left: 15px;
-`;
-
-const BottomNavSpacer = Styled.div`
-  margin-top: 20px;
-`;
-
-class Gallery extends Component {
-  state = {
-    id: "",
-    location: "",
-    name: "",
-    posts: [],
-  };
-
-  componentDidMount() {
-    // Get session cookie and update posts
-    fetch("/api/session", {
-      method: "Get",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      redirect: "follow",
-      referrer: "client",
-    })
-      .then(res => res.json())
-      .then(
-        result => {
-          const { user, loc, name } = result.data;
-          console.log(result);
-          this.setState({
-            id: user,
-            location: loc,
-            name: name,
-          });
-          this.updatePosts();
-        },
-        error => {
-          console.log(error);
-        }
-      );
-  }
-
-  updatePosts = () => {
-    fetch(`/api/posts/50/${this.state.location}`, {
-      method: "Get",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-        },
-
-      redirect: "follow", 
-      referrer: "client", 
-    })
-      .then(res => res.json())
-      .then(
-        result => {
-          console.log(result);
-          const filteredPosts = result.filter(post => {
-            return post.category === "Gallery";
-          });
-          this.setState({
-            posts: filteredPosts,
-          });
-        },
-        error => {
-          console.log(error);
-        }
-      );
-  };
-
-  render() {
-    return (
-      <main>
-        <NavWrapperDiv>
-          <Sidebar />
-        </NavWrapperDiv>
-        <Grid>
-          <SideBarItem style={{ textAlign: "center" }}>
-            <SubmitItem>
-              <SubmitTextWrapper>
-                <Typography color="black">
-                  Want to contribute? Just click the button to create your own
-                  post.
-                </Typography>
-              </SubmitTextWrapper>
-              <SubmitModal
-                posts={this.state.posts}
-                updatePosts={this.updatePosts}
-                id={this.state.id}
-                name={this.state.name}
-                location={this.state.location}
-              />
-            </SubmitItem>
-            <div style={{height: "10%"}}></div>
-          </SideBarItem>
-          <TabItem>
-            <PageTabs
-              category="Gallery"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-            />
-          </TabItem>
-        </Grid>
-        <BottomNavSpacer />
-        <BottomNav />
-      </main>
-    );
-  }
+function MadeWithLove() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Built with love by the '}
+      <Link color="inherit" href="https://material-ui.com/">
+        Material-UI
+      </Link>
+      {' team.'}
+    </Typography>
+  );
 }
+const useStyles = makeStyles(theme => ({
+  icon: {
+    marginRight: theme.spacing(2),
+  },
+  heroContent: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(8, 0, 6),
+  },
+  heroButtons: {
+    marginTop: theme.spacing(4),
+  },
+  cardGrid: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
+  },
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  cardMedia: {
+    paddingTop: '56.25%', // 16:9
+  },
+  cardContent: {
+    flexGrow: 1,
+  },
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(6),
+  },
+}));
 
-export default Gallery;
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+export default function Album() {
+  const classes = useStyles();
+
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <AppBar position="relative">
+        <Toolbar>
+          <CameraIcon className={classes.icon} />
+          <Typography variant="h6" color="inherit" noWrap>
+            Album layout
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <main>
+        {/* Hero unit */}
+        <div className={classes.heroContent}>
+          <Container maxWidth="sm">
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+              Album layout
+            </Typography>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              Something short and leading about the collection below—its contents, the creator, etc.
+              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+              entirely.
+            </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button variant="contained" color="primary">
+                    Main call to action
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary">
+                    Secondary action
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
+          </Container>
+        </div>
+        <Container className={classes.cardGrid} maxWidth="md">
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {cards.map(card => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://source.unsplash.com/random"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </main>
+      {/* Footer */}
+      <footer className={classes.footer}>
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+          Something here to give the footer a purpose!
+        </Typography>
+        <MadeWithLove />
+      </footer>
+      {/* End footer */}
+    </React.Fragment>
+  );
+}
