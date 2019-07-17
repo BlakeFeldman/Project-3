@@ -4,8 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Styled from "styled-components";
 
-// const Image = require("./assets/white-mountains1-jpg");
-
 const styles = theme => ({
   root: {
     flexGrow: 1,

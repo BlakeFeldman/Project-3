@@ -138,7 +138,7 @@ class SideBar extends React.Component {
           onChange={this.handleOnChange}
           keyword={this.state.keyword}
         />
-        {/* Put this button as the dropdown on navbar */}
+  
         <Drawer
           open={this.state.left}
           onClose={this.toggleDrawer("left", false)}

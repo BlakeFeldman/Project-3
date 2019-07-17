@@ -39,7 +39,7 @@ const styles = theme => ({
   },
 });
 
-class HowToHelpCard extends React.Component {
+class GalleryCard extends React.Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -85,8 +85,8 @@ class HowToHelpCard extends React.Component {
   }
 }
 
-HowToHelpCard.propTypes = {
+GalleryCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(HowToHelpCard);
+export default withStyles(styles)(GalleryCard);

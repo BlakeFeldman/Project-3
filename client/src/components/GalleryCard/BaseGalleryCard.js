@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import HowToHelpCard from "./HowToHelpCard";
+import GalleryCard from "./GalleryCard";
 import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
@@ -15,7 +15,7 @@ const styles = {
   card: {
     minWidth: 275,
     width: "100%",
-    backgroundColor: "red",
+    backgroundColor: "pink",
     borderRadius: "10px",
   },
   bullet: {
@@ -43,15 +43,15 @@ const ImageWrapper = Styled.div`
   max-width: 100%;
 `;
 
-class BaseHowToHelpCard extends Component {
+class BaseGalleryCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "How To Help")
+      .filter(post => post.category === "Gallery")
       .slice(0, 9)
       .map((post, index) => {
         return (
-          <HowToHelpCard
+          <GalleryCard
             key={index}
             id={post.userId}
             name={post.name}
@@ -79,7 +79,7 @@ class BaseHowToHelpCard extends Component {
             />
           </ImageWrapper>
           <ImageWrapper>
-            <Link to="/howtohelp" style={linkStyle}>
+            <Link to="/gallery" style={linkStyle}>
               <Button color="default" className={classes.button} size="large">
                 {this.props.category}
               </Button>
@@ -94,8 +94,8 @@ class BaseHowToHelpCard extends Component {
   }
 }
 
-BaseHowToHelpCard.propTypes = {
+BaseGalleryCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BaseHowToHelpCard);
+export default withStyles(styles)(BaseGalleryCard);

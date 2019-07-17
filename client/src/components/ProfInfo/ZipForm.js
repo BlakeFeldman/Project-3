@@ -4,11 +4,10 @@ import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import Button from "@material-ui/core/Button";
 import EditIcon from "@material-ui/icons/Edit";
-// import "../../App.css";
 import Typography from "@material-ui/core/Typography";
 
 function ZipForm(props) {
-  // const name = props.name.notName;
+  
   return (
     <div>
       <Typography className="formTitle">Edit your zipcode here</Typography>

@@ -32,16 +32,15 @@ class Panel extends React.Component {
 
   componentDidMount = () => {
     fetch("/api/session", {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get",
+      mode: "cors", 
+      cache: "no-cache", 
+      credentials: "include", 
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+      redirect: "follow",
+      referrer: "client", 
     })
       .then(res => res.json())
       .then(
@@ -91,16 +90,11 @@ class Panel extends React.Component {
           </ExpansionPanel>
         );
       });
-    // })
-    // .catch(error => {
-    //   console.log(error);
-    // });
   };
 
   render() {
     const { classes } = this.props;
-    // const { expanded } = this.state;
-
+    
     return (
       <div className={classes.root}>
         <SimpleCard

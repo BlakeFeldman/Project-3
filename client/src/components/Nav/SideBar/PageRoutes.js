@@ -4,12 +4,14 @@ import {
   DirectionsCar,
   School,
   Public,
+  Camera,
 } from "@material-ui/icons";
 import HowToHelp from "../../../pages/HowToHelp";
 import Education from "../../../pages/Education";
 import Advocacy from "../../../pages/Advocacy";
 import Community from "../../../pages/Community";
 import Services from "../../../pages/Services";
+import gallery from "../../../pages/gallery";
 
 const PageRoutes = [
   {
@@ -46,6 +48,13 @@ const PageRoutes = [
     navbarName: "Services",
     icon: School,
     component: Services,
+  },
+  {
+    path: "/gallery",
+    sidebarName: "gallery",
+    navbarName: "gallery",
+    icon: Camera,
+    component: gallery,
   },
 ];
 

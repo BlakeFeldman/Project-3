@@ -39,8 +39,7 @@ const ImageWrapper = Styled.div`
 
 function SimpleCard(props) {
   const { classes } = props;
-  // const bull = <span className={classes.bullet}>•</span>;
-
+  
   return (
     <div>
       <Card className={classes.card} square>
@@ -55,7 +54,6 @@ function SimpleCard(props) {
         </CardContent>
         <div />
       </Card>
-      {/* <Button onClick={this.handleOpen}>Open Modal</Button> */}
     </div>
   );
 }

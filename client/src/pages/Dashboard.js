@@ -100,16 +100,16 @@ class Dashboard extends Component {
 
   componentDidMount() {
     fetch("/api/session", {
-      method: "Get", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, cors, *same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "include", // include, *same-origin, omit
+      method: "Get",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "client", // no-referrer, *client
+
+      redirect: "follow",
+      referrer: "client",
     })
       .then(res => res.json())
       .then(
@@ -153,30 +153,7 @@ class Dashboard extends Component {
     }
     console.log(name)
     console.log(location)
-    //           let data = {
-    //             name: this.state.name,
-    //             location: this.state.location
-    //           }
-    //           fetch("/api/users",
-    //           {
-    //             method: "PUT", // *GET, POST, PUT, DELETE, etc.
-    // mode: "cors", // no-cors, cors, *same-origin
-    // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    // credentials: "same-origin", // include, *same-origin, omit
-    // headers: {
-    //   "Content-Type": "application/json",
-    //   // "Content-Type": "application/x-www-form-urlencoded",
-    // },
-    // redirect: "follow", // manual, *follow, error
-    // referrer: "no-referrer", // no-referrer, *client
-    // body: JSON.stringify(data)
-    //           })
-    //           .then(function(response){
-    //             console.log(response)
-    //           })
-    //           .catch(err=>{
-    //             console.log(err)
-    //           })
+    
   };
 
   render() {

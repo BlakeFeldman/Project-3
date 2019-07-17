@@ -1,12 +1,10 @@
 import React from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
-// import Styled from "styled-components";
 import Nav from "../components/Nav/Nav";
 import BottomNav from "../components/Nav/BottomNav";
 import FormControl from '@material-ui/core/FormControl';
 import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from '@material-ui/core/styles';
-// import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from '../components/ContactUs/SubmitButton'
 import Image from "../components/LandingPage/assets/jacquie_and_daddy.jpg";
@@ -95,7 +93,6 @@ class OutlinedTextFields extends React.Component {
                                 onChange={this.handleChange('multiline')}
                                 className={classes.messageField}
                                 margin="normal"
-                                // helperText="What can we help you with?"
                                 variant="outlined"
                                 width="100%"
                             />

@@ -5,7 +5,6 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Button from "@material-ui/core/Button";
 import EditIcon from "@material-ui/icons/Edit";
 import Typography from "@material-ui/core/Typography";
-// import "../../App.css";
 import withStyles from "@material-ui/core/styles/withStyles";
 import { createMuiTheme } from "@material-ui/core";
 
@@ -20,7 +19,7 @@ const theme = createMuiTheme({
 
 
 function NameForm(props) {
-  // const name = props.name.notName;
+  
   return (
     <div>     
       <Typography className="formTitle">Edit your name here</Typography>

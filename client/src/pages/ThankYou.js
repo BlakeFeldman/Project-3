@@ -1,11 +1,9 @@
 import React from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
-// import Styled from "styled-components";
 import Nav from "../components/Nav/Nav";
 import BottomNav from "../components/Nav/BottomNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from '@material-ui/core/styles';
-// import MenuItem from '@material-ui/core/MenuItem';
 import Image from "../components/LandingPage/assets/pexels-photo-1557549.jpeg";
 import Styled from "styled-components";
 
