@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
 
 const cards = [1];
 
-export default function Album() {
+export default function Gallery() {
   const classes = useStyles();
 
   return (
@@ -69,7 +69,7 @@ export default function Album() {
         <Toolbar>
           <CameraIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            Album layout
+            Gallery
           </Typography>
         </Toolbar>
       </AppBar>
@@ -78,14 +78,12 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
+              Special Needs United
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+             Here is the inspiration behind our project, Nate's daughter Jacquie!!
             </Typography>
-            <div className={classes.heroButtons}>
+            {/* <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -98,7 +96,7 @@ export default function Album() {
                   </Button>
                 </Grid>
               </Grid>
-            </div>
+            </div> */}
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
@@ -114,7 +112,7 @@ export default function Album() {
                     image="https://source.unsplash.com/random"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -129,7 +127,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -143,7 +141,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -158,7 +156,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -172,7 +170,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -187,7 +185,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -201,7 +199,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -216,7 +214,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -230,7 +228,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -245,7 +243,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -259,7 +257,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -274,7 +272,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -288,7 +286,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -303,7 +301,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -317,7 +315,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -332,7 +330,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -347,7 +345,7 @@ export default function Album() {
                     image="https://source.unsplash.com/cats"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>
@@ -362,7 +360,7 @@ export default function Album() {
                     <Button size="small" color="primary">
                       Edit
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             ))}
@@ -373,4 +371,3 @@ export default function Album() {
     </React.Fragment>
   );
 }
-
