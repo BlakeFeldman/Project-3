@@ -50,7 +50,7 @@ const PageRoutes = [
     component: Services,
   },
   {
-    path: "/gallery",
+    path: "/Gallery",
     sidebarName: "Gallery",
     navbarName: "Gallery",
     icon: Camera,
