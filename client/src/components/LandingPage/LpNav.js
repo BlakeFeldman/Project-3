@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Image from "../LandingPage/assets/special_needs_united_logo.png";
+import Image from "../../assets/special_needs_united_logo.png";
 
 const styles = theme => ({
 

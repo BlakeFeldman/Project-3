@@ -4,7 +4,7 @@ import Nav from "../components/Nav/Nav";
 import BottomNav from "../components/Nav/BottomNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from '@material-ui/core/styles';
-import Image from "../components/LandingPage/assets/pexels-photo-1557549.jpeg";
+import Image from "../assets/pexels-photo-1557549.jpeg";
 import Styled from "styled-components";
 
 const styles = theme => ({
