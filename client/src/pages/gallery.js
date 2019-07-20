@@ -43,6 +43,9 @@ import jacquie_sassy from '../assets/jacquie_sassy.jpg';
 import jacquie_smile from '../assets/jacquie_smile.jpg';
 import little_jacquie_big_jacquie from '../assets/little_jacquie_big_jacquie.jpg';
 import jacquie_cupcake2 from '../assets/jacquie_cupcake2.jpg';
+import jacquie_glasses from '../assets/jacquie_glasses.jpg';
+import jacquie_jordan from '../assets/jacquie_jordan.jpeg';
+import jacquie_hospital2 from '../assets/jacquie_hospital2.jpg';
 
 function MadeWithLove() {
   return (
@@ -1003,7 +1006,97 @@ export default function Gallery() {
               </Grid>
             ))}
 
-              {/* image 30 */}
+            {/* image 30 */}
+            {cards.map(card => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_hospital2}
+                    title="Image title"
+                  />
+                  {/* <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 31 */}
+            {cards.map(card => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_glasses}
+                    title="Image title"
+                  />
+                  {/* <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 32 */}
+            {cards.map(card => (
+              <Grid item key={card} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_jordan}
+                    title="Image title"
+                  />
+                  {/* <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+              {/* image 33 */}
               {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
