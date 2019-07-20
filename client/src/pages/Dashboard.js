@@ -12,7 +12,7 @@ import BottomNav from "../components/Nav/BottomNav";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Image from "../assets/pexels-photo-688835.jpeg";
+//import Image from "../assets/pexels-photo-688835.jpeg";
 
 const styles = theme => ({
   card: {
