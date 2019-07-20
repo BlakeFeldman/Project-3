@@ -3,7 +3,7 @@ import BaseInboxCard from "../components/Inbox/BaseInboxCard";
 import Sidebar from "../components/Nav/SideBar/SideBar";
 import BottomNav from "../components/Nav/BottomNav";
 import Styled from "styled-components";
-import Image from "../assets/pexels-photo-533416.jpeg";
+import Image from "../assets/jacquie_st_pattys_day.jpg";
 
 const InboxWrapper = Styled.div`
   display: grid;
