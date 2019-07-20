@@ -1,10 +1,10 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
+// import CardActions from '@material-ui/core/CardActions';
+// import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
@@ -12,7 +12,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import jacquie_in_tub from '../assets/jacquie_in_tub.jpg';
 import jacquie_donut_face from '../assets/jacquie_donut_face.jpg';
 import jacquie_chewbacca from '../assets/jacquie_chewbacca.jpg';
@@ -44,17 +44,17 @@ import jacquie_smile from '../assets/jacquie_smile.jpg';
 import little_jacquie_big_jacquie from '../assets/little_jacquie_big_jacquie.jpg';
 import jacquie_cupcake2 from '../assets/jacquie_cupcake2.jpg';
 
-function MadeWithLove() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
-      </Link>
-      {' team.'}
-    </Typography>
-  );
-}
+// function MadeWithLove() {
+//   return (
+//     <Typography variant="body2" color="textSecondary" align="center">
+//       {'Built with love by the '}
+//       <Link color="inherit" href="https://material-ui.com/">
+//         Material-UI
+//       </Link>
+//       {' team.'}
+//     </Typography>
+//   );
+// }
 const useStyles = makeStyles(theme => ({
   icon: {
     marginRight: theme.spacing(2),
