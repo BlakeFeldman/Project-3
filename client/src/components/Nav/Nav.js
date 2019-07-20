@@ -6,7 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
-import Image from "../LandingPage/assets/special_needs_united_logo.png";
+import Image from "../../assets/special_needs_united_logo.png";
 
 const styles = theme => ({
   root: {

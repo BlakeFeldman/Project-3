@@ -7,7 +7,7 @@ import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '../components/ContactUs/SubmitButton'
-import Image from "../components/LandingPage/assets/jacquie_and_daddy.jpg";
+import Image from "../assets/jacquie_and_daddy.jpg";
 import Styled from "styled-components";
 
 const styles = theme => ({

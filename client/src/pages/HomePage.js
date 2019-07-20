@@ -4,7 +4,7 @@ import LpNav from "../components/LandingPage/LpNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import Button from "../components/LandingPage/LpButton";
 import Styled from "styled-components";
-import Image from "../components/LandingPage/assets/jacquie_in_car.jpeg";
+import Image from "../assets/jacquie_in_car.jpeg";
 import BottomNav from "../components/Nav/BottomNav";
 import SignInModal from "../components/LandingPage/SignIn/SignInModal";
 import SignUpModal from "../components/LandingPage/SignUp/SignUpModal";
