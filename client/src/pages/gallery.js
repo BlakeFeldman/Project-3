@@ -46,6 +46,7 @@ import jacquie_cupcake2 from '../assets/jacquie_cupcake2.jpg';
 import jacquie_glasses from '../assets/jacquie_glasses.jpg';
 import jacquie_jordan from '../assets/jacquie_jordan.jpeg';
 import jacquie_hospital2 from '../assets/jacquie_hospital2.jpg';
+import jacquie_messy from '../assets/jacquie_messy.jpg';
 
 function MadeWithLove() {
   return (
@@ -138,12 +139,12 @@ export default function Gallery() {
 
             {/* image 1 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_in_tub}
-                    title="Image title"
+                    title="Jacquie in smiling in the bathtub"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -168,12 +169,12 @@ export default function Gallery() {
 
             {/* image 2 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_donut_face}
-                    title="Image title"
+                    title="Jacquie after she got caught eating her dads donuts"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -198,12 +199,12 @@ export default function Gallery() {
 
             {/* image 3 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_chewbacca}
-                    title="Image title"
+                    title="Jacquie in her chewbacca onsie"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -228,12 +229,12 @@ export default function Gallery() {
 
             {/* image 4 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_daddy_hospital}
-                    title="Image title"
+                    title="Jacquie and her dad sitting with each other in the hospital"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -258,12 +259,12 @@ export default function Gallery() {
 
             {/* image 5 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} s={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_2nd_bday}
-                    title="Image title"
+                    title="Jacquie's second birthday outfit"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -288,12 +289,12 @@ export default function Gallery() {
 
               {/* image 6 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bubble_beard}
-                    title="Image title"
+                    title="Jacquie with a bubble beard in the tub"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -318,12 +319,12 @@ export default function Gallery() {
 
               {/* image 7 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_in_fridge}
-                    title="Image title"
+                    title="Jacquie cooling off sitting in the fridge"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -348,12 +349,12 @@ export default function Gallery() {
 
               {/* image 8 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_laundry_basket}
-                    title="Image title"
+                    title="Jacquie playing in the laundry basket"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -378,12 +379,12 @@ export default function Gallery() {
 
             {/* image 9 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_mommy_hospital}
-                    title="Image title"
+                    title="Jacquie and her mom in the hospital"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -408,12 +409,12 @@ export default function Gallery() {
 
             {/* image 10 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_pink_chair}
-                    title="Image title"
+                    title="jjacquie in her pink chair"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -438,12 +439,12 @@ export default function Gallery() {
 
             {/* image 11 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_potty}
-                    title="Image title"
+                    title="Jacquie potty training"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -468,12 +469,12 @@ export default function Gallery() {
 
             {/* image 12 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sleep}
-                    title="Image title"
+                    title="Jacquie sleep in her high chair"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -498,12 +499,12 @@ export default function Gallery() {
 
             {/* image 13 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_mommy}
-                    title="Image title"
+                    title="Jacquie and her mom"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -528,12 +529,12 @@ export default function Gallery() {
 
             {/* image 14 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bday}
-                    title="Image title"
+                    title="Jacquie's first birthday"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -558,12 +559,12 @@ export default function Gallery() {
 
             {/* image 15 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bob_ross}
-                    title="Image title"
+                    title="Jacquie and Bob Ross"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -588,12 +589,12 @@ export default function Gallery() {
 
              {/* image 16 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_daddy2}
-                    title="Image title"
+                    title="Jacquie and her dad doing work"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -618,12 +619,12 @@ export default function Gallery() {
 
             {/* image 17 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_hospital}
-                    title="Image title"
+                    title="Jacquie after her facial surgery"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -648,12 +649,12 @@ export default function Gallery() {
 
              {/* image 18 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={just_jacquie}
-                    title="Image title"
+                    title="Jacquie all up in the camera"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -678,12 +679,12 @@ export default function Gallery() {
 
              {/* image 19 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_monkey}
-                    title="Image title"
+                    title="Jacquie looking at monkeys at the zoo"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -708,12 +709,12 @@ export default function Gallery() {
 
              {/* image 20 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_smile}
-                    title="Image title"
+                    title="Jacquie smilling about something she did"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -738,12 +739,12 @@ export default function Gallery() {
 
             {/* image 21 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sassy}
-                    title="Image title"
+                    title="Jacquie being sassy"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -768,12 +769,12 @@ export default function Gallery() {
 
              {/* image 22 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_heart_glasses}
-                    title="Image title"
+                    title="Jacquie with the heart glasses filter"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -798,12 +799,12 @@ export default function Gallery() {
 
              {/* image 23 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_gangster}
-                    title="Image title"
+                    title="Gangster Jacquie"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -828,12 +829,12 @@ export default function Gallery() {
 
             {/* image 24 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_foot}
-                    title="Image title"
+                    title="Jacquie eating her feet in the hospital"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -858,12 +859,12 @@ export default function Gallery() {
 
             {/* image 25 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_cupcake}
-                    title="Image title"
+                    title="Jacquie trying her first cupcake"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -888,12 +889,12 @@ export default function Gallery() {
 
             {/* image 26 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={little_jacquie_big_jacquie}
-                    title="Image title"
+                    title="Jacquie when she can home from the hospital vs. when she got her new car seat"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -918,12 +919,12 @@ export default function Gallery() {
 
             {/* image 27 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_cupcake2}
-                    title="Image title"
+                    title="Jacquie smiling after trying her first cupcake"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -948,12 +949,12 @@ export default function Gallery() {
 
             {/* image 28 */}
             {cards.map(card => (
-              <Grid item key={card} m={12} sm={6} md={4}>
+              <Grid item key={card} m={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sleep2}
-                    title="Image title"
+                    title="Jacquie sleep in her bouncer"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -978,12 +979,12 @@ export default function Gallery() {
 
             {/* image 29 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_halloween}
-                    title="Image title"
+                    title="Jacquie's first halloween"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -1008,12 +1009,12 @@ export default function Gallery() {
 
             {/* image 30 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_hospital2}
-                    title="Image title"
+                    title="Jacquie on her tablet in the hospital"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -1038,12 +1039,12 @@ export default function Gallery() {
 
             {/* image 31 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_glasses}
-                    title="Image title"
+                    title="Jacquie in her glasses"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -1068,12 +1069,42 @@ export default function Gallery() {
 
             {/* image 32 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_jordan}
-                    title="Image title"
+                    title="Jacquie in her jordan outfit"
+                  />
+                  {/* <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 34 */}
+            {cards.map(card => (
+              <Grid item key={card} xs={12} sm={7} md={5}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_messy}
+                    title="Jacquie with a messy face"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -1098,12 +1129,12 @@ export default function Gallery() {
 
               {/* image 33 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={7} md={5}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_turtle_hat}
-                    title="Image title"
+                    title="Jacquie in a ninja turtle hat"
                   />
                   {/* <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
