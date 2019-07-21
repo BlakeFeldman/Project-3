@@ -71,8 +71,8 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(4),
   },
   cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
   },
   card: {
     height: '100%',
@@ -80,11 +80,12 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   cardMedia: {
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '56.25%', 
   },
   cardContent: {
     flexGrow: 1,
   },
+  
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
@@ -133,29 +134,29 @@ export default function Gallery() {
             </div> */}
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={4}>
 
             {/* image 1 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_in_tub}
                     title="Jacquie in smiling in the bathtub"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                    {/* {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                    Jacquie in smiling in the bathtub
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/*  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -169,23 +170,23 @@ export default function Gallery() {
 
             {/* image 2 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_donut_face}
                     title="Jacquie after she got caught eating her dads donuts"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                   {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                    Jacquie after she got caught eating her dads donuts
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -199,23 +200,23 @@ export default function Gallery() {
 
             {/* image 3 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_chewbacca}
                     title="Jacquie in her chewbacca onsie"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                    Jacquie in her chewbacca onsie
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/* <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -229,23 +230,23 @@ export default function Gallery() {
 
             {/* image 4 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_daddy_hospital}
                     title="Jacquie and her dad sitting with each other in the hospital"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                    Jacquie and her dad sitting with each other in the hospital
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/* <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -259,23 +260,23 @@ export default function Gallery() {
 
             {/* image 5 */}
             {cards.map(card => (
-              <Grid item key={card} s={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_2nd_bday}
                     title="Jacquie's second birthday outfit"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                    {/* {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                    Jacquie's second birthday outfit
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/* <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -289,23 +290,23 @@ export default function Gallery() {
 
               {/* image 6 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bubble_beard}
                     title="Jacquie with a bubble beard in the tub"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                     Jacquie with a bubble beard in the tub
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -319,23 +320,23 @@ export default function Gallery() {
 
               {/* image 7 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_in_fridge}
                     title="Jacquie cooling off sitting in the fridge"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie cooling off sitting in the fridge
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -349,23 +350,23 @@ export default function Gallery() {
 
               {/* image 8 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_laundry_basket}
                     title="Jacquie playing in the laundry basket"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie playing in the laundry basket
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -379,23 +380,23 @@ export default function Gallery() {
 
             {/* image 9 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_mommy_hospital}
                     title="Jacquie and her mom in the hospital"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie and her mom in the hospital
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -409,23 +410,23 @@ export default function Gallery() {
 
             {/* image 10 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_pink_chair}
-                    title="jjacquie in her pink chair"
+                    title="Jacquie in her pink chair"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie in her pink chair she got for christmas
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -439,23 +440,23 @@ export default function Gallery() {
 
             {/* image 11 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_potty}
                     title="Jacquie potty training"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie potty training with her tablet and milk
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -469,23 +470,23 @@ export default function Gallery() {
 
             {/* image 12 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sleep}
                     title="Jacquie sleep in her high chair"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie sleep in her high chair
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -499,23 +500,23 @@ export default function Gallery() {
 
             {/* image 13 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_mommy}
                     title="Jacquie and her mom"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie and her mom
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -529,23 +530,23 @@ export default function Gallery() {
 
             {/* image 14 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bday}
                     title="Jacquie's first birthday"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie's first birthday
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -559,23 +560,23 @@ export default function Gallery() {
 
             {/* image 15 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bob_ross}
                     title="Jacquie and Bob Ross"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie and Bob Ross
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -589,23 +590,23 @@ export default function Gallery() {
 
              {/* image 16 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_daddy2}
                     title="Jacquie and her dad doing work"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie and her dad doing work
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -619,23 +620,23 @@ export default function Gallery() {
 
             {/* image 17 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_hospital}
                     title="Jacquie after her facial surgery"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie after her facial surgery
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -649,23 +650,23 @@ export default function Gallery() {
 
              {/* image 18 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={just_jacquie}
                     title="Jacquie all up in the camera"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie all up in the camera
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -679,23 +680,23 @@ export default function Gallery() {
 
              {/* image 19 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_monkey}
                     title="Jacquie looking at monkeys at the zoo"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie looking at monkeys at the zoo
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -709,23 +710,23 @@ export default function Gallery() {
 
              {/* image 20 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_smile}
                     title="Jacquie smilling about something she did"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie smilling about something she did
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -739,23 +740,23 @@ export default function Gallery() {
 
             {/* image 21 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sassy}
                     title="Jacquie being sassy"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie being sassy
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -769,23 +770,23 @@ export default function Gallery() {
 
              {/* image 22 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_heart_glasses}
                     title="Jacquie with the heart glasses filter"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie with the heart glasses filter
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -799,23 +800,23 @@ export default function Gallery() {
 
              {/* image 23 */}
              {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_gangster}
                     title="Gangster Jacquie"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie with the gangster filter
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -829,23 +830,23 @@ export default function Gallery() {
 
             {/* image 24 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_foot}
                     title="Jacquie eating her feet in the hospital"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                     Jacquie eating her feet in the hospital
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -859,23 +860,23 @@ export default function Gallery() {
 
             {/* image 25 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_cupcake}
                     title="Jacquie trying her first cupcake"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie trying her first cupcake
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -889,23 +890,23 @@ export default function Gallery() {
 
             {/* image 26 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={little_jacquie_big_jacquie}
                     title="Jacquie when she can home from the hospital vs. when she got her new car seat"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                     Jacquie when she can home from the hospital vs. when she got her new car seat
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -919,23 +920,23 @@ export default function Gallery() {
 
             {/* image 27 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_cupcake2}
                     title="Jacquie smiling after trying her first cupcake"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie smiling after trying her first cupcake
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -949,23 +950,23 @@ export default function Gallery() {
 
             {/* image 28 */}
             {cards.map(card => (
-              <Grid item key={card} m={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sleep2}
                     title="Jacquie sleep in her bouncer"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                  {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie sleep in her bouncer
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -979,23 +980,23 @@ export default function Gallery() {
 
             {/* image 29 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_halloween}
-                    title="Jacquie's first halloween"
+                    title="Jacquie's first halloween costume"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                  {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie's first halloween costume
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1009,23 +1010,23 @@ export default function Gallery() {
 
             {/* image 30 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_hospital2}
                     title="Jacquie on her tablet in the hospital"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie on her tablet in the hospital
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1039,23 +1040,23 @@ export default function Gallery() {
 
             {/* image 31 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_glasses}
                     title="Jacquie in her glasses"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie in her glasses
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1069,23 +1070,23 @@ export default function Gallery() {
 
             {/* image 32 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_jordan}
                     title="Jacquie in her jordan outfit"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                  {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie in her jordan outfit
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                   {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1099,23 +1100,23 @@ export default function Gallery() {
 
             {/* image 34 */}
             {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_messy}
                     title="Jacquie with a messy face"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie with a messy face after eating ravioli
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/* <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1129,23 +1130,23 @@ export default function Gallery() {
 
               {/* image 33 */}
               {cards.map(card => (
-              <Grid item key={card} xs={12} sm={7} md={5}>
+              <Grid item key={card} lg={12} lg={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_turtle_hat}
                     title="Jacquie in a ninja turtle hat"
                   />
-                  {/* <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                   <CardContent className={classes.cardContent}>
+                   {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>
+                    </Typography>*/}
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Jacquie in a ninja turtle hat
                     </Typography>
                   </CardContent>
 
-                  <CardActions>
+                  {/* <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
