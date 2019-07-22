@@ -44,9 +44,13 @@
     "gofundme": "^0.1.1",
     "google": "^2.1.0",
     "if-env": "^1.0.4",
+    "markdown-to-jsx": "^6.10.2",
     "mongoose": "^5.4.14",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reactstrap": "^8.0.1",
     "uuid": "^3.3.2",
     "yarn": "^1.16.0"
   }
