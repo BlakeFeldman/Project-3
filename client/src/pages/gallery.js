@@ -47,6 +47,10 @@ import jacquie_glasses from '../assets/jacquie_glasses.jpg';
 import jacquie_jordan from '../assets/jacquie_jordan.jpeg';
 import jacquie_hospital2 from '../assets/jacquie_hospital2.jpg';
 import jacquie_messy from '../assets/jacquie_messy.jpg';
+import { pink } from '@material-ui/core/colors';
+
+
+
 
 // function MadeWithLove() {
 //   return (
@@ -140,7 +144,7 @@ export default function Gallery() {
 
             {/* image 1 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -156,7 +160,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                  {/*  {/*<CardActions>
+                  {/* <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -170,7 +174,7 @@ export default function Gallery() {
 
             {/* image 2 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -200,7 +204,7 @@ export default function Gallery() {
 
             {/* image 3 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -230,7 +234,7 @@ export default function Gallery() {
 
             {/* image 4 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -260,7 +264,7 @@ export default function Gallery() {
 
             {/* image 5 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -290,7 +294,7 @@ export default function Gallery() {
 
               {/* image 6 */}
               {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -320,7 +324,7 @@ export default function Gallery() {
 
               {/* image 7 */}
               {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -350,7 +354,7 @@ export default function Gallery() {
 
               {/* image 8 */}
               {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -380,7 +384,7 @@ export default function Gallery() {
 
             {/* image 9 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -410,7 +414,7 @@ export default function Gallery() {
 
             {/* image 10 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -440,7 +444,7 @@ export default function Gallery() {
 
             {/* image 11 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -470,7 +474,7 @@ export default function Gallery() {
 
             {/* image 12 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -500,7 +504,7 @@ export default function Gallery() {
 
             {/* image 13 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -530,7 +534,7 @@ export default function Gallery() {
 
             {/* image 14 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -560,7 +564,7 @@ export default function Gallery() {
 
             {/* image 15 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -590,7 +594,7 @@ export default function Gallery() {
 
              {/* image 16 */}
              {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -620,7 +624,7 @@ export default function Gallery() {
 
             {/* image 17 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -650,7 +654,7 @@ export default function Gallery() {
 
              {/* image 18 */}
              {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -680,7 +684,7 @@ export default function Gallery() {
 
              {/* image 19 */}
              {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -710,7 +714,7 @@ export default function Gallery() {
 
              {/* image 20 */}
              {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -740,7 +744,7 @@ export default function Gallery() {
 
             {/* image 21 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -770,7 +774,7 @@ export default function Gallery() {
 
              {/* image 22 */}
              {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -800,7 +804,7 @@ export default function Gallery() {
 
              {/* image 23 */}
              {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -830,7 +834,7 @@ export default function Gallery() {
 
             {/* image 24 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -860,7 +864,7 @@ export default function Gallery() {
 
             {/* image 25 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -890,7 +894,7 @@ export default function Gallery() {
 
             {/* image 26 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -920,7 +924,7 @@ export default function Gallery() {
 
             {/* image 27 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -950,7 +954,7 @@ export default function Gallery() {
 
             {/* image 28 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -980,7 +984,7 @@ export default function Gallery() {
 
             {/* image 29 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -1010,7 +1014,7 @@ export default function Gallery() {
 
             {/* image 30 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -1040,7 +1044,7 @@ export default function Gallery() {
 
             {/* image 31 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -1070,7 +1074,7 @@ export default function Gallery() {
 
             {/* image 32 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -1100,7 +1104,7 @@ export default function Gallery() {
 
             {/* image 34 */}
             {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -1130,7 +1134,7 @@ export default function Gallery() {
 
               {/* image 33 */}
               {cards.map(card => (
-              <Grid item key={card} lg={12} lg={6} lg={6}>
+              <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
