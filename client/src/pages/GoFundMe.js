@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 import AppBar from "@material-ui/core/AppBar";
+import Styled from "styled-components";
 import CameraIcon from "@material-ui/icons/PhotoCamera";
+import SideBar from "../components/Nav/SideBar/SideBar";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -11,6 +13,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/styles";
 import Container from "@material-ui/core/Container";
+
+const NavWrapperDiv = Styled.div`
+  margin-bottom: 100px;
+`;
 
 const styles = theme => ({
   icon: {
@@ -77,7 +83,14 @@ class GoFundMe extends Component {
     // );
 
     return (
-      <React.Fragment>
+
+        <React.Fragment>
+          <NavWrapperDiv>
+            <SideBar />
+          </NavWrapperDiv>
+    
+
+      {/* <React.Fragment>
         <CssBaseline />
         <AppBar position="relative">
           <Toolbar>
@@ -86,7 +99,7 @@ class GoFundMe extends Component {
               Donate
             </Typography>
           </Toolbar>
-        </AppBar>
+        </AppBar> */}
         <main>
           {/* Hero unit */}
           <div className={classes.heroContent}>
