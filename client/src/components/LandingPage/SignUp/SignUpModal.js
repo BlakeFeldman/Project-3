@@ -52,6 +52,9 @@ class SUModal extends React.Component {
         password: event.target.password.value,
         name: event.target.name.value,
         zip: event.target.zipcode.value,
+        avatar: event.target.avatar.value,
+        interests: event.target.interests.value,
+        services: event.target.services.value,
       };
 
       fetch("/api/users", {
@@ -130,6 +133,19 @@ class SUModal extends React.Component {
               <InputLabel htmlFor="zipcode">Zipcode</InputLabel>
               <Input name="zipcode" id="zipcode" autoComplete="zipcode" />
             </FormControl>
+            <FormControl margin="normal" fullWidth>
+              <InputLabel htmlFor="avatar">Avatar</InputLabel>
+              <Input name="avatar" id="avatar" />
+            </FormControl>
+            <FormControl margin="normal" fullWidth>
+              <InputLabel htmlFor="interests">Interests</InputLabel>
+              <Input name="interests" id="interests" />
+            </FormControl>
+            <FormControl margin="normal" fullWidth>
+              <InputLabel htmlFor="services">services</InputLabel>
+              <Input name="services" id="services" />
+            </FormControl>
+
             <Button
               type="submit"
               fullWidth

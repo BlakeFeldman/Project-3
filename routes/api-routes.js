@@ -61,6 +61,21 @@ module.exports = function(app) {
       });
   });
 
+  app.get("/api/users/:id", function(req, res) {
+
+    var {id}= req.params
+    console.log(id);
+
+    User.findOne({ _id: id }, function(err, user) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(user);
+       res.json(user); 
+      }
+    });
+  });
+
   // TODO: Add security layer to authorize post request, perhaps captcha?
   // * Adds new user to db
   app.post("/api/users", function(req, res) {
@@ -127,6 +142,8 @@ module.exports = function(app) {
             if (result) {
               req.session.user = user._id;
               req.session.loc = user.zip;
+              req.session.services = user.services;
+              req.session.interests = user.interests;
               req.session.name = user.name;
               console.log(req.session.user);
               res.sendStatus(200);
@@ -241,6 +258,7 @@ module.exports = function(app) {
       res.status(401).send("No user is signed in on this session");
     } else {
       console.log(`Session cookie is ${req.session.user}`);
+      console.log(req.session);
       res.send(JSON.stringify({ data: req.session }));
     }
   });

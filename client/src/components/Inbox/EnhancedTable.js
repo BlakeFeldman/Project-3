@@ -7,6 +7,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
+import {Link} from "react-router-dom";
+import Typography from "@material-ui/core/Typography";
 
 const styles = theme => ({
   root: {
@@ -37,7 +39,11 @@ function EnhancedTable(props) {
           {props.messages.map((message, index) => (
             <TableRow key={index}>
               <TableCell component="th" scope="row">
+              <Link to={"/users/" + message.senderId}>
+            <Typography>
                 {message.senderName}
+            </Typography>
+          </Link>
               </TableCell>
               <TableCell>{message.subject}</TableCell>
               <TableCell align="right">{message.createdAt}</TableCell>

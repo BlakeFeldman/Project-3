@@ -83,7 +83,7 @@ import React, { Component } from "react";
 //   width: 120px;
 // `;
 
-class Dashboard extends Component {
+class Profile extends Component {
   state = {
     notName: "",
     id: "",
@@ -103,7 +103,9 @@ class Dashboard extends Component {
   };
 
   componentDidMount() {
-    fetch("/api/session", {
+    console.log(this.props);
+
+    fetch("/api/users/" + this.props.match.params.userId, {
       method: "Get",
       mode: "cors",
       cache: "no-cache",
@@ -118,13 +120,10 @@ class Dashboard extends Component {
       .then(res => res.json())
       .then(
         result => {
+          
           this.setState({
-            id: result.data.user,
-            prevLocation: result.data.loc,
-            prevnotName: result.data.name,
-            email: result.data.email,
-            interests: result.data.interests,
-            services: result.data.services,
+            interests: result.interests,
+            services: result.services,
           });
         },
         error => {
@@ -222,5 +221,5 @@ class Dashboard extends Component {
 //   }
 // }
 
-export default Dashboard;
+export default Profile;
 // export default withStyles(styles)(Dashboard);

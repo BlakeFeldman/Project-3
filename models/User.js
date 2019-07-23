@@ -37,6 +37,21 @@ const UserSchema = new Schema({
     type: Date,
     default: Date.now(),
   },
+  image: {
+    type: String,
+    trim: true,
+    required: false,
+  },
+  interests: {
+    type: String,
+    trim: true,
+    required: "Tell us why you are here."
+  },
+  services: {
+    type: String,
+    trim: true,
+    required: "Tell us how you wish to get involved."
+  }
 });
 
 const User = mongoose.model("User", UserSchema);
