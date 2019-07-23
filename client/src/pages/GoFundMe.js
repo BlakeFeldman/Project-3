@@ -11,6 +11,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/styles";
 import Container from "@material-ui/core/Container";
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 const styles = theme => ({
   icon: {
@@ -124,6 +125,8 @@ class GoFundMe extends Component {
                     </a>
                     <CardContent className={classes.cardContent}>
                       <Typography>{campaign.title}</Typography>
+                      <Typography>${campaign.donationGoal.raised} of ${campaign.donationGoal.total}</Typography>
+                    <LinearProgress variant="determinate" color="primary" value={(parseInt(campaign.donationGoal.raised) / parseInt(campaign.donationGoal.total)) * 100} />
                     </CardContent>
                   </Card>
                 </Grid>

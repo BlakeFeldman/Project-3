@@ -56,7 +56,11 @@ class Education extends Component {
     posts: [],
   };
 
+
+  
   componentDidMount() {
+
+    
     // Get session cookie and update posts
     fetch("/api/session", {
       method: "Get",
@@ -117,7 +121,9 @@ class Education extends Component {
   };
 
   render() {
+
     return (
+
       <main>
         <NavWrapperDiv>
           <Sidebar />
