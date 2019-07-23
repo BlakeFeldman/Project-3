@@ -1,4 +1,4 @@
-import { Mail, BusinessCenter,Face, AttachMoney,} from "@material-ui/icons";
+import { Mail, BusinessCenter,Face, AttachMoney, ArrowRight,} from "@material-ui/icons";
 import TermsOfService from "../../../pages/TermsOfService";
 import ContactUs from "../../../pages/ContactUs";
 import AboutUS from "../../../pages/AboutUs";
@@ -40,6 +40,12 @@ const AltRoutes = [
     icon: AttachMoney,
     component: GoFundMe,
   },
+  {
+    path: "/",
+    sidebarName: "Sign Out",
+    navbarName: "Sign Out",
+    icon: ArrowRight,
+  }
   
 ];
 
