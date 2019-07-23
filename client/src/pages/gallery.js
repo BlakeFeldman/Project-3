@@ -47,7 +47,7 @@ import jacquie_glasses from '../assets/jacquie_glasses.jpg';
 import jacquie_jordan from '../assets/jacquie_jordan.jpeg';
 import jacquie_hospital2 from '../assets/jacquie_hospital2.jpg';
 import jacquie_messy from '../assets/jacquie_messy.jpg';
-import { pink } from '@material-ui/core/colors';
+// import { pink } from '@material-ui/core/colors';
 
 
 
