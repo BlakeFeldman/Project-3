@@ -12,22 +12,22 @@ const NavWrapperDiv = Styled.div`
 `;
 
 const styles = {
-        card: {
-          minWidth: 275,
-          width: "500px"
-        },
-        bullet: {
-          display: 'inline-block',
-          margin: '0 2px',
-          transform: 'scale(0.8)',
-        },
-        title: {
-          fontSize: 14,
-        },
-        pos: {
-          marginBottom: 12,
-        },
-      };
+  card: {
+    minWidth: 275,
+    width: "500px"
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+};
 
 
 const Background = Styled.main`
@@ -38,19 +38,9 @@ const Background = Styled.main`
 `;
 
 const AboutUs = (props) => {
-        console.log(props);
-        const {classes}=props;
-        
-              return(
-                <Background>
-                <NavWrapperDiv>
-               <SideBar />
-               </NavWrapperDiv>     
-                 <Wrapper>
-                <Card className={classes.card}>
-                <CardContent>
-          
-          <h3>Our Inspiration</h3>
+  console.log(props);
+  const { classes } = props;
+
 
           <p>
           Everybody is born different, because of those differences, unfortunately, some children
@@ -67,18 +57,17 @@ const AboutUs = (props) => {
           <br></br>
           <h3>The brains behind Special Needs United</h3>
 
-          
-             <p>Blake Feldman -</p>
-             <br></br>
-             <p>Sydney Weaver - </p>
-             <br></br>
-             <p>Nathan Pearson - </p>
-             <br></br>
-                    </CardContent>
-          </Card> 
-          </Wrapper>
-          </Background>
-        )  
+            <p>Blake Feldman -</p>
+            <br></br>
+            <p>Sydney Weaver - </p>
+            <br></br>
+            <p>Nathan Pearson - </p>
+            <br></br>
+          </CardContent>
+        </Card>
+      </Wrapper>
+    </Background>
+  )
 }
 
 export default withStyles(styles)(AboutUs);
