@@ -41,6 +41,16 @@ const AboutUs = (props) => {
   console.log(props);
   const { classes } = props;
 
+  return (
+    <Background>
+      <NavWrapperDiv>
+        <SideBar />
+      </NavWrapperDiv>
+      <Wrapper>
+        <Card className={classes.card}>
+          <CardContent>
+            <h3>Our Inspiration</h3>
+
 
           <p>
           Everybody is born different, because of those differences, unfortunately, some children
