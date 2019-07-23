@@ -53,7 +53,6 @@ const AboutUs = (props) => {
           <CardContent>
             <h3>Our Inspiration</h3>
 
-
           <p>
           Everybody is born different, because of those differences, unfortunately, some children
           are isolated, shunned, bullied and made fun of through no fault of their own — it's not ok.
