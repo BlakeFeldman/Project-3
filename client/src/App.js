@@ -19,6 +19,7 @@ import Community from "./pages/Community";
 import Education from "./pages/Education";
 import GoFundMe from "./pages/GoFundMe";
 import Gallery from "./pages/Gallery";
+import Profile from "./pages/Profile";
 
 const theme = createMuiTheme({
   palette: {
@@ -87,6 +88,8 @@ class App extends Component {
                 <Route exact path="/" component={HomePage} />
 
                 <Route exact path="/profile" component={Dashboard} />
+                <Route exact path="/users/:userId" component={Profile} />
+
                 {/* discard^ */}
 
                 {/* true homepage */}

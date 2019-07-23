@@ -16,6 +16,10 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import SnackBar from "../components/SnackBar/SnackBar";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
 
 function getModalStyle() {
   const top = 50;
@@ -149,6 +153,8 @@ class Bulletin extends Component {
     id: "",
     location: "",
     name: "",
+    interests: "",
+    services: "",
     snackBar: false,
     open: false,
     recipientName: "",
@@ -159,10 +165,10 @@ class Bulletin extends Component {
 
   componentDidMount() {
     fetch("/api/session", {
-      method: "Get", 
-      mode: "cors", 
-      cache: "no-cache", 
-      credentials: "include", 
+      method: "Get",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -173,12 +179,14 @@ class Bulletin extends Component {
       .then(res => res.json())
       .then(
         result => {
-          const { user, loc, name } = result.data;
+          const { user, loc, name, interests, services } = result.data;
           console.log(result);
           this.setState({
             id: user,
             location: loc,
             name: name,
+            interests: interests, 
+            services: services
           });
           this.updatePosts();
         },
@@ -191,12 +199,11 @@ class Bulletin extends Component {
   updatePosts = () => {
     fetch(`/api/posts/50/${this.state.location}`, {
       method: "Get",
-      mode: "cors", 
-      cache: "no-cache", 
-      credentials: "include", 
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        
       },
 
       redirect: "follow",
@@ -239,10 +246,9 @@ class Bulletin extends Component {
       method: "POST",
       mode: "same-origin",
       cache: "no-cache",
-      credentials: "include", 
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        
       },
 
       redirect: "follow",
@@ -295,10 +301,35 @@ class Bulletin extends Component {
         </NavWrapperDiv>
 
         <Grid>
-          <SideBarItem style={{textAlign: "center"}}>
+          <SideBarItem style={{ textAlign: "center" }}>
+            <Card className={classes.card}>
+              
+                <CardMedia
+                  className={classes.media}
+                  
+                  title="Contemplative Reptile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {this.state.interests}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+            
+            </Card>
+          </SideBarItem>
+          <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
               <SubmitTextWrapper>
-                <Typography color= "black" >
+                <Typography color="black">
                   Want to contribute? Just click the button to create your own
                   post.
                 </Typography>
@@ -319,7 +350,7 @@ class Bulletin extends Component {
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
               openModal={this.handleOpen}
-              style={{borderRadius: "30px"}}
+              style={{ borderRadius: "30px" }}
             />
           </CommunityItem>
           <AdvocacyItem>
