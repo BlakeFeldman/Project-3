@@ -6,6 +6,7 @@ import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
 
+
 const Grid = Styled.div`
   display: grid;
   grid-template-columns: [col-1] 20% [col-2] 80% ;

@@ -1,5 +1,8 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
+//import NavWrapperDiv from '../components/Nav';
+import SideBar from "../components/Nav/SideBar/SideBar";
+import Styled from "styled-components";
 // import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
@@ -47,10 +50,6 @@ import jacquie_glasses from '../assets/jacquie_glasses.jpg';
 import jacquie_jordan from '../assets/jacquie_jordan.jpeg';
 import jacquie_hospital2 from '../assets/jacquie_hospital2.jpg';
 import jacquie_messy from '../assets/jacquie_messy.jpg';
-import { pink } from '@material-ui/core/colors';
-
-
-
 
 // function MadeWithLove() {
 //   return (
@@ -63,6 +62,11 @@ import { pink } from '@material-ui/core/colors';
 //     </Typography>
 //   );
 // }
+
+const NavWrapperDiv = Styled.div`
+  margin-bottom: 100px;
+`;
+
 const useStyles = makeStyles(theme => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -84,12 +88,12 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   cardMedia: {
-    paddingTop: '56.25%', 
+    paddingTop: '56.25%',
   },
   cardContent: {
     flexGrow: 1,
   },
-  
+
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
@@ -102,8 +106,13 @@ export default function Gallery() {
   const classes = useStyles();
 
   return (
+
     <React.Fragment>
-      <CssBaseline />
+      <NavWrapperDiv>
+        <SideBar />
+      </NavWrapperDiv>
+
+      {/* <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
           <CameraIcon className={classes.icon} />
@@ -111,7 +120,7 @@ export default function Gallery() {
             Gallery
           </Typography>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -120,7 +129,7 @@ export default function Gallery() {
               Special Needs United
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-             Here is the inspiration behind our project, Nate's daughter Jacquie!!
+              Here is the inspiration behind our project, Nate's daughter Jacquie!!
             </Typography>
             {/* <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -156,7 +165,7 @@ export default function Gallery() {
                       Heading
                     </Typography>*/}
                     <Typography>
-                    Jacquie in smiling in the bathtub
+                      Jacquie in smiling in the bathtub
                     </Typography>
                   </CardContent>
 
@@ -181,12 +190,12 @@ export default function Gallery() {
                     image={jacquie_donut_face}
                     title="Jacquie after she got caught eating her dads donuts"
                   />
-                   <CardContent className={classes.cardContent}>
-                   {/* <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                    Jacquie after she got caught eating her dads donuts
+                      Jacquie after she got caught eating her dads donuts
                     </Typography>
                   </CardContent>
 
@@ -211,12 +220,12 @@ export default function Gallery() {
                     image={jacquie_chewbacca}
                     title="Jacquie in her chewbacca onsie"
                   />
-                   <CardContent className={classes.cardContent}>
+                  <CardContent className={classes.cardContent}>
                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                    Jacquie in her chewbacca onsie
+                      Jacquie in her chewbacca onsie
                     </Typography>
                   </CardContent>
 
@@ -241,12 +250,12 @@ export default function Gallery() {
                     image={jacquie_daddy_hospital}
                     title="Jacquie and her dad sitting with each other in the hospital"
                   />
-                   <CardContent className={classes.cardContent}>
+                  <CardContent className={classes.cardContent}>
                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                    Jacquie and her dad sitting with each other in the hospital
+                      Jacquie and her dad sitting with each other in the hospital
                     </Typography>
                   </CardContent>
 
@@ -271,12 +280,12 @@ export default function Gallery() {
                     image={jacquie_2nd_bday}
                     title="Jacquie's second birthday outfit"
                   />
-                   <CardContent className={classes.cardContent}>
+                  <CardContent className={classes.cardContent}>
                     {/* {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                    Jacquie's second birthday outfit
+                      Jacquie's second birthday outfit
                     </Typography>
                   </CardContent>
 
@@ -292,8 +301,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-              {/* image 6 */}
-              {cards.map(card => (
+            {/* image 6 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -302,15 +311,15 @@ export default function Gallery() {
                     title="Jacquie with a bubble beard in the tub"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                     Jacquie with a bubble beard in the tub
+                      Jacquie with a bubble beard in the tub
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -322,8 +331,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-              {/* image 7 */}
-              {cards.map(card => (
+            {/* image 7 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -332,7 +341,7 @@ export default function Gallery() {
                     title="Jacquie cooling off sitting in the fridge"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -340,7 +349,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -352,8 +361,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-              {/* image 8 */}
-              {cards.map(card => (
+            {/* image 8 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -362,7 +371,7 @@ export default function Gallery() {
                     title="Jacquie playing in the laundry basket"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -370,7 +379,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -392,7 +401,7 @@ export default function Gallery() {
                     title="Jacquie and her mom in the hospital"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -400,7 +409,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -422,7 +431,7 @@ export default function Gallery() {
                     title="Jacquie in her pink chair"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -430,7 +439,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -452,7 +461,7 @@ export default function Gallery() {
                     title="Jacquie potty training"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -460,7 +469,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -482,7 +491,7 @@ export default function Gallery() {
                     title="Jacquie sleep in her high chair"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -490,7 +499,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -512,7 +521,7 @@ export default function Gallery() {
                     title="Jacquie and her mom"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -520,7 +529,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -542,7 +551,7 @@ export default function Gallery() {
                     title="Jacquie's first birthday"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -550,7 +559,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -572,7 +581,7 @@ export default function Gallery() {
                     title="Jacquie and Bob Ross"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -580,7 +589,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -592,8 +601,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-             {/* image 16 */}
-             {cards.map(card => (
+            {/* image 16 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -602,7 +611,7 @@ export default function Gallery() {
                     title="Jacquie and her dad doing work"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -610,7 +619,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -632,7 +641,7 @@ export default function Gallery() {
                     title="Jacquie after her facial surgery"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -640,7 +649,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -652,8 +661,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-             {/* image 18 */}
-             {cards.map(card => (
+            {/* image 18 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -662,7 +671,7 @@ export default function Gallery() {
                     title="Jacquie all up in the camera"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -670,7 +679,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -682,8 +691,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-             {/* image 19 */}
-             {cards.map(card => (
+            {/* image 19 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -692,7 +701,7 @@ export default function Gallery() {
                     title="Jacquie looking at monkeys at the zoo"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -700,7 +709,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -712,8 +721,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-             {/* image 20 */}
-             {cards.map(card => (
+            {/* image 20 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -722,7 +731,7 @@ export default function Gallery() {
                     title="Jacquie smilling about something she did"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -730,7 +739,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -752,7 +761,7 @@ export default function Gallery() {
                     title="Jacquie being sassy"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -760,7 +769,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -772,8 +781,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-             {/* image 22 */}
-             {cards.map(card => (
+            {/* image 22 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -782,7 +791,7 @@ export default function Gallery() {
                     title="Jacquie with the heart glasses filter"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -790,7 +799,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -802,8 +811,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-             {/* image 23 */}
-             {cards.map(card => (
+            {/* image 23 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -812,7 +821,7 @@ export default function Gallery() {
                     title="Gangster Jacquie"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -820,7 +829,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -842,15 +851,15 @@ export default function Gallery() {
                     title="Jacquie eating her feet in the hospital"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                     Jacquie eating her feet in the hospital
+                      Jacquie eating her feet in the hospital
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -872,7 +881,7 @@ export default function Gallery() {
                     title="Jacquie trying her first cupcake"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -880,7 +889,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -902,15 +911,15 @@ export default function Gallery() {
                     title="Jacquie when she can home from the hospital vs. when she got her new car seat"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
-                     Jacquie when she can home from the hospital vs. when she got her new car seat
+                      Jacquie when she can home from the hospital vs. when she got her new car seat
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -932,7 +941,7 @@ export default function Gallery() {
                     title="Jacquie smiling after trying her first cupcake"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -940,7 +949,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -962,7 +971,7 @@ export default function Gallery() {
                     title="Jacquie sleep in her bouncer"
                   />
                   <CardContent className={classes.cardContent}>
-                  {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -970,7 +979,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -992,7 +1001,7 @@ export default function Gallery() {
                     title="Jacquie's first halloween costume"
                   />
                   <CardContent className={classes.cardContent}>
-                  {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}*/}
                     <Typography>
@@ -1000,7 +1009,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1030,7 +1039,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1052,7 +1061,7 @@ export default function Gallery() {
                     title="Jacquie in her glasses"
                   />
                   <CardContent className={classes.cardContent}>
-                     {/* <Typography gutterBottom variant="h5" component="h2">
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -1060,7 +1069,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1081,8 +1090,8 @@ export default function Gallery() {
                     image={jacquie_jordan}
                     title="Jacquie in her jordan outfit"
                   />
-                   <CardContent className={classes.cardContent}>
-                  {/* <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
@@ -1090,7 +1099,7 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
 
-                   {/*<CardActions>
+                  {/*<CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
@@ -1111,7 +1120,7 @@ export default function Gallery() {
                     image={jacquie_messy}
                     title="Jacquie with a messy face"
                   />
-                   <CardContent className={classes.cardContent}>
+                  <CardContent className={classes.cardContent}>
                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
@@ -1132,8 +1141,8 @@ export default function Gallery() {
               </Grid>
             ))}
 
-              {/* image 33 */}
-              {cards.map(card => (
+            {/* image 33 */}
+            {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -1141,8 +1150,8 @@ export default function Gallery() {
                     image={jacquie_turtle_hat}
                     title="Jacquie in a ninja turtle hat"
                   />
-                   <CardContent className={classes.cardContent}>
-                   {/* <Typography gutterBottom variant="h5" component="h2">
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
                     <Typography>
