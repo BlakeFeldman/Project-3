@@ -105,7 +105,7 @@ class App extends Component {
                 <Route exact path="/thank-you" component={ThankYou} />
                 <Route exact path="/aboutus" component={AboutUs} />
                 <Route exact path="/how-to-help" component={GoFundMe} />
-                <Route exact path="/gallery" component={Gallery} />
+                <Route exact path="/Gallery" component={Gallery} />
                 <Route exact path="/donate" component={GoFundMe} />
 
                 <Route component={NoMatch} />

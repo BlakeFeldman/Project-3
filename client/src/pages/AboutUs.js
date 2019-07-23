@@ -40,6 +40,7 @@ const Background = Styled.main`
 const AboutUs = (props) => {
   console.log(props);
   const { classes } = props;
+
   return (
     <Background>
       <NavWrapperDiv>
@@ -49,6 +50,7 @@ const AboutUs = (props) => {
         <Card className={classes.card}>
           <CardContent>
             <h3>Our Inspiration</h3>
+
           <p>
           Everybody is born different, because of those differences, unfortunately, some children
           are isolated, shunned, bullied and made fun of through no fault of their own — it's not ok.
