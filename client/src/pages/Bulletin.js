@@ -310,6 +310,10 @@ class Bulletin extends Component {
                   title="Contemplative Reptile"
                 />
                 <CardContent>
+                  
+                <Typography gutterBottom variant="h5" component="h2">
+                    {this.state.name}
+                  </Typography>
                   <Typography gutterBottom variant="h5" component="h2">
                     {this.state.interests}
                   </Typography>
@@ -317,10 +321,8 @@ class Bulletin extends Component {
                     variant="body2"
                     color="textSecondary"
                     component="p"
-                  >
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                  >{this.state.services}
+                    
                   </Typography>
                 </CardContent>
             
