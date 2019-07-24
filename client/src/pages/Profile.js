@@ -133,7 +133,10 @@ class Profile extends Component {
   }
 
   render () {
-    return (<div>{this.state.interests}</div>)
+    return (<div>
+      {this.state.interests}
+      {this.state.services}
+      </div>)
   }
 }
 
