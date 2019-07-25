@@ -301,18 +301,18 @@ class Bulletin extends Component {
         </NavWrapperDiv>
 
         <Grid>
-          <SideBarItem style={{ textAlign: "center" }}>
+          <SideBarItem style={{ textAlign: "center", paddingLeft: "20px" }}>
             <Card className={classes.card}>
               
                 <CardMedia
                   className={classes.media}
-                  
+
                   title="Contemplative Reptile"
                 />
                 <CardContent>
                   
                 <Typography gutterBottom variant="h5" component="h2">
-                    {this.state.name}
+                   Hello, {this.state.name}
                   </Typography>
                   <Typography gutterBottom variant="h5" component="h2">
                     {this.state.interests}
