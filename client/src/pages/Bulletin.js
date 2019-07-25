@@ -83,6 +83,8 @@ border-radius: 10px;
 border-style: solid;
 border-width: 1px;
 border-color: #c9c9c9;
+font-family: 'StyreneB', 'sans-Serif';
+font-size: 40px; 
 `;
 
 const CommunityItem = Styled.div`
@@ -371,8 +373,11 @@ class Bulletin extends Component {
 
 
 <IntroItem>
-  <CardContent>
-    <p>Welcome to Special Needs United!</p>
+  <CardContent> 
+    <p>Welcome to Special Needs United!</p>  
+    <p2>Think Globally.  </p2>  
+    <p3> Act Locally.  </p3>  
+    <p4> Get Involved!</p4>
   </CardContent>
 </IntroItem>
 
