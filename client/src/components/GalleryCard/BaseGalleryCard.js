@@ -10,6 +10,7 @@ import thumbtackRed from "../Card/assets/thumbtackred.png";
 import Styled from "styled-components";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
 import { Link } from "react-router-dom";
+import jacquie_chair from "../../assets/jacquie_chair.jpg";
 
 const styles = {
   card: {
@@ -85,8 +86,16 @@ class BaseGalleryCard extends Component {
               </Button>
             </Link>
           </ImageWrapper>
-
-          {this.props.posts.length ? this.renderCards() : <LoadingCircle />}
+          <ImageWrapper>
+            <img
+              className={classes.jacquie_chair}
+              alt=""
+              src={jacquie_chair}
+              width="20%"
+            />
+          </ImageWrapper>
+          
+          {/* {this.props.posts.length ? this.renderCards() : <LoadingCircle />} */}
         </CardContent>
         <CardActions />
       </Card>
