@@ -6,8 +6,6 @@ import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
 
-
-
 const Grid = Styled.div`
   display: grid;
   grid-template-columns: [col-1] 20% [col-2] 80% ;
@@ -125,7 +123,7 @@ class Community extends Component {
           <Sidebar />
         </NavWrapperDiv>
         <Grid>
-
+          
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
               <SubmitTextWrapper>
@@ -144,7 +142,11 @@ class Community extends Component {
             </SubmitItem>
             <div style={{ height: "10%" }} />
           </SideBarItem>
+
           <TabItem>
+            <Typography color="black">
+            Connect here for Professional Services.
+          </Typography>
             <PageTabs
               category="Advocacy"
               posts={this.state.posts}
