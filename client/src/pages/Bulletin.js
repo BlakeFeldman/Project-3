@@ -161,6 +161,7 @@ class Bulletin extends Component {
     recipientId: "",
     replyContent: "",
     replySubject: "",
+    avatar: ""
   };
 
   componentDidMount() {
@@ -179,14 +180,15 @@ class Bulletin extends Component {
       .then(res => res.json())
       .then(
         result => {
-          const { user, loc, name, interests, services } = result.data;
+          const { user, loc, name, interests, services, avatar } = result.data;
           console.log(result);
           this.setState({
             id: user,
             location: loc,
             name: name,
             interests: interests, 
-            services: services
+            services: services,
+            avatar: avatar
           });
           this.updatePosts();
         },
@@ -303,14 +305,14 @@ class Bulletin extends Component {
         <Grid>
           <SideBarItem style={{ textAlign: "center" }}>
             <Card className={classes.card}>
-              
                 <CardMedia
-                  className={classes.media}
-                  
-                  title="Contemplative Reptile"
+                component="img"                
+                alt="Avatar"
+                height="100"
+                image={this.state.avatar}
+                title={this.state.name}
                 />
                 <CardContent>
-                  
                 <Typography gutterBottom variant="h5" component="h2">
                     {this.state.name}
                   </Typography>
