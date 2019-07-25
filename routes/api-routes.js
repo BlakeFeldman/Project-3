@@ -145,6 +145,7 @@ module.exports = function(app) {
               req.session.services = user.services;
               req.session.interests = user.interests;
               req.session.name = user.name;
+              req.session.avatar = user.avatar
               console.log(req.session.user);
               res.sendStatus(200);
             }
