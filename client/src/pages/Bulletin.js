@@ -20,7 +20,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-
+import world_tree from '../assets/world_tree.png';
 
 
 function getModalStyle() {
@@ -373,12 +373,20 @@ class Bulletin extends Component {
 
 
 <IntroItem>
+  
   <CardContent> 
     <p>Welcome to Special Needs United!</p>  
     <p2>Think Globally.  </p2>  
     <p3> Act Locally.  </p3>  
     <p4> Get Involved!</p4>
   </CardContent>
+  <CardMedia 
+          component="img"
+          alt="World Tree"
+          height="360"
+          image={world_tree}
+          title="World Tree"
+        />
 </IntroItem>
 
 
