@@ -59,10 +59,12 @@ const SubmitItem = Styled.div`
   margin: 200pt 0 30pt 10pt;
   padding-top: 15pt;
   border: 1px dashed #66bb6a;
+  background-color: white;
 `;
 
 const SubmitTextWrapper = Styled.div`
   margin-left: 15px;
+  background-color: white;
 `;
 
 const BottomNavSpacer = Styled.div`
@@ -75,6 +77,12 @@ grid-column-end: col-3;
 grid-row-start: row-1;
 grid-row-end: row-1;
 margin: 10px 0 10px 0;
+background-color: white;
+width: 199%;
+border-radius: 10px;
+border-style: solid;
+border-width: 1px;
+border-color: #c9c9c9;
 `;
 
 const CommunityItem = Styled.div`
@@ -115,7 +123,7 @@ const ServicesItem = Styled.div`
   grid-column-end: col-3;
   grid-row-start: row-4;
   grid-row-end: row-4;
-  margin: 0 5px 10px 0;
+  margin: 0 0 10px 5px;
 `;
 
 const GalleryItem = Styled.div`
@@ -316,7 +324,7 @@ class Bulletin extends Component {
         </NavWrapperDiv>
 
         <Grid>
-          <SideBarItem style={{ textAlign: "center", paddingLeft: "20px" }}>
+          <SideBarItem style={{ textAlign: "center", paddingLeft: "13px" }}>
             <Card className={classes.card}>
               <CardMedia
                 component="img"
@@ -361,11 +369,13 @@ class Bulletin extends Component {
             </SubmitItem>
           </SideBarItem>
 
+
 <IntroItem>
   <CardContent>
-    <p>Welcome to our site!</p>
+    <p>Welcome to Special Needs United!</p>
   </CardContent>
 </IntroItem>
+
 
           <CommunityItem>
             <BaseCommunityCard
