@@ -20,8 +20,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import world_tree from '../assets/world_tree.png';
-
+import world_tree from "../assets/world_tree.png";
 
 function getModalStyle() {
   const top = 50;
@@ -146,8 +145,6 @@ const ButtonWrapper = Styled.div`
   
 `;
 
-
-
 const styles = theme => ({
   paper: {
     position: "absolute",
@@ -170,7 +167,6 @@ const styles = theme => ({
 });
 
 class Bulletin extends Component {
-
   state = {
     posts: [],
     id: "",
@@ -184,7 +180,7 @@ class Bulletin extends Component {
     recipientId: "",
     replyContent: "",
     replySubject: "",
-    avatar: ""
+    avatar: "",
   };
 
   componentDidMount() {
@@ -211,7 +207,7 @@ class Bulletin extends Component {
             name: name,
             interests: interests,
             services: services,
-            avatar: avatar
+            avatar: avatar,
           });
           this.updatePosts();
         },
@@ -342,15 +338,10 @@ class Bulletin extends Component {
                 <Typography gutterBottom variant="h5" component="h2">
                   {this.state.interests}
                 </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecondary"
-                  component="p"
-                >{this.state.services}
-
+                <Typography variant="body2" color="textSecondary" component="p">
+                  {this.state.services}
                 </Typography>
               </CardContent>
-
             </Card>
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
@@ -371,24 +362,21 @@ class Bulletin extends Component {
             </SubmitItem>
           </SideBarItem>
 
-
-<IntroItem>
-  
-  <CardContent> 
-    <p>Welcome to Special Needs United!</p>  
-    <p2>Think Globally.  </p2>  
-    <p3> Act Locally.  </p3>  
-    <p4> Get Involved!</p4>
-  </CardContent>
-  <CardMedia 
-          component="img"
-          alt="World Tree"
-          height="360"
-          image={world_tree}
-          title="World Tree"
-        />
-</IntroItem>
-
+          <IntroItem>
+            <CardContent>
+              <Typography variant="body5" color="textPrimary" component="p">
+                Welcome to Special Needs United! Think Globally. Act Locally.
+                Get Involved!
+              </Typography>
+            </CardContent>
+            <CardMedia
+              component="img"
+              alt="World Tree"
+              height="360"
+              image={world_tree}
+              title="World Tree"
+            />
+          </IntroItem>
 
           <CommunityItem>
             <BaseCommunityCard
