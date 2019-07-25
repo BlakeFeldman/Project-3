@@ -56,6 +56,7 @@ class SUModal extends React.Component {
         interests: event.target.interests.value,
         services: event.target.services.value,
       };
+      console.log(data);
 
       fetch("/api/users", {
         method: "POST",
@@ -64,7 +65,7 @@ class SUModal extends React.Component {
         credentials: "same-origin",
         headers: {
           "Content-Type": "application/json",
-          },
+        },
         redirect: "follow",
         referrer: "no-referrer",
         body: JSON.stringify(data),
@@ -133,10 +134,7 @@ class SUModal extends React.Component {
               <InputLabel htmlFor="zipcode">Zipcode</InputLabel>
               <Input name="zipcode" id="zipcode" autoComplete="zipcode" />
             </FormControl>
-            <FormControl margin="normal" fullWidth>
-              <InputLabel htmlFor="avatar">Avatar</InputLabel>
-              <Input name="avatar" id="avatar" />
-            </FormControl>
+
             <FormControl margin="normal" fullWidth>
               <InputLabel htmlFor="interests">Interests</InputLabel>
               <Input name="interests" id="interests" />
@@ -145,7 +143,10 @@ class SUModal extends React.Component {
               <InputLabel htmlFor="services">services</InputLabel>
               <Input name="services" id="services" />
             </FormControl>
-
+            <FormControl margin="normal" fullWidth>
+              <InputLabel htmlFor="avatar">Avatar</InputLabel>
+              <Input name="avatar" id="avatar" />
+            </FormControl>
             <Button
               type="submit"
               fullWidth

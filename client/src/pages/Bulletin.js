@@ -20,6 +20,8 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+// import Wrapper from "../components/LandingPage/Wrapper";
+
 
 function getModalStyle() {
   const top = 50;
@@ -67,27 +69,35 @@ const BottomNavSpacer = Styled.div`
   margin-top: 100px;
 `;
 
+const IntroItem = Styled.div`
+grid-column-start: col-2;
+grid-column-end: col-3;
+grid-row-start: row-1;
+grid-row-end: row-1;
+margin: 10px 0 10px 0;
+`;
+
 const CommunityItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: col-2;
-  grid-row-start: row-1;
-  grid-row-end: row-1;
+  grid-row-start: row-2;
+  grid-row-end: row-2;
   margin: 0 5px 10px 0;
 `;
 
 const AdvocacyItem = Styled.div`
   grid-column-start: col-3;
   grid-column-end: col-3;
-  grid-row-start: row-1;
-  grid-row-end: row-1;
+  grid-row-start: row-2;
+  grid-row-end: row-2;
   margin: 0 0 10px 5px;
 `;
 
 const HowToHelpItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: span col-3;
-  grid-row-start: row-2;
-  grid-row-end: row-2;
+  grid-row-start: row-3;
+  grid-row-end: row-3;
   margin: 10px 0 10px 0;
   width: 199%;
 `;
@@ -95,24 +105,24 @@ const HowToHelpItem = Styled.div`
 const EducationItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: col-2;
-  grid-row-start: row-3;
-  grid-row-end: row-3;
+  grid-row-start: row-4;
+  grid-row-end: row-4;
   margin: 0 5px 10px 0;
 `;
 
 const ServicesItem = Styled.div`
   grid-column-start: col-3;
   grid-column-end: col-3;
-  grid-row-start: row-3;
-  grid-row-end: row-3;
+  grid-row-start: row-4;
+  grid-row-end: row-4;
   margin: 0 5px 10px 0;
 `;
 
 const GalleryItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: span col-2;
-  grid-row-start: row-4;
-  grid-row-end: row-4;
+  grid-row-start: row-5;
+  grid-row-end: row-5;
   margin: 10px 0 10px 0;
   width: 100%;
 `;
@@ -125,6 +135,8 @@ const ButtonWrapper = Styled.div`
   margin-top: 20px;
   
 `;
+
+
 
 const styles = theme => ({
   paper: {
@@ -148,6 +160,7 @@ const styles = theme => ({
 });
 
 class Bulletin extends Component {
+
   state = {
     posts: [],
     id: "",
@@ -161,6 +174,7 @@ class Bulletin extends Component {
     recipientId: "",
     replyContent: "",
     replySubject: "",
+    avatar: ""
   };
 
   componentDidMount() {
@@ -179,14 +193,15 @@ class Bulletin extends Component {
       .then(res => res.json())
       .then(
         result => {
-          const { user, loc, name, interests, services } = result.data;
+          const { user, loc, name, interests, services, avatar } = result.data;
           console.log(result);
           this.setState({
             id: user,
             location: loc,
             name: name,
-            interests: interests, 
-            services: services
+            interests: interests,
+            services: services,
+            avatar: avatar
           });
           this.updatePosts();
         },
@@ -303,29 +318,29 @@ class Bulletin extends Component {
         <Grid>
           <SideBarItem style={{ textAlign: "center", paddingLeft: "20px" }}>
             <Card className={classes.card}>
-              
-                <CardMedia
-                  className={classes.media}
-
-                  title="Contemplative Reptile"
-                />
-                <CardContent>
-                  
+              <CardMedia
+                component="img"
+                alt="Avatar"
+                height="100"
+                image={this.state.avatar}
+                title={this.state.name}
+              />
+              <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                   Hello, {this.state.name}
-                  </Typography>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {this.state.interests}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >{this.state.services}
-                    
-                  </Typography>
-                </CardContent>
-            
+                  Hello, {this.state.name}
+                </Typography>
+                <Typography gutterBottom variant="h5" component="h2">
+                  {this.state.interests}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                >{this.state.services}
+
+                </Typography>
+              </CardContent>
+
             </Card>
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
@@ -345,6 +360,13 @@ class Bulletin extends Component {
               />
             </SubmitItem>
           </SideBarItem>
+
+<IntroItem>
+  <CardContent>
+    <p>Welcome to our site!</p>
+  </CardContent>
+</IntroItem>
+
           <CommunityItem>
             <BaseCommunityCard
               category="Community"

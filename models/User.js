@@ -51,6 +51,10 @@ const UserSchema = new Schema({
     type: String,
     trim: true,
     required: "Tell us how you wish to get involved."
+  },
+  avatar: {
+    type: String,
+    trim: true,
   }
 });
 
