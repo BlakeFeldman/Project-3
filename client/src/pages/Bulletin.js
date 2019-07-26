@@ -336,10 +336,10 @@ class Bulletin extends Component {
                   Hello, {this.state.name}
                 </Typography>
                 <Typography gutterBottom variant="h5" component="h2">
-                  {this.state.interests}
+                  Interests: {this.state.interests}
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  {this.state.services}
+                <Typography variant="h5" color="textPrimary" component="p">
+                  Services: {this.state.services}
                 </Typography>
               </CardContent>
             </Card>
