@@ -55,6 +55,13 @@ import jacquie_st_pattys_day from '../assets/jacquie_st_pattys_day.jpg';
 import jacquie_in_tutu from '../assets/jacquie_in_tutu.jpg';
 import jacquie_and_daddy from '../assets/jacquie_and_daddy.jpg';
 import jacquie_with_remote from '../assets/jacquie_with_remote.jpg';
+import jacquie_in_car from "../assets/jacquie_in_car.jpeg";
+import jacquie_in_rocking_chair from '../assets/jacquie_in_rocking_chair.jpg';
+import jacquie_chewbacca_chair from '../assets/jacquie_chewbacca_chair.jpg';
+import afro_jacquie from '../assets/afro_jacquie.jpeg';
+import jacquie_wallet from '../assets/jacquie_wallet.jpg';
+import jacquie_adulting from '../assets/jacquie_adulting.jpeg';
+
 
 
 // function MadeWithLove() {
@@ -1645,6 +1652,240 @@ export default function Gallery() {
                     </Typography>*/}
                     <Typography>
                     Jacquie with the remote
+                    </Typography>
+                  </CardContent>
+
+                  {/* <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 39 */}
+            {cards.map(card => (
+              <Grid item key={card} lg={6} md={6} sm={6}>
+                <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_in_rocking_chair}
+                    title=" Jacquie in her rocking chair with her milk and tablet"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>*/}
+                    <Typography>
+                    Jacquie in her rocking chair with her milk and tablet
+                    </Typography>
+                  </CardContent>
+
+                  {/* <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 40 */}
+            {cards.map(card => (
+              <Grid item key={card} lg={6} md={6} sm={6}>
+                <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_in_car}
+                    title="Jacquie in her car she got for her birthday"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>*/}
+                    <Typography>
+                    Jacquie in her car she got for her birthday
+                    </Typography>
+                  </CardContent>
+
+                  {/* <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 41 */}
+            {cards.map(card => (
+              <Grid item key={card} lg={6} md={6} sm={6}>
+                <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={afro_jacquie}
+                    title="Jacquie rockin the fro"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>*/}
+                    <Typography>
+                    Jacquie rockin the fro
+                    </Typography>
+                  </CardContent>
+
+                  {/* <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 42 */}
+            {cards.map(card => (
+              <Grid item key={card} lg={6} md={6} sm={6}>
+                <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_chewbacca_chair}
+                    title="Jacquie sitting in her pink chair wearing her chewbacca onsie"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>*/}
+                    <Typography>
+                    Jacquie sitting in her pink chair wearing her chewbacca onsie
+                    </Typography>
+                  </CardContent>
+
+                  {/* <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 42 */}
+            {cards.map(card => (
+              <Grid item key={card} lg={6} md={6} sm={6}>
+                <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_wallet}
+                    title="Jacquie stealing her dads money"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>*/}
+                    <Typography>
+                    Jacquie stealing her dads money
+                    </Typography>
+                  </CardContent>
+
+                  {/* <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions> */}
+                </Card>
+              </Grid>
+            ))}
+
+            {/* image 42 */}
+            {cards.map(card => (
+              <Grid item key={card} lg={6} md={6} sm={6}>
+                <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={jacquie_adulting}
+                    title="Jacquie sitting at the computer table Adulting"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    {/* <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>*/}
+                    <Typography>
+                    Jacquie sitting at the computer table "Adulting"
                     </Typography>
                   </CardContent>
 
