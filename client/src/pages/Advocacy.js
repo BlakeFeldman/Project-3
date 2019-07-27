@@ -162,14 +162,15 @@ class Community extends Component {
 
           <IntroItem>
             <CardContent>
-              <p>Welcome to Special Needs United!</p>
+            <p>Welcome to Special Needs United! The purpose of our site is to assist children with
+additional needs and their families in order to ensure that families and children are living their best life possible.</p>
             </CardContent>
           </IntroItem>
 
           <TabItem>
-            <Typography color="black">
+            {/* <Typography color="black">
             Connect here for Professional Services.
-          </Typography>
+          </Typography> */}
             <PageTabs
               category="Advocacy"
               posts={this.state.posts}

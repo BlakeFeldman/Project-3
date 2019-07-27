@@ -10,7 +10,7 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   card: {
-    minWidth: 275,
+    minWidth: 300,
     width: "640px",
     padding: 15,
   },
