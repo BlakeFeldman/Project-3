@@ -53,6 +53,7 @@ const SubmitItem = Styled.div`
   margin: 200pt 0 30pt 10pt;
   padding-top: 15pt;
   border: 1px dashed #66bb6a;
+  background-color: white;
 `;
 
 const SubmitTextWrapper = Styled.div`
@@ -110,7 +111,7 @@ class HowToHelp extends Component {
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        },
+      },
 
       redirect: "follow",
       referrer: "client",
@@ -155,12 +156,13 @@ class HowToHelp extends Component {
                 location={this.state.location}
               />
             </SubmitItem>
-            <div style={{height: "10%"}}></div>
+            <div style={{ height: "10%" }}></div>
           </SideBarItem>
 
           <IntroItem>
             <CardContent>
-              <p>Welcome to Special Needs United!</p>
+            <p>Welcome to Special Needs United! The purpose of our site is to assist children with
+additional needs and their families in order to ensure that families and children are living their best life possible.</p>
             </CardContent>
           </IntroItem>
 

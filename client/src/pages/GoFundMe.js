@@ -14,6 +14,16 @@ import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/styles";
 import Container from "@material-ui/core/Container";
 import LinearProgress from '@material-ui/core/LinearProgress';
+import thumbtackRed from "../components/Card/assets/thumbtackred.png"; 
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
+
 
 const NavWrapperDiv = Styled.div`
   margin-bottom: 100px;
@@ -105,6 +115,15 @@ class GoFundMe extends Component {
           {/* Hero unit */}
           <div className={classes.heroContent}>
             <Container maxWidth="sm">
+            <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>         
+
               <Typography
                 component="h1"
                 variant="h2"
@@ -130,7 +149,16 @@ class GoFundMe extends Component {
               {this.state.campaigns.map(campaign => (
                 <Grid item key={campaign.id} lg={6} md={12} sm={12}>
                   <Card className={classes.card}>
-                    <a href={campaign.link} target="_blank">
+                  <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>          
+
+                    <a href={campaign.link}>
                       <CardMedia
                         className={classes.cardMedia}
                         image={campaign.image}
