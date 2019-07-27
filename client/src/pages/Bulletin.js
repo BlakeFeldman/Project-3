@@ -58,8 +58,6 @@ const Grid = Styled.div`
 const SideBarItem = Styled.div`
   grid-column-start: col-1;
   grid-column-end: col-1;
-  grid-row-start: row-1
-  grid-row-end: span row-4
   margin-right: 10px;
   padding-right: 20px;
   border-right: solid rgba(189, 195, 199, 0.7) 1px;
@@ -334,15 +332,15 @@ class Bulletin extends Component {
         </NavWrapperDiv>
 
         <Grid>
-          <SideBarItem style={{ textAlign: "center", paddingLeft: "13px" }}>
-            <Profile
-              name={name}
-              interests={interests}
-              services={services}
-              avatar={avatar}
-              imageHeight="100"
 
-            />
+          <SideBarItem style={{ gridRowStart: "row-1", textAlign: "center", paddingLeft: "13px" }}>
+            <Profile 
+             name= {name}
+             interests= {interests}
+             services= {services}
+             avatar= {avatar}
+             imageHeight= "100"
+                         />
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
@@ -364,6 +362,7 @@ class Bulletin extends Component {
 
           <IntroItem>
             <CardContent>
+
             <ImageWrapper>
             <img
               className={classes.tack}
@@ -373,16 +372,21 @@ class Bulletin extends Component {
             />
           </ImageWrapper>
 
+
               <font><Typography variant="heading4" color="textPrimary" align="center" component="h4">
                 Welcome to Special Needs United! <br></br>
+                <hr></hr>
+
               </Typography>
                 <Typography variant="heading6" color="textPrimary" align="center" component="h6">
                   Think Globally. <br></br>
                   Act Locally. <br></br>
                   Get Involved!<br></br>
+                  <br></br>
                 </Typography>
-                <Typography variant="body2" color="textPrimary" align="center" component="p">
-                  Post below to get involved.
+                <Typography variant="body1" color="textPrimary" align="center" component="p">
+                  To get involved, start by posting below with other users in the Special Needs United community.
+                  Use the menu at the top left corner of the page to navigate through the site.
                 </Typography></font>
             </CardContent>
             <CardMedia
