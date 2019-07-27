@@ -17,10 +17,9 @@ import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import SnackBar from "../components/SnackBar/SnackBar";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-
+// import CardActions from "@material-ui/core/CardActions";
 
 
 function getModalStyle() {
