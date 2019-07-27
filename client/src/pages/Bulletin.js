@@ -48,8 +48,6 @@ const Grid = Styled.div`
 const SideBarItem = Styled.div`
   grid-column-start: col-1;
   grid-column-end: col-1;
-  grid-row-start: row-1
-  grid-row-end: span row-4
   margin-right: 10px;
   padding-right: 20px;
   border-right: solid rgba(189, 195, 199, 0.7) 1px;
@@ -324,7 +322,7 @@ class Bulletin extends Component {
         </NavWrapperDiv>
 
         <Grid>
-          <SideBarItem style={{ textAlign: "center", paddingLeft: "13px" }}>
+          <SideBarItem style={{ gridRowStart: "row-1", textAlign: "center", paddingLeft: "13px" }}>
             <Profile 
              name= {name}
              interests= {interests}
@@ -354,7 +352,7 @@ class Bulletin extends Component {
 
           <IntroItem>
             <CardContent>
-              <Typography variant="body5" color="textPrimary" component="p">
+              <Typography variant="body" color="textPrimary" component="p">
                 Welcome to Special Needs United! Think Globally. Act Locally.
                 Get Involved!
               </Typography>
