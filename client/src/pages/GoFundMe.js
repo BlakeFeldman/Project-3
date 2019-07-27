@@ -149,7 +149,6 @@ class GoFundMe extends Component {
               {this.state.campaigns.map(campaign => (
                 <Grid item key={campaign.id} lg={6} md={12} sm={12}>
                   <Card className={classes.card}>
-
                   <ImageWrapper>
             <img
               className={classes.tack}
@@ -160,9 +159,6 @@ class GoFundMe extends Component {
           </ImageWrapper>          
 
                     <a href={campaign.link}>
-
-                    <a href={campaign.link} target="_blank">
-
                       <CardMedia
                         className={classes.cardMedia}
                         image={campaign.image}
