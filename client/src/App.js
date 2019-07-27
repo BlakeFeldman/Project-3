@@ -19,7 +19,7 @@ import Community from "./pages/Community";
 import Education from "./pages/Education";
 import GoFundMe from "./pages/GoFundMe";
 import Gallery from "./pages/Gallery";
-import Profile from "./pages/Profile";
+import ProfilePage from "./pages/ProfilePage";
 
 const theme = createMuiTheme({
   palette: {
@@ -41,6 +41,7 @@ class App extends Component {
     location: "",
     name: "",
   };
+
   componentDidUpdate() {
     fetch("/api/session", {
       method: "Get", 
@@ -87,8 +88,8 @@ class App extends Component {
                 {/* login page */}
                 <Route exact path="/" component={HomePage} />
 
-                <Route exact path="/profile" component={Dashboard} />
-                <Route exact path="/users/:userId" component={Profile} />
+                <Route exact path="/profile" component={ProfilePage} />
+                <Route exact path="/users/:userId" component={ProfilePage} />
 
                 {/* discard^ */}
 
