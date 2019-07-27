@@ -1,11 +1,19 @@
 import React from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import Styled from "styled-components";
-import Image from "../assets/afro_jacquie.jpeg";
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from "@material-ui/core/styles";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const NavWrapperDiv = Styled.div`
   margin-bottom: 100px;
@@ -31,24 +39,30 @@ const styles = {
 };
 
 
-const Background = Styled.main`
-  background: url(${Image}) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-`;
+ const Background = Styled.main`
+
+ `;
 
 const AboutUs = (props) => {
   console.log(props);
   const { classes } = props;
 
   return (
-    <Background>
+     <Background>
       <NavWrapperDiv>
         <SideBar />
       </NavWrapperDiv>
       <Wrapper>
         <Card className={classes.card}>
+        <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
           <CardContent>
             <h3>Our Inspiration</h3>
 
