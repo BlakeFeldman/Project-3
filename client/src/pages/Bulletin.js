@@ -17,9 +17,9 @@ import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import SnackBar from "../components/SnackBar/SnackBar";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import Profile from "../components/Profile/Profile";
 import world_tree from "../assets/world_tree.png";
 
 function getModalStyle() {
@@ -315,6 +315,7 @@ class Bulletin extends Component {
 
   render() {
     const { classes } = this.props;
+    const { name, interests, services, avatar } = this.state;
     return (
       <main>
         <NavWrapperDiv>
@@ -323,26 +324,14 @@ class Bulletin extends Component {
 
         <Grid>
           <SideBarItem style={{ textAlign: "center", paddingLeft: "13px" }}>
-            <Card className={classes.card}>
-              <CardMedia
-                component="img"
-                alt="Avatar"
-                height="100"
-                image={this.state.avatar}
-                title={this.state.name}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Hello, {this.state.name}
-                </Typography>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Interests: {this.state.interests}
-                </Typography>
-                <Typography variant="h5" color="textPrimary" component="p">
-                  Services: {this.state.services}
-                </Typography>
-              </CardContent>
-            </Card>
+            <Profile 
+             name= {name}
+             interests= {interests}
+             services= {services}
+             avatar= {avatar}
+             imageHeight= "100"
+             
+            />
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
@@ -502,3 +491,4 @@ class Bulletin extends Component {
 }
 
 export default withStyles(styles)(Bulletin);
+
