@@ -4,13 +4,21 @@ import LpNav from "../components/LandingPage/LpNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import Button from "../components/LandingPage/LpButton";
 import Styled from "styled-components";
-import Image from "../assets/jacquie_in_car.jpeg";
+//import Image from "../assets/jacquie_in_car.jpeg";
 import BottomNav from "../components/Nav/BottomNav";
 import SignInModal from "../components/LandingPage/SignIn/SignInModal";
 import SignUpModal from "../components/LandingPage/SignUp/SignUpModal";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const Background = Styled.main`
-  background: url(${Image}) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -68,9 +76,18 @@ class HomePage extends Component {
   render() {
     return (
       <Background>
+
+      
         <div>
           <LpNav />
           <Wrapper>
+          <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
           Resources that turn helpless to hopeful. Find support and unity when dealing with children with special needs.
            We're there when you need us.
 

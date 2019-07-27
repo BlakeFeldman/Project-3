@@ -22,6 +22,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Profile from "../components/Profile/Profile";
 import world_tree from "../assets/world_tree.png";
 import font from "../App.css";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+
 
 function getModalStyle() {
   const top = 50;
@@ -33,6 +35,14 @@ function getModalStyle() {
     transform: `translate(-${top}%, -${left}%)`,
   };
 }
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const NavWrapperDiv = Styled.div`
   margin-bottom: 100px;
@@ -352,6 +362,16 @@ class Bulletin extends Component {
 
           <IntroItem>
             <CardContent>
+
+            <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="5%"
+            />
+          </ImageWrapper>
+
 
               <font><Typography variant="heading4" color="textPrimary" align="center" component="h4">
                 Welcome to Special Needs United! <br></br>
