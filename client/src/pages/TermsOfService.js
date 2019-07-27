@@ -7,6 +7,15 @@ import CardContent from "@material-ui/core/CardContent";
 import { withStyles } from "@material-ui/core/styles";
 import BottomNav from "../components/Nav/BottomNav";
 import Button from "@material-ui/core/Button";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const styles = {
   card: {
@@ -28,7 +37,6 @@ const styles = {
 };
 
 const Background = Styled.main`
-  background: url(${Image}) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -71,6 +79,15 @@ const TermsOfService = props => {
         <MainItem>
           <Card className={classes.card} square>
             <CardContent>
+            <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
               <h3>Terms and Conditions</h3>
 
               <p>Last updated: 7/12/2019</p>
