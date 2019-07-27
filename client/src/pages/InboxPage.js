@@ -22,7 +22,6 @@ const Background = Styled.main`
 `;
 
 class InboxPage extends Component {
-  state = {};
 
   render() {
     return (
