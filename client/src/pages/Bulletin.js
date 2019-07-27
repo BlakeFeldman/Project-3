@@ -19,9 +19,9 @@ import SnackBar from "../components/SnackBar/SnackBar";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-// import CardActions from "@material-ui/core/CardActions";
+import Profile from "../components/Profile/Profile";
 import world_tree from "../assets/world_tree.png";
-
+import font from "../App.css";
 
 function getModalStyle() {
   const top = 50;
@@ -40,7 +40,7 @@ const NavWrapperDiv = Styled.div`
 
 const Grid = Styled.div`
   display: grid;
-  grid-template-columns: [col-1] 20% [col-2] 40% [col-3] 40%;
+  grid-template-columns: [col-1] 20% [col-2] 39.5% [col-3] 39.5%;
   grid-template-rows: [row-1] auto [row-2] auto [row-3] auto [row-4] auto;
   justify-content: start;
 `;
@@ -316,6 +316,7 @@ class Bulletin extends Component {
 
   render() {
     const { classes } = this.props;
+    const { name, interests, services, avatar } = this.state;
     return (
       <main>
         <NavWrapperDiv>
@@ -324,26 +325,14 @@ class Bulletin extends Component {
 
         <Grid>
           <SideBarItem style={{ textAlign: "center", paddingLeft: "13px" }}>
-            <Card className={classes.card}>
-              <CardMedia
-                component="img"
-                alt="Avatar"
-                height="100"
-                image={this.state.avatar}
-                title={this.state.name}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Hello, {this.state.name}
-                </Typography>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Interests: {this.state.interests}
-                </Typography>
-                <Typography variant="h5" color="textPrimary" component="p">
-                  Services: {this.state.services}
-                </Typography>
-              </CardContent>
-            </Card>
+            <Profile
+              name={name}
+              interests={interests}
+              services={services}
+              avatar={avatar}
+              imageHeight="100"
+
+            />
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
@@ -365,10 +354,17 @@ class Bulletin extends Component {
 
           <IntroItem>
             <CardContent>
-              <Typography variant="body5" color="textPrimary" component="p">
-                Welcome to Special Needs United! Think Globally. Act Locally.
-                Get Involved!
+              <font><Typography variant="heading4" color="textPrimary" align="center" component="h4">
+                Welcome to Special Needs United! <br></br>
               </Typography>
+                <Typography variant="heading6" color="textPrimary" align="center" component="h6">
+                  Think Globally. <br></br>
+                  Act Locally. <br></br>
+                  Get Involved!<br></br>
+                </Typography>
+                <Typography variant="body2" color="textPrimary" align="center" component="p">
+                  Post below to get involved.
+                </Typography></font>
             </CardContent>
             <CardMedia
               component="img"
@@ -503,3 +499,4 @@ class Bulletin extends Component {
 }
 
 export default withStyles(styles)(Bulletin);
+

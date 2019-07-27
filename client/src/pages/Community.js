@@ -53,6 +53,7 @@ const SubmitItem = Styled.div`
   margin: 200pt 0 30pt 10pt;
   padding-top: 15pt;
   border: 1px dashed #66bb6a;
+  background-color: white;
 `;
 
 const SubmitTextWrapper = Styled.div`
