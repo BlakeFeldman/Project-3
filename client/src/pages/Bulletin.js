@@ -22,6 +22,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Profile from "../components/Profile/Profile";
 import world_tree from "../assets/world_tree.png";
 
+
 function getModalStyle() {
   const top = 50;
   const left = 50;

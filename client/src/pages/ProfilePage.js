@@ -5,7 +5,7 @@ import Profile from "../components/Profile/Profile";
 const styles = theme => ({
   root: {
     textAlign: "center",
-    maxWidth: "60%",
+    maxWidth: "40%",
     margin: "10px auto",
     
   },
