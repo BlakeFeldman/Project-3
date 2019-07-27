@@ -5,6 +5,22 @@ import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
+import CardContent from "@material-ui/core/CardContent";
+
+
+const IntroItem = Styled.div`
+grid-column-start: col-2;
+grid-column-end: col-2;
+grid-row-start: row-1;
+grid-row-end: row-1;
+margin: 10px 0 10px 0;
+background-color: white;
+width: 99%;
+border-radius: 10px;
+border-style: solid;
+border-width: 1px;
+border-color: #c9c9c9;
+`;
 
 const Grid = Styled.div`
   display: grid;
@@ -30,8 +46,8 @@ const SideBarItem = Styled.div`
 const TabItem = Styled.div`
   grid-column-start: col-2;
   grid-column-end: span col-2;
-  grid-row-start: row-1;
-  grid-row-end: row-3;
+  grid-row-start: row-2;
+  grid-row-end: row-4;
 `;
 
 const SubmitItem = Styled.div`
@@ -57,10 +73,10 @@ class Education extends Component {
   };
 
 
-  
+
   componentDidMount() {
 
-    
+
     // Get session cookie and update posts
     fetch("/api/session", {
       method: "Get",
@@ -147,6 +163,13 @@ class Education extends Component {
             </SubmitItem>
             <div style={{ height: "10%" }} />
           </SideBarItem>
+
+          <IntroItem>
+            <CardContent>
+              <p>Welcome to Special Needs United!</p>
+            </CardContent>
+          </IntroItem>
+
           <TabItem>
             <PageTabs
               category="Event"
