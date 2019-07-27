@@ -40,7 +40,7 @@ const NavWrapperDiv = Styled.div`
 
 const Grid = Styled.div`
   display: grid;
-  grid-template-columns: [col-1] 20% [col-2] 40% [col-3] 40%;
+  grid-template-columns: [col-1] 20% [col-2] 39.5% [col-3] 39.5%;
   grid-template-rows: [row-1] auto [row-2] auto [row-3] auto [row-4] auto;
   justify-content: start;
 `;
@@ -365,141 +365,145 @@ class Bulletin extends Component {
 
           <IntroItem>
             <CardContent>
-              <Typography variant="body5" color="textPrimary" component="p">
-                Welcome to Special Needs United! Think Globally. Act Locally.
-                Get Involved!
+              <Typography variant="heading4" color="textPrimary" align="center" component="h4">
+                Welcome to Special Needs United! <br></br>
               </Typography>
+              <Typography variant="heading6" color="textPrimary" align="center" component="h6">
+                Think Globally. <br></br>
+                Act Locally. <br></br>
+                Get Involved!<br></br>
+                </Typography>
             </CardContent>
-            <CardMedia
-              component="img"
-              alt="World Tree"
-              height="360"
-              image={world_tree}
-              title="World Tree"
-            />
+              <CardMedia
+                component="img"
+                alt="World Tree"
+                height="360"
+                image={world_tree}
+                title="World Tree"
+              />
           </IntroItem>
 
-          <CommunityItem>
-            <BaseCommunityCard
-              category="Community"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-              updateReply={this.updateReply}
-              openModal={this.handleOpen}
-              style={{ borderRadius: "30px" }}
-            />
-          </CommunityItem>
-          <AdvocacyItem>
-            <BaseAdvocacyCard
-              category="Advocacy"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-              updateReply={this.updateReply}
-              openModal={this.handleOpen}
-            />
-          </AdvocacyItem>
-          <HowToHelpItem>
-            <BaseHowToHelpCard
-              category="How To Help"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-              updateReply={this.updateReply}
-              openModal={this.handleOpen}
-            />
-          </HowToHelpItem>
-          <EducationItem>
-            <BaseEducationCard
-              category="Education"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-              updateReply={this.updateReply}
-              openModal={this.handleOpen}
-            />
-          </EducationItem>
-          <ServicesItem>
-            <BaseServicesCard
-              category="Services"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-              updateReply={this.updateReply}
-              openModal={this.handleOpen}
-            />
-          </ServicesItem>
-          <GalleryItem>
-            <BaseGalleryCard
-              category="Gallery"
-              posts={this.state.posts}
-              updatePosts={this.updatePosts}
-              updateReply={this.updateReply}
-              openModal={this.handleOpen}
-            />
-          </GalleryItem>
+            <CommunityItem>
+              <BaseCommunityCard
+                category="Community"
+                posts={this.state.posts}
+                updatePosts={this.updatePosts}
+                updateReply={this.updateReply}
+                openModal={this.handleOpen}
+                style={{ borderRadius: "30px" }}
+              />
+            </CommunityItem>
+            <AdvocacyItem>
+              <BaseAdvocacyCard
+                category="Advocacy"
+                posts={this.state.posts}
+                updatePosts={this.updatePosts}
+                updateReply={this.updateReply}
+                openModal={this.handleOpen}
+              />
+            </AdvocacyItem>
+            <HowToHelpItem>
+              <BaseHowToHelpCard
+                category="How To Help"
+                posts={this.state.posts}
+                updatePosts={this.updatePosts}
+                updateReply={this.updateReply}
+                openModal={this.handleOpen}
+              />
+            </HowToHelpItem>
+            <EducationItem>
+              <BaseEducationCard
+                category="Education"
+                posts={this.state.posts}
+                updatePosts={this.updatePosts}
+                updateReply={this.updateReply}
+                openModal={this.handleOpen}
+              />
+            </EducationItem>
+            <ServicesItem>
+              <BaseServicesCard
+                category="Services"
+                posts={this.state.posts}
+                updatePosts={this.updatePosts}
+                updateReply={this.updateReply}
+                openModal={this.handleOpen}
+              />
+            </ServicesItem>
+            <GalleryItem>
+              <BaseGalleryCard
+                category="Gallery"
+                posts={this.state.posts}
+                updatePosts={this.updatePosts}
+                updateReply={this.updateReply}
+                openModal={this.handleOpen}
+              />
+            </GalleryItem>
         </Grid>
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={this.state.open}
-          onClose={this.handleClose}
-        >
-          <div style={getModalStyle()} className={classes.paper}>
-            <Typography gutterBottom variant="h5" id="modal-title">
-              Message
+          <Modal
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+            open={this.state.open}
+            onClose={this.handleClose}
+          >
+            <div style={getModalStyle()} className={classes.paper}>
+              <Typography gutterBottom variant="h5" id="modal-title">
+                Message
             </Typography>
-            <Divider variant="fullWidth" />
-            <Typography variant="subtitle1" id="modal-title">
-              <b>To:</b> {this.state.recipientName}
-            </Typography>
-            <TextField
-              id="standard-name"
-              label="Subject"
-              name="replySubject"
-              className={classes.textField}
-              value={this.state.replySubject}
-              onChange={this.handleInputChange}
-              margin="normal"
-              variant="outlined"
-            />
-            <TextField
-              id="standard-multiline-flexible"
-              multiline
-              rowsMax="6"
-              label="Message"
-              className={classes.textField}
-              name="replyContent"
-              value={this.state.replyContent}
-              onChange={this.handleInputChange}
-              margin="normal"
-              variant="outlined"
-            />
-            <ButtonWrapper>
-              <Button
+              <Divider variant="fullWidth" />
+              <Typography variant="subtitle1" id="modal-title">
+                <b>To:</b> {this.state.recipientName}
+              </Typography>
+              <TextField
+                id="standard-name"
+                label="Subject"
+                name="replySubject"
+                className={classes.textField}
+                value={this.state.replySubject}
+                onChange={this.handleInputChange}
+                margin="normal"
                 variant="outlined"
-                color="secondary"
-                onClick={this.handleClose}
-              >
-                Cancel
+              />
+              <TextField
+                id="standard-multiline-flexible"
+                multiline
+                rowsMax="6"
+                label="Message"
+                className={classes.textField}
+                name="replyContent"
+                value={this.state.replyContent}
+                onChange={this.handleInputChange}
+                margin="normal"
+                variant="outlined"
+              />
+              <ButtonWrapper>
+                <Button
+                  variant="outlined"
+                  color="secondary"
+                  onClick={this.handleClose}
+                >
+                  Cancel
               </Button>
 
-              <Button
-                variant="outlined"
-                color="primary"
-                onClick={this.sendMessage}
-              >
-                Send
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  onClick={this.sendMessage}
+                >
+                  Send
               </Button>
-            </ButtonWrapper>
-          </div>
-        </Modal>
-        <SnackBar
-          open={this.state.snackBar}
-          openSnackBar={this.openSnackBar}
-          closeSnackBar={this.closeSnackBar}
-        />
-        <BottomNavSpacer />
-        <BottomNav />
+              </ButtonWrapper>
+            </div>
+          </Modal>
+          <SnackBar
+            open={this.state.snackBar}
+            openSnackBar={this.openSnackBar}
+            closeSnackBar={this.closeSnackBar}
+          />
+          <BottomNavSpacer />
+          <BottomNav />
       </main>
-    );
-  }
-}
-
-export default withStyles(styles)(Bulletin);
+        );
+      }
+    }
+    
+    export default withStyles(styles)(Bulletin);
