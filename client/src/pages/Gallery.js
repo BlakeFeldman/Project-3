@@ -16,6 +16,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 // import Link from '@material-ui/core/Link';
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
 import jacquie_in_tub from '../assets/jacquie_in_tub.jpg';
 import jacquie_donut_face from '../assets/jacquie_donut_face.jpg';
 import jacquie_chewbacca from '../assets/jacquie_chewbacca.jpg';
@@ -63,6 +64,14 @@ import jacquie_messy from '../assets/jacquie_messy.jpg';
 //     </Typography>
 //   );
 // }
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const NavWrapperDiv = Styled.div`
   margin-bottom: 100px;
@@ -126,6 +135,15 @@ export default function Gallery() {
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
+          <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>         
+
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Special Needs United
             </Typography>
@@ -156,8 +174,18 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
+                    src={thumbtackRed}
                     image={jacquie_in_tub}
                     title="Jacquie in smiling in the bathtub"
                   />
@@ -186,12 +214,23 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>                      
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_donut_face}
                     title="Jacquie after she got caught eating her dads donuts"
                   />
                   <CardContent className={classes.cardContent}>
+                  
+
                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
                     </Typography>*/}
@@ -216,6 +255,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_chewbacca}
@@ -246,6 +294,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_daddy_hospital}
@@ -276,6 +333,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_2nd_bday}
@@ -306,6 +372,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bubble_beard}
@@ -336,6 +411,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_in_fridge}
@@ -366,6 +450,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_laundry_basket}
@@ -396,6 +489,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_mommy_hospital}
@@ -426,6 +528,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_pink_chair}
@@ -456,6 +567,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_potty}
@@ -486,6 +606,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sleep}
@@ -516,6 +645,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_mommy}
@@ -546,6 +684,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bday}
@@ -576,6 +723,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_bob_ross}
@@ -606,6 +762,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_daddy2}
@@ -636,6 +801,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_hospital}
@@ -666,6 +840,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={just_jacquie}
@@ -696,6 +879,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_monkey}
@@ -726,6 +918,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_smile}
@@ -756,6 +957,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sassy}
@@ -786,6 +996,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_heart_glasses}
@@ -816,6 +1035,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_gangster}
@@ -846,6 +1074,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_foot}
@@ -876,6 +1113,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_cupcake}
@@ -906,6 +1152,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={little_jacquie_big_jacquie}
@@ -936,6 +1191,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_cupcake2}
@@ -966,6 +1230,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_sleep2}
@@ -996,6 +1269,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_halloween}
@@ -1026,6 +1308,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_hospital2}
@@ -1056,6 +1347,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_glasses}
@@ -1086,6 +1386,15 @@ export default function Gallery() {
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_jordan}
@@ -1112,10 +1421,19 @@ export default function Gallery() {
               </Grid>
             ))}
 
-            {/* image 34 */}
+            {/* image 33 */}
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_messy}
@@ -1142,10 +1460,19 @@ export default function Gallery() {
               </Grid>
             ))}
 
-            {/* image 33 */}
+            {/* image 34 */}
             {cards.map(card => (
               <Grid item key={card} lg={6} md={6} sm={6}>
                 <Card className={classes.card}>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+            />
+          </ImageWrapper>
+
                   <CardMedia
                     className={classes.cardMedia}
                     image={jacquie_turtle_hat}

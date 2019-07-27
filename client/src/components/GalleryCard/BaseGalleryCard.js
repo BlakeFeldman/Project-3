@@ -92,6 +92,7 @@ class BaseGalleryCard extends Component {
               alt=""
               src={jacquie_chair}
               width="20%"
+              align-items="left"
             />
           </ImageWrapper>
           

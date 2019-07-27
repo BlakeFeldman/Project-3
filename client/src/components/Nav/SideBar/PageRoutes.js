@@ -1,7 +1,7 @@
 import {
-  Build,
+  Domain,
   DateRange,
-  DirectionsCar,
+  Group,
   School,
   Public,
   Camera,
@@ -32,14 +32,14 @@ const PageRoutes = [
     path: "/advocacy",
     sidebarName: "Advocacy",
     navbarName: "Advocacy",
-    icon: DirectionsCar,
+    icon:Group ,
     component: Advocacy,
   },
   {
     path: "/community",
     sidebarName: "Community",
     navbarName: "Community",
-    icon: Build,
+    icon:Domain ,
     component: Community,
   },
   {
