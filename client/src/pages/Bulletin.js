@@ -356,14 +356,17 @@ class Bulletin extends Component {
             <CardContent>
               <font><Typography variant="heading4" color="textPrimary" align="center" component="h4">
                 Welcome to Special Needs United! <br></br>
+                <hr></hr>
               </Typography>
                 <Typography variant="heading6" color="textPrimary" align="center" component="h6">
                   Think Globally. <br></br>
                   Act Locally. <br></br>
                   Get Involved!<br></br>
+                  <br></br>
                 </Typography>
-                <Typography variant="body2" color="textPrimary" align="center" component="p">
-                  Post below to get involved.
+                <Typography variant="body1" color="textPrimary" align="center" component="p">
+                  To get involved, start by posting below with other users in the Special Needs United community.
+                  Use the menu at the top left corner of the page to navigate through the site.
                 </Typography></font>
             </CardContent>
             <CardMedia
