@@ -110,7 +110,7 @@ class HowToHelp extends Component {
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        },
+      },
 
       redirect: "follow",
       referrer: "client",
@@ -155,7 +155,7 @@ class HowToHelp extends Component {
                 location={this.state.location}
               />
             </SubmitItem>
-            <div style={{height: "10%"}}></div>
+            <div style={{ height: "10%" }}></div>
           </SideBarItem>
 
           <IntroItem>
