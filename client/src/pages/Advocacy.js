@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
 import CardContent from "@material-ui/core/CardContent";
 
+
 const IntroItem = Styled.div`
 grid-column-start: col-2;
 grid-column-end: col-2;
@@ -138,7 +139,7 @@ class Community extends Component {
           <Sidebar />
         </NavWrapperDiv>
         <Grid>
-
+          
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
               <SubmitTextWrapper>
@@ -158,6 +159,7 @@ class Community extends Component {
             <div style={{ height: "10%" }} />
           </SideBarItem>
 
+
           <IntroItem>
             <CardContent>
               <p>Welcome to Special Needs United!</p>
@@ -165,6 +167,9 @@ class Community extends Component {
           </IntroItem>
 
           <TabItem>
+            <Typography color="black">
+            Connect here for Professional Services.
+          </Typography>
             <PageTabs
               category="Advocacy"
               posts={this.state.posts}
