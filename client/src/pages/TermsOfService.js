@@ -79,51 +79,128 @@ const TermsOfService = props => {
         <MainItem>
           <Card className={classes.card} square>
             <CardContent>
-            <ImageWrapper>
-            <img
-              className={classes.tack}
-              alt=""
-              src={thumbtackRed}
-              width="10%"
-            />
-          </ImageWrapper>
+              <ImageWrapper>
+                <img
+                  className={classes.tack}
+                  alt=""
+                  src={thumbtackRed}
+                  width="10%"
+                />
+              </ImageWrapper>
 
               <h3>Terms and Conditions</h3>
 
-              <p>Last updated: 7/12/2019</p>
+              <p>Last updated: 7/28/2019</p>
+
+              <h3>Special Needs United Privacy Policy</h3>
 
               <p>
-                Please read these Terms and Conditionsn carefully before using
-                the https://kued-project3.herokuapp.com/ website operated by Special Needs United
-                (us, we, or our). Your access to and use of the Special Needs United is
-                conditioned on your acceptance of and compliance with these
-                Terms. These Terms apply to all visitors, users and others who
-                access or use Neighborly. By accessing or using Special Needs United you
-                agree to be bound by these Terms. If you disagree with any part
-                of the terms then you may not access Neighborly.
+                  Protecting your privacy is very important to us. We’re telling
+                you about our privacy policy so you know what information we
+                collect, why we collect it, and what we do with it. This privacy
+                notice is for SpecialNeedsUnited.com and is referred to as
+                "Special Needs United" throughout the rest of this notificaton.  As
+                a general matter, we encourage you to be engaged with the Special Needs
+                United community while safeguarding personal information and private 
+                medical information for you and your loved ones.  Always verify the identity 
+                of any person before sharing your private information!
+              </p>
+
+              <p>
+                  Special Needs United does not collect name, contact information,
+                social security number or other similar information unless you
+                choose to provide it. We do collect other limited information
+                automatically from visitors who read, browse, and/or download
+                information from our site. We do this so we can understand how
+                the site is being used and how we can make it more helpful. See
+                the "Types of Information We Collect" section below for a more
+                detailed explanation.
+              </p>
+
+              <p>
+                  Personally identifiable information (PII), as defined by the United
+                States Government Office of Management and Budget (OMB), refers to
+                information which can be used to distinguish or trace an
+                individual's identity, such as their name, social security
+                number, biometric records, and other relevant data.  PII may consist of 
+                a single pience of data, or a compilation of other personal or identifying 
+                information which is linked or where linkages may be inferred, to a specific individual, 
+                such as date and place of birth, mother’s maiden name, and other personally identifiable information. 
+                </p>
+                <p>
+                  If you create a user account and use other tools on the site, Special
+                Needs United may collect personally identifiable information
+                that you have voluntarily provided. This information is
+                collected in order to provide the services Special Needs United
+                is designed to offer – to connect service providers with those
+                in need.
+              </p>
+
+              <p>
+                  Special Needs United does not sell any information entered into
+                SpecialNeedsUnited.com. Moreover, Special Needs United has never
+                and will never sell advertising on the SpecialNeedsUnited.com
+                website and will not use any user data of any kind to be
+                leveraged for marketing or other purposes outside of the scope of the 
+                Special Needs United Mission - To improve the lives of Special Needs children,
+                their families, friends, and allies.
+              </p>
+
+              <h3>Types of Information We Collect</h3>
+              
+              <p>Information which is automatically collected:</p>
+              
+              <p>When you browse:</p>
+
+              <p>Certain information about your visit can be collected when you browse websites. When you browse SpecialNeedsUnited.com, we, and in some cases our third-party service providers, can collect the following types of information about your visit, including: </p>
+              <p>1.  Domain (for example, comcast.com, if you are using a Comcast account) from which you accessed the Internet.</p>
+              <p>2.  IP address (an IP or internet protocol address is a number that is automatically assigned to a device connected to the web).</p>
+              <p>3.  Approximate geographic location based on the IP address of the user’s local system.</p>
+              <p>4.  Operating system (which is software that directs a computer’s basic functions such as executing programs and managing storage) for the device that you are using and information about the browser you used when visiting the site.</p>
+              <p>5.  Date and time of your visit.</p>
+              <p>6.  Pages you visited</p>
+              <p>7.  Address of the website that connected you to SpecialNeedsUnited.com (such as google.com or bing.com)</p>
+              <p>8.  Device type (desktop computer, tablet, or type of mobile device).</p>
+              <p>9.  Screen resolution.</p>
+              <p>10. Browser language.</p>
+              <p>11. Geographic location.</p>
+              <p>12. Time spent on page.</p>
+              <p>12. Scroll depth – The measure of how much of a web page was viewed.</p>
+              <p>13. User events (e.g. clicking a button).</p>              
+
+              <p>
+                Please read these Terms and Conditions carefully before using
+                the https://kued-project3.herokuapp.com/ website operated by
+                Special Needs United (us, we, or our). Your access to 
+                the Special Needs United community is conditioned on your acceptance of
+                and compliance with these Terms. These Terms apply to all
+                visitors, users and others who access or use Special Needs United. By
+                accessing or using Special Needs United you agree to be bound by
+                these Terms. If you disagree with any part of the terms then you
+                may not access Special Needs United.
               </p>
 
               <h3>Content</h3>
 
               <p>
-                Special Needs United allows you to post, link, store, share and otherwise
-                make available certain information, text, graphics, videos, or
-                other material ("Content").{" "}
+                Special Needs United allows you to post, link, store, share and
+                otherwise make available certain information, text, graphics,
+                videos, or other material ("Content").{" "}
               </p>
 
               <h3>Links To Other Web Sites</h3>
 
               <p>
-                Special Needs United may contain links to third-party web sites or
-                services that are not owned or controlled by Special Needs United.
-                Special Needs United has no control over, and assumes no responsibility
-                for, the content, privacy policies, or practices of any third
-                party web sites or services. You further acknowledge and agree
-                that Special Needs United shall not be responsible or liable, directly or
-                indirectly, for any damage or loss caused or alleged to be
-                caused by or in connection with use of or reliance on any such
-                content, goods or services available on or through any such web
-                sites or services.
+                Special Needs United may contain links to third-party web sites
+                or services that are not owned or controlled by Special Needs
+                United. Special Needs United has no control over, and assumes no
+                responsibility for, the content, privacy policies, or practices
+                of any third party web sites or services. You further
+                acknowledge and agree that Special Needs United shall not be
+                responsible or liable, directly or indirectly, for any damage or
+                loss caused or alleged to be caused by or in connection with use
+                of or reliance on any such content, goods or services available
+                on or through any such web sites or services.
               </p>
 
               <h3>Changes</h3>
@@ -131,7 +208,7 @@ const TermsOfService = props => {
                 {" "}
                 We reserve the right, at our sole discretion, to modify or
                 replace these Terms at any time. If a revision is material we
-                will try to provide at least 30 (change this) days' notice prior
+                will try to provide at least 30 days' notice prior
                 to any new terms taking effect. What constitutes a material
                 change will be determined at our sole discretion.
               </p>
