@@ -522,4 +522,3 @@ class Bulletin extends Component {
 }
 
 export default withStyles(styles)(Bulletin);
-
