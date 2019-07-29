@@ -1,9 +1,40 @@
-import React, { Component } from "react";
+import React from "react";
 import BaseInboxCard from "../components/Inbox/BaseInboxCard";
 import Sidebar from "../components/Nav/SideBar/SideBar";
 import BottomNav from "../components/Nav/BottomNav";
 import Styled from "styled-components";
-import Image from "../assets/jacquie_st_pattys_day.jpg";
+import { withStyles } from "@material-ui/core/styles";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+const styles = {
+  card: {
+    minWidth: 275,
+    width: "500px"
+
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+};
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  z-index: 9999;
+  top: 160px;
+`;
+
 
 const InboxWrapper = Styled.div`
   display: grid;
@@ -15,25 +46,43 @@ const InboxWrapper = Styled.div`
 `;
 
 const Background = Styled.main`
-  background: url(${Image}) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+  
 `;
 
-class InboxPage extends Component {
+// class InboxPage extends Component {
+  const InboxPage = (props) => {
+    console.log(props);
+    const { classes } = props;
 
-  render() {
+  // render() {
     return (
+
+
       <Background>
         <Sidebar />
         <InboxWrapper>
+        
+        
+
+          <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+              top="20px"
+            />
+          </ImageWrapper> 
           <BaseInboxCard />
+          
+
         </InboxWrapper>
+        
+
         <BottomNav />
       </Background>
     );
   }
-}
+// }
 
-export default InboxPage;
+export default withStyles(styles)(InboxPage);

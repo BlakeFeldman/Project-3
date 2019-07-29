@@ -7,8 +7,16 @@ import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '../components/ContactUs/SubmitButton'
-import Image from "../assets/jacquie_and_daddy.jpg";
 import Styled from "styled-components";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const styles = theme => ({
     container: {
@@ -33,7 +41,6 @@ const styles = theme => ({
 });
 
 const Background = Styled.main`
-  background: url(${Image}) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -60,6 +67,16 @@ class OutlinedTextFields extends React.Component {
                 <Nav />
                 <SideBar />
                 <Wrapper>
+                <ImageWrapper>
+            <img
+              className={classes.tack}
+              alt=""
+              src={thumbtackRed}
+              width="10%"
+              top="20px"
+            />
+          </ImageWrapper> 
+
                     <h1>Contact Us</h1>
                     <FormControl>
                         <form className={classes.container} noValidate autoComplete="off">
