@@ -76,14 +76,14 @@ const TermsOfService = props => {
               <p>Last updated: 7/12/2019</p>
 
               <p>
-                Please read these Terms and Conditionsn carefully before using
+                Please read these Terms and Conditions carefully before using
                 the https://kued-project3.herokuapp.com/ website operated by Special Needs United
-                (us, we, or our). Your access to and use of the Special Needs United is
+                (us, we, or our). Your access to and use of Special Needs United is
                 conditioned on your acceptance of and compliance with these
                 Terms. These Terms apply to all visitors, users and others who
-                access or use Neighborly. By accessing or using Special Needs United you
+                access or use Special Needs United. By accessing or using Special Needs United you
                 agree to be bound by these Terms. If you disagree with any part
-                of the terms then you may not access Neighborly.
+                of the terms then you may not access Special Needs United.
               </p>
 
               <h3>Content</h3>
