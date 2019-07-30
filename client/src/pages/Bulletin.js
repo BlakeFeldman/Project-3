@@ -385,8 +385,10 @@ class Bulletin extends Component {
                   <br></br>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" align="center" component="p">
-                  To get involved, start by posting below with other users in the Special Needs United community.
-                  Use the menu at the top left corner of the page to navigate through the site.
+                  To get involved, start by posting below with other users in the Special Needs United community.  Simply click the "Add Post"
+                  button on the left side of the corkboard, enter the subject and content of your message, and select the area of interest from 
+                  our convenient drop-down menu.  You may reply to messages posted by clicking on the "Reply" button at the top right corner of 
+                  each index card.  You can also use the menu at the top left corner of the page to navigate through the site.
                 </Typography></font>
             </CardContent>
             <CardMedia
