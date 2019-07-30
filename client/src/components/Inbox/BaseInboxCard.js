@@ -125,6 +125,7 @@ class BaseInboxCard extends Component {
       .then(
         result => {
           console.log(result);
+          this.setState({ open: false });
         },
         error => {
           console.log(error);
