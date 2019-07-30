@@ -344,6 +344,13 @@ class Bulletin extends Component {
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
+            <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="20%"
+            />
+          </ImageWrapper>
               <SubmitTextWrapper>
                 <Typography color="black">
                   Want to contribute? Just click the button to create your own
