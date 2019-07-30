@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import Profile from "../components/Profile/Profile";
+import SideBar from "../components/Nav/SideBar/SideBar";
+import Styled from "styled-components";
+//import { withStyles } from "@material-ui/styles";
+
+const NavWrapperDiv = Styled.div`
+  margin-bottom: 100px;
+`;
+
+
 
 const styles = theme => ({
   root: {
@@ -79,6 +88,11 @@ class ProfilePage extends Component {
     const { name, interests, services, avatar } = this.state;
     const { classes } = this.props;
     return (
+      <React.Fragment>
+      <NavWrapperDiv>
+        <SideBar />
+      </NavWrapperDiv>
+      
       <div className={classes.root}>
         <Profile
           name={name}
@@ -86,9 +100,9 @@ class ProfilePage extends Component {
           interests={interests}
           services={services}
           avatar={avatar}
-          
         />
       </div>
+      </React.Fragment>
     );
   }
 }
