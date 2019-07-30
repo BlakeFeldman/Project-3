@@ -169,9 +169,7 @@ class Education extends Component {
             <CardContent>
               
 
-
-            <h4>Below is a Special Needs Medical Glossary, courtesy of <a href="https://childrenofallnations.com/waiting-child/special-needs-medical-glossary/">Children of All Nations</a>.</h4>
-
+            <h4>Below is a Special Needs Medical Glossary, courtesy of <a href="https://childrenofallnations.com/waiting-child/special-needs-medical-glossary/">Children of All Nations</a>. We highly recommend speaking with an experienced physician for further details on each condition.</h4>
                 <br></br>
                <hr></hr>
                 <br></br>
@@ -202,13 +200,13 @@ class Education extends Component {
                 There are two major types of Thalassemia: alpha and beta, named for the two protein chains that make up normal hemoglobin. Some children will have a Hemoglobin test in their file, while some orphanages and hospitals do not have the resources to provide the test to determine which type the child has. Both types can range from mild to severe. It is important to note that for children who receive blood transfusions, excessive amounts of iron can build up in the blood and internal organs.
 <br></br>
                 Chelation therapy helps remove the buildup of iron; however, this therapy is not often available in the child’s home country. Without chelation therapy, early mortality is inevitable.
-<br></br>
-                α Thalassemia trait is characterized by mild anemia and typically has no severe effects. This type is rarely diagnosed.
-                Hemoglobin H disease is a subtype of α Thalassemia. Children with this disease may require regular blood transfusions.
-                β Thalassemia is characterized by mild anemia and typically has no severe effects. This type is rarely diagnosed.
-                β Thalassemia intermedia creates mild to severe anemia. These children do not typically require regular blood transfusions, however may need one during illnesses or later in life during pregnancy.
-                β Thalassemia major is also referred to as Cooley’s anemia. Children with this type will require regular blood transfusions to survive.
-<br></br>
+<br></br><ul>
+                <li>α Thalassemia trait is characterized by mild anemia and typically has no severe effects. This type is rarely diagnosed.</li>
+                <li>Hemoglobin H disease is a subtype of α Thalassemia. Children with this disease may require regular blood transfusions.</li>
+                <li>β Thalassemia is characterized by mild anemia and typically has no severe effects. This type is rarely diagnosed.</li>
+                <li>β Thalassemia intermedia creates mild to severe anemia. These children do not typically require regular blood transfusions, however may need one during illnesses or later in life during pregnancy.</li>
+                <li>β Thalassemia major is also referred to as Cooley’s anemia. Children with this type will require regular blood transfusions to survive.</li>
+</ul><br></br>
                 <br></br>
                 <b>Central Nervous System</b>
 <br></br>
@@ -223,11 +221,11 @@ class Education extends Component {
                 Cerebral Palsy (CP) is an umbrella term for any group of disorders caused by abnormal development or damage in one or more parts of the brain that control muscle tone and motor activity (movement). The effects of CP can range from mild or subtle to very profound. Some issues linked to CP may include difficulty controlling and coordinating muscles, breathing, vision and hearing issues, seizures, and mental retardation.
 <br></br>
                 There are several different types of CP characterized by how the disorder affects the muscles. It is important to note that CP is typically non-progressive, meaning it will not get worse over time. Most children will not have a defined type of CP, however, they would fall under the mild-moderate categories. For the purposes of the Waiting Child Profile, the severities are defined as follows:
-<br></br>
-                Mild: The child may have some diminished function of one or more limbs, such as walking with a limp or mildly decreased strength.  The child is able to walk and function independently, but may require some therapy to strengthen muscles.
-                Moderate: The child may require some levels of assistance to function in daily life (ie: using a walker). The child may have more mild to moderate global delays, such as gross and fine motor and language skills.
-                Severe: The child may have significant global delays and would require continual, long-term assistance.
-<br></br>
+<br></br><ul>
+               <li> Mild: The child may have some diminished function of one or more limbs, such as walking with a limp or mildly decreased strength.  The child is able to walk and function independently, but may require some therapy to strengthen muscles.</li>
+                <li>Moderate: The child may require some levels of assistance to function in daily life (ie: using a walker). The child may have more mild to moderate global delays, such as gross and fine motor and language skills.</li>
+                <li>Severe: The child may have significant global delays and would require continual, long-term assistance.</li>
+</ul><br></br>
                 <br></br>
                 <b>Epilepsy</b><br></br>
                 Epilepsy is a general term for conditions with recurring seizures. There are many kinds of seizures, but all involve abnormal electrical activity in the brain that causes an involuntary change in body movement or function, sensation, awareness, or behavior. Generally seizure disorders are not curable, but they can be controlled with medication and sometimes surgery. In most cases, individuals with seizure disorders can live relatively normal lives, with only the severest cases requiring restrictions.
@@ -255,12 +253,12 @@ class Education extends Component {
                 <br></br>
                 <b>Spina Bifida</b><br></br>
                 Spina Bifida (SB) is a birth defect that involves the incomplete development of the spinal cord or its coverings.
-<br></br>
-                SB occulta is the most mild form and typically has no long-term effects. It is usually only discovered if the child is being screened for other issues.
-                Meningocele occurs when the membranes responsible for covering and protecting the brain and spinal cord (meninges) protrude through a hole in the vertebrae.
-                Myelomeningocele is when both the meninges and the spinal cord push through the vertebrae. Children with myelomeningocele also typically have hydrocephalus as well and are at risk for paralysis. All children are at risk for some nerve damage and possible incontinence.
-                The terms meningocele and myelomeningocele are typically used interchangeably due to translations. However, most of the children will fall under the category of meningocele. Most often, these children are able to recover from surgery and lead full and active lives.
-<br></br>
+<br></br><ul>
+                <li>SB occulta is the most mild form and typically has no long-term effects. It is usually only discovered if the child is being screened for other issues.</li>
+                <li>Meningocele occurs when the membranes responsible for covering and protecting the brain and spinal cord (meninges) protrude through a hole in the vertebrae.</li>
+                <li>Myelomeningocele is when both the meninges and the spinal cord push through the vertebrae. Children with myelomeningocele also typically have hydrocephalus as well and are at risk for paralysis. All children are at risk for some nerve damage and possible incontinence.
+                The terms meningocele and myelomeningocele are typically used interchangeably due to translations. However, most of the children will fall under the category of meningocele. Most often, these children are able to recover from surgery and lead full and active lives.</li>
+</ul><br></br>
                 <br></br>
                 <b>Congenital Heart Disease</b><br></br>
                 Congenital Heart Disease (CHD) refers to a problem with the heart’s structure and function due to abnormal heart development before birth. While congenital heart disease is present at birth, the symptoms may not be immediately obvious.
@@ -270,11 +268,11 @@ class Education extends Component {
                 Some congenital heart diseases can be treated with medication alone, while others require one or more surgeries. All defects could be considered minor or severe, depending on how they affect the individual child.
 <br></br>
                 It is important to speak with a physician about each possible diagnosis to gain a good understanding of what your family would be comfortable handling. For the purpose of the Waiting Child Profile, CHD is divided into the categories listed below. The majority of the children referred with CHD would be categorized as having moderate to severe conditions.
-<br></br>
-                Mild: Mild heart conditions are defined as only one defect being present. This would include defects such as VSD or ASD. It would also include a child who had a significant heart condition that has been surgically corrected, with a positive recovery.
-                Moderate: Moderate heart conditions would be defined as either more than one defect (for example: VSD and ASD) or a more severe defect, with a surgery having already been completed (Tetralogy of Fallot, post Glenn shunt surgery).
-                Severe: Severe heart conditions would be defined as any defect that would require significant medical intervention and the child has had no corrective surgery completed. Defects that would into this category would be Endocardial Cushion Defect, Transposition of the Great Vessels, and Tetralogy of Fallot with pulmonary atresia.
-<br></br>
+<br></br><ul>
+                <li>Mild: Mild heart conditions are defined as only one defect being present. This would include defects such as VSD or ASD. It would also include a child who had a significant heart condition that has been surgically corrected, with a positive recovery.</li>
+                <li>Moderate: Moderate heart conditions would be defined as either more than one defect (for example: VSD and ASD) or a more severe defect, with a surgery having already been completed (Tetralogy of Fallot, post Glenn shunt surgery).</li>
+                <li>Severe: Severe heart conditions would be defined as any defect that would require significant medical intervention and the child has had no corrective surgery completed. Defects that would into this category would be Endocardial Cushion Defect, Transposition of the Great Vessels, and Tetralogy of Fallot with pulmonary atresia.</li>
+</ul><br></br>
                 <b>Craniofacial</b>
 <br></br>
                 <br></br>
@@ -344,11 +342,11 @@ class Education extends Component {
                 <br></br>
                 <b>Cognitive Development</b><br></br>
                 Cognitive development includes the ability to analyze, evaluate, retain information, recall experiences, make comparisons, and determine action. There can be many reasons for a delay in this development (brain injury, lack of stimulation). For the purposes of the application, cognitive delays would be defined as follows:
-<br></br>
-                Slight delay: A slight delay would be categorized as mildly affecting day-to-day life. Perhaps the child requires extra assistance when learning new tasks or needs more one-on-one attention. The child would be able to complete simple tasks, would be responsive to instructions, and though possibly not meeting developmental milestones at the appropriate time, is meeting the milestones.
-                Significant delay: A significant delay would be categorized as affecting day-to-day life and their ability to complete self-care. The child would most likely require significant one-on-one attention and ongoing care.
-                Global delay: Global delays include delays in all areas of development. It is usually caused by static (does not worsen with time) encephalopathy, occurring before or near the time of birth. Causes of global delays include prematurity, cerebral malformations, chromosomal disorders, infections, and progressive encephalopathies, such as metabolic diseases, hypothyroidism, neurocutaneous syndromes, like neurofibromatosis and tuberous sclerosis, Rett syndrome, and hydrocephalus.
-<br></br>
+<br></br><ul>
+                <li>Slight delay: A slight delay would be categorized as mildly affecting day-to-day life. Perhaps the child requires extra assistance when learning new tasks or needs more one-on-one attention. The child would be able to complete simple tasks, would be responsive to instructions, and though possibly not meeting developmental milestones at the appropriate time, is meeting the milestones.</li>
+                <li>Significant delay: A significant delay would be categorized as affecting day-to-day life and their ability to complete self-care. The child would most likely require significant one-on-one attention and ongoing care.</li>
+                <li>Global delay: Global delays include delays in all areas of development. It is usually caused by static (does not worsen with time) encephalopathy, occurring before or near the time of birth. Causes of global delays include prematurity, cerebral malformations, chromosomal disorders, infections, and progressive encephalopathies, such as metabolic diseases, hypothyroidism, neurocutaneous syndromes, like neurofibromatosis and tuberous sclerosis, Rett syndrome, and hydrocephalus.</li>
+</ul><br></br>
                 <br></br>
                 <b>Infectious Diseases</b>
 <br></br>
@@ -426,12 +424,12 @@ class Education extends Component {
                 <br></br>
                 <b>Deformity of fingers and/or toes</b><br></br>
                 This may take on many forms. The types of deformities are defined below.  Each deformity may affect one or multiple fingers or toes. Most often, digital deformities are caused by amniotic band syndrome, which occurs in utero. Damage to the amnion (part of the placenta) may produce fiber-like bands that can trap the arms, legs, fingers, or toes of the fetus. These bands reduce blood supply to the areas and cause them to develop abnormally. These children may also have deformed or missing limbs, clubbed feet or permanent “band” or indentation around a limb.
-<br></br>
-                Adactayly refers to missing digits.<br></br>
-                Brachydactyly refers to shortened or underdeveloped digits.<br></br>
-                Polydactyly refers to one or more extra digits.<br></br>
-                Syndactyly refers to fused or combined digits. This may be surgically correctable, or the bones may be permanently fused or absent.
-<br></br>
+<br></br><ul>
+               <li> Adactayly refers to missing digits.</li>
+                <li>Brachydactyly refers to shortened or underdeveloped digits.</li>
+               <li> Polydactyly refers to one or more extra digits.</li>
+               <li> Syndactyly refers to fused or combined digits. This may be surgically correctable, or the bones may be permanently fused or absent.</li>
+</ul>
                 <br></br>
                 <b>Dwarfism</b><br></br>
                 Dwarfism is a condition characterized by short stature. Technically, that means an adult height of 4 feet 10 inches or under and can be caused by any one of more than 200 conditions, most of which are genetic.
@@ -477,10 +475,10 @@ class Education extends Component {
                 Scoliosis is an abnormal curvature of the spine. In scoliosis, the spine curves to the side when viewed from the front, and each vertebra also twists on the next one in a corkscrew fashion. Scoliosis can be caused by a non-structural issue where the spin is normal, but is caused by another issue such as one leg being shorter than the other.
 <br></br>
                 It can also be structural where the curvature is caused by another disease process, such as a birth defect, muscular dystrophy, metabolic diseases, connective tissue disorders, or Marfan syndrome. Some instances of scoliosis require no treatment, while some may require braces or surgery. Because most reports we receive do not define the degree of curvature, for the purposes of the Waiting Child Profile:
-<br></br>
-                A slight curvature is defined as a defect that does not appear to affect the child’s spinal structure.  From a visual standpoint, the curvature is not evident through the child’s clothing.
-                A significant curvature is defined as being apparent that the child will most likely require surgery and the spine and thorax are significantly deformed.  For these children, the curvature is apparent when the child is dressed.
-<br></br>
+<br></br><ul>
+                <li>A slight curvature is defined as a defect that does not appear to affect the child’s spinal structure.  From a visual standpoint, the curvature is not evident through the child’s clothing.</li>
+                <li>A significant curvature is defined as being apparent that the child will most likely require surgery and the spine and thorax are significantly deformed.  For these children, the curvature is apparent when the child is dressed.</li>
+</ul><br></br>
                 <br></br>
                 <b>Short/Webbed Neck</b><br></br>
                 Short/webbed neck, or pterygium colli deformity, is a congenital fold that runs along the sides of the neck down to the shoulders. On babies, webbed neck may look like loose folds of skin on the neck. As the child grows, the skin may stretch out to look like there is little or no neck.  It can be a feature of Turner syndrome and Noonan syndrome, as well as the rarer Klippel-Feil syndrome.
@@ -495,29 +493,32 @@ class Education extends Component {
                 <br></br>
                 <b>Hearing Loss</b><br></br>
                 Hearing loss refers to all hearing issues, including deafness. Hearing impairment can be caused by a variety of reasons, including:
-<br></br>
-                Congenital defect<br></br>
-                Disease<br></br>
-                Environmental causes<br></br>
+<br></br><ul>
+                <li>Congenital defect</li>
+                <li>Disease</li>
+                <li>Environmental causes</li>
+                </ul>
                 Depending on the underlying cause, some types of hearing impairment can be corrected with hearing aids, surgery, or other therapies. If the individual suffers from complete deafness, many therapies and learning techniques such as Sign Language, lip reading, and animal assistance programs, are available to help the individual to be independent. Often with only minor aid, individuals with hearing impairment can live full and successful lives.
 <br></br>
                 <br></br>
                 <b>Vision Impairment</b><br></br>
                 Vision impairment is a very broad category that covers any vision issue which has not caused vision loss in the child. Typical vision impairments include:
-<br></br>
-                Mild or corrected cataracts<br></br>
-                Ptosis (drooping eyelids)<br></br>
-                Strabismus (crossed-eyes)<br></br>
-                Ambylopia (lazy-eye)<br></br>
+<br></br><ul>
+                <li>Mild or corrected cataracts</li>
+                <li>Ptosis (drooping eyelids)</li>
+                <li>Strabismus (crossed-eyes)</li>
+                <li>Ambylopia (lazy-eye)</li>
+                </ul>
                 These conditions would be considered correctable or manageable with minimal intervention.<br></br>
                 <br></br>
                 <b>Vision Loss</b><br></br>
                 Visions Loss includes any level of explained or unexplained vision loss. Typical diagnoses seen would include:
-<br></br>
-                Glaucoma (increased eye pressure)<br></br>
-                Severe cataracts<br></br>
-                Microphthalmia (abnormally small eyeball)<br></br>
-                Atrophy of the eye (one or both)<br></br>
+<br></br><ul>
+                <li>Glaucoma (increased eye pressure)</li>
+                <li>Severe cataracts</li>
+                <li>Microphthalmia (abnormally small eyeball)</li>
+                <li>Atrophy of the eye (one or both)</li>
+                </ul>
                 If the individual has complete blindness, many therapies and learning techniques, such as Braille and animal assistance programs, are available to help the individual to be independent. Often with only minor aid, individuals with vision impairment can live full and successful lives.
 <br></br>
                 <br></br>
@@ -576,10 +577,10 @@ class Education extends Component {
                 <br></br>
                 <b>Hypospadias</b><br></br>
                 Hypospadias is a somewhat common birth (congenital) defect in which the opening of the urethra is on the underside, rather than at the end, of the penis. The condition varies in severity. In most cases, the opening of the urethra is located near the tip of the penis on the underside. More severe forms of hypospadias occur when the opening is at the midshaft or base of the penis. Occasionally, the opening is located in or behind the scrotum.  For the purposes of the application, the severity is defined as follows:
-<br></br>
-                Mild: Mild hypospadias is defined as typical appearance of genitalia and mild misplacement of the urethra. In some occasions, the scrotum will be split, however the overall structure of the penis appears normal.<br></br>
-                Severe: Severe hypospadias may include significant misplacement of the urethra causing further structural deformities of the penis and scrotum. These children may also be classified as having more ambiguous genitalia.<br></br>
-                <br></br>
+<br></br><ul>
+                <li>Mild: Mild hypospadias is defined as typical appearance of genitalia and mild misplacement of the urethra. In some occasions, the scrotum will be split, however the overall structure of the penis appears normal.</li>
+                <li>Severe: Severe hypospadias may include significant misplacement of the urethra causing further structural deformities of the penis and scrotum. These children may also be classified as having more ambiguous genitalia.</li>
+                </ul><br></br>
                 <b>Imperforate Anus</b><br></br>
                 Imperforate anus is a congenital (present from birth) defect in which the opening to the anus is missing or blocked. The rectum may end in a blind pouch that does not connect with the colon. Or, it may have openings to the urethra, bladder, base of penis or scrotum in boys, or vagina in girls.
 <br></br>
