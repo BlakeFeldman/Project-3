@@ -344,6 +344,13 @@ class Bulletin extends Component {
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
+            <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="20%"
+            />
+          </ImageWrapper>
               <SubmitTextWrapper>
                 <Typography color="black">
                   Want to contribute? Just click the button to create your own
@@ -355,7 +362,7 @@ class Bulletin extends Component {
                 updatePosts={this.updatePosts}
                 id={this.state.id}
                 name={this.state.name}
-                location={this.state.location}
+                location={this.state.location}                
               />
             </SubmitItem>
           </SideBarItem>
@@ -505,6 +512,7 @@ class Bulletin extends Component {
                 variant="outlined"
                 color="primary"
                 onClick={this.sendMessage}
+                onClick={this.handleClose}
               >
                 Send
               </Button>

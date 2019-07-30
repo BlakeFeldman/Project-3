@@ -46,6 +46,10 @@ class GalleryCard extends React.Component {
     this.setState(state => ({ expanded: !state.expanded }));
   };
 
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
   render() {
     const { classes } = this.props;
 
@@ -61,7 +65,7 @@ class GalleryCard extends React.Component {
             <IconButton
               onClick={() => {
                 this.props.updateReply(this.props.name, this.props.id);
-                this.props.openModal();
+                this.props.openModal();                
               }}
             >
               <Reply />

@@ -6,7 +6,17 @@ import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
 import CardContent from "@material-ui/core/CardContent";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
 
+
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 const IntroItem = Styled.div`
 grid-column-start: col-2;
@@ -144,7 +154,14 @@ class Community extends Component {
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
               <SubmitTextWrapper>
-                <Typography color="black">
+              <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="20%"
+            />
+          </ImageWrapper>
+              <Typography color="black">
                   Want to contribute? Just click the button to create your own
                   post.
                 </Typography>
@@ -162,7 +179,16 @@ class Community extends Component {
 
 
           <IntroItem>
+          <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="4%"
+            />
+          </ImageWrapper>
+
             <CardContent>
+            
             <p>Welcome to Special Needs United! The purpose of our site is to assist children with
 additional needs and their families in order to ensure that families and children are living their best life possible.  The "Advocacy" 
 forum discussion is intended to connect members of our community who require (or offer) professional services.  Reach out to professionals in

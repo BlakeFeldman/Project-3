@@ -158,7 +158,7 @@ class GoFundMe extends Component {
             />
           </ImageWrapper>          
 
-                    <a href={campaign.link}>
+                    <a href={campaign.link} target="_blank">
                       <CardMedia
                         className={classes.cardMedia}
                         image={campaign.image}
