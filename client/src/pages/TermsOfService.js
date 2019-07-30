@@ -1,7 +1,6 @@
 import React from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import Styled from "styled-components";
-import Image from "../assets/jacquie_in_tutu.jpg";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { withStyles } from "@material-ui/core/styles";
