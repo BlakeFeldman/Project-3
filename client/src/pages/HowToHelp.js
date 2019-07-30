@@ -187,7 +187,8 @@ class HowToHelp extends Component {
           </ImageWrapper>
             <CardContent>
             <p>Welcome to Special Needs United! The purpose of our site is to assist children with
-additional needs and their families in order to ensure that families and children are living their best life possible.</p>
+additional needs and their families in order to ensure that families and children are living their best life possible. Use the forum below
+to discuss ways to help families affected by special needs. Get involved today!</p>
             </CardContent>
           </IntroItem>
 
