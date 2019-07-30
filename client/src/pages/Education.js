@@ -169,7 +169,9 @@ class Education extends Component {
             <CardContent>
               
 
-                <h4>Below is a Special Needs Medical Glossary, courtesy of <a href="https://childrenofallnations.com/waiting-child/special-needs-medical-glossary/">Children of All Nations</a>.</h4>
+
+            <h4>Below is a Special Needs Medical Glossary, courtesy of <a href="https://childrenofallnations.com/waiting-child/special-needs-medical-glossary/">Children of All Nations</a>.</h4>
+
                 <br></br>
                <hr></hr>
                 <br></br>

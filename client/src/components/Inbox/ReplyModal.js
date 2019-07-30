@@ -142,6 +142,7 @@ class SimpleModal extends React.Component {
                   variant="outlined"
                   color="primary"
                   onClick={this.props.sendReply}
+
                 >
                   Send
                 </Button>
