@@ -173,7 +173,7 @@ class BaseInboxCard extends Component {
             replySubject={this.state.subject}
             handleInputChange={this.handleInputChange}
             updateReply={this.updateReply}
-            sendReply={this.sendReply}
+            sendReply={this.sendReply}            
           />
         </CardContent>
         
