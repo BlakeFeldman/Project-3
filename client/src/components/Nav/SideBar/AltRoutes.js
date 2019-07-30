@@ -30,8 +30,8 @@ const AltRoutes = [
   {
 
     path: "/how-to-help",
-    sidebarName: "HowToHelp",
-    navbarName: "HowToHelp",
+    sidebarName: "How To Help",
+    navbarName: "How To Help",
 
     path: "/donate",
     sidebarName: "Donate",
