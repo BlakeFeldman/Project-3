@@ -164,7 +164,9 @@ class Community extends Component {
           <IntroItem>
             <CardContent>
             <p>Welcome to Special Needs United! The purpose of our site is to assist children with
-additional needs and their families in order to ensure that families and children are living their best life possible.</p>
+additional needs and their families in order to ensure that families and children are living their best life possible.  The "Advocacy" 
+forum discussion is intended to connect members of our community who require (or offer) professional services.  Reach out to professionals in
+your community with knowledge and expertise in depth on the issues that can make a difference!</p>
             </CardContent>
           </IntroItem>
 

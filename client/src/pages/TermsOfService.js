@@ -171,13 +171,12 @@ const TermsOfService = props => {
               <p>
                 Please read these Terms and Conditions carefully before using
                 the https://kued-project3.herokuapp.com/ website operated by
-                Special Needs United (us, we, or our). Your access to 
-                the Special Needs United community is conditioned on your acceptance of
-                and compliance with these Terms. These Terms apply to all
-                visitors, users and others who access or use Special Needs United. By
-                accessing or using Special Needs United you agree to be bound by
-                these Terms. If you disagree with any part of the terms then you
-                may not access Special Needs United.
+                Special Needs United. Your access to the Special Needs United community 
+                is conditioned on your acceptance of and compliance with these Terms and Conditions. 
+                These Terms and Conditions apply to all visitors, users and others who access or use 
+                Special Needs United. By accessing or using Special Needs United you agree to be bound 
+                by these Terms and Conditions. If you disagree with any part of the Terms and Conditions 
+                you will be denied access to the Special Needs United community.
               </p>
 
               <h3>Content</h3>
