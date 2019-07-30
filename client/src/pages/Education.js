@@ -6,6 +6,17 @@ import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
 import SubmitModal from "../components/SubmitModal/SubmitModal";
 import CardContent from "@material-ui/core/CardContent";
+import thumbtackRed from "../components/Card/assets/thumbtackred.png";
+
+
+
+const ImageWrapper = Styled.div`
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 
 const IntroItem = Styled.div`
@@ -149,6 +160,13 @@ class Education extends Component {
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
               <SubmitTextWrapper>
+              <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="20%"
+            />
+          </ImageWrapper>
                 <Typography color="black">
                   Want to contribute? Just click the button to create your own
                   post.
@@ -166,6 +184,13 @@ class Education extends Component {
           </SideBarItem>
 
           <IntroItem>
+          <ImageWrapper>
+            <img
+              alt=""
+              src={thumbtackRed}
+              width="4%"
+            />
+          </ImageWrapper>
             <CardContent>
               
 
