@@ -647,6 +647,16 @@ class Education extends Component {
                 Lymphangioma is a rare, benign, congenital disorder in which a blockage in the lymphatic system causes fluid to accumulate in bubbles beneath the skin. Lymphangiomas can occur anywhere in the skin and the mucous membranes. The most common sites are the head and the neck, followed by the proximal extremities, the buttocks, and the trunk. However, they sometimes can be found in the intestines, the pancreas, and the mesentery.
 <br></br>
                 Since they have no chance of becoming malignant, lymphangiomas are usually treated for cosmetic reasons only.</p>
+<br></br>
+
+            <b>Pfeiffer syndrome</b><br></br>
+            Pfeiffer syndrome is a genetic disorder characterized by the premature fusion of certain skull bones (craniosynostosis). This early fusion prevents the skull from growing normally and affects the shape of the head and face. Pfeiffer syndrome also affects bones in the hands and feet.
+
+Many of the characteristic facial features of Pfeiffer syndrome result from premature fusion of the skull bones. Abnormal growth of these bones leads to bulging and wide-set eyes, a high forehead, an underdeveloped upper jaw, and a beaked nose. More than half of all children with Pfeiffer syndrome have hearing loss; dental problems are also common.
+
+In people with Pfeiffer syndrome, the thumbs and first (big) toes are wide and bend away from the other digits. Unusually short fingers and toes (brachydactyly) are also common, and there may be some webbing or fusion between the digits (syndactyly).
+
+Pfeiffer syndrome is divided into three subtypes. Type 1, also known as classic Pfeiffer syndrome, has symptoms as described above. Most individuals with type 1 Pfeiffer syndrome have normal intelligence and a normal life span. Types 2 and 3 are more severe forms of Pfeiffer syndrome that often involve problems with the nervous system. The premature fusion of skull bones can limit brain growth, leading to delayed development and other neurological problems. In addition, individuals with type 2 or 3 can have fusion of the bones (ankylosis) in the elbow or other joints, limiting mobility, and abnormalities of the face and airways, which can cause life-threatening breathing problems. Type 2 is distinguished from type 3 by the presence of a cloverleaf-shaped head, which is caused by more extensive fusion of bones in the skull.
             </CardContent>
           </IntroItem>
 
