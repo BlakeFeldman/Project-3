@@ -1297,7 +1297,7 @@ export default function Gallery() {
                   <CardContent className={classes.cardContent}>
                     {/* <Typography gutterBottom variant="h5" component="h2">
                       Heading
-                    </Typography>*/}*/}
+                    </Typography>*/}
                     <Typography>
                       Jacquie's first halloween costume
                     </Typography>
