@@ -355,7 +355,7 @@ class Bulletin extends Component {
                 updatePosts={this.updatePosts}
                 id={this.state.id}
                 name={this.state.name}
-                location={this.state.location}
+                location={this.state.location}                
               />
             </SubmitItem>
           </SideBarItem>
@@ -505,6 +505,7 @@ class Bulletin extends Component {
                 variant="outlined"
                 color="primary"
                 onClick={this.sendMessage}
+                onClick={this.handleClose}
               >
                 Send
               </Button>
