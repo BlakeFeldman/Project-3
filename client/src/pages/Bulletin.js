@@ -24,7 +24,6 @@ import world_tree from "../assets/world_tree.png";
 import font from "../App.css";
 import thumbtackRed from "../components/Card/assets/thumbtackred.png";
 
-
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -256,7 +255,7 @@ class Bulletin extends Component {
   handleOpen = () => {
     this.setState({ open: true });
   };
-
+  
   handleClose = () => {
     this.setState({ open: false });
   };
@@ -288,6 +287,7 @@ class Bulletin extends Component {
       result => {
         if (result.ok) {
           this.openSnackBar();
+          this.setState({ open: false });
         }
       },
       error => {
@@ -332,25 +332,26 @@ class Bulletin extends Component {
         </NavWrapperDiv>
 
         <Grid>
-
-          <SideBarItem style={{ gridRowStart: "row-1", textAlign: "center", paddingLeft: "13px" }}>
-            <Profile 
-             name= {name}
-             interests= {interests}
-             services= {services}
-             avatar= {avatar}
-             imageHeight= "100"
-                         />
+          <SideBarItem
+            style={{
+              gridRowStart: "row-1",
+              textAlign: "center",
+              paddingLeft: "13px",
+            }}
+          >
+            <Profile
+              name={name}
+              interests={interests}
+              services={services}
+              avatar={avatar}
+              imageHeight="100"
+            />
           </SideBarItem>
           <SideBarItem style={{ textAlign: "center" }}>
             <SubmitItem>
-            <ImageWrapper>
-            <img
-              alt=""
-              src={thumbtackRed}
-              width="20%"
-            />
-          </ImageWrapper>
+              <ImageWrapper>
+                <img alt="" src={thumbtackRed} width="20%" />
+              </ImageWrapper>
               <SubmitTextWrapper>
                 <Typography color="black">
                   Want to contribute? Just click the button to create your own
@@ -362,41 +363,60 @@ class Bulletin extends Component {
                 updatePosts={this.updatePosts}
                 id={this.state.id}
                 name={this.state.name}
-                location={this.state.location}                
+                location={this.state.location}
               />
             </SubmitItem>
           </SideBarItem>
 
           <IntroItem>
             <CardContent>
+              <ImageWrapper>
+                <img
+                  className={classes.tack}
+                  alt=""
+                  src={thumbtackRed}
+                  width="5%"
+                />
+              </ImageWrapper>
 
-            <ImageWrapper>
-            <img
-              className={classes.tack}
-              alt=""
-              src={thumbtackRed}
-              width="5%"
-            />
-          </ImageWrapper>
-
-
-              <font><Typography variant="heading4" color="textPrimary" align="center" component="h4">
-                Welcome to Special Needs United! <br></br>
-                <hr></hr>
-
-              </Typography>
-                <Typography variant="heading6" color="textPrimary" align="center" component="h6">
-                  Think Globally. <br></br>
-                  Act Locally. <br></br>
-                  Get Involved!<br></br>
-                  <br></br>
+              <font>
+                <Typography
+                  variant="heading4"
+                  color="textPrimary"
+                  align="center"
+                  component="h4"
+                >
+                  Welcome to Special Needs United! <br />
+                  <hr />
                 </Typography>
-                <Typography variant="body1" color="textPrimary" align="center" component="p">
-                  To get involved, start by posting below with other users in the Special Needs United community.  Simply click the "Add Post"
-                  button on the left side of the corkboard, enter the subject and content of your message, and select the area of interest from 
-                  our convenient drop-down menu.  You may reply to messages posted by clicking on the "Reply" button at the top right corner of 
-                  each index card.  You can also use the menu at the top left corner of the page to navigate through the site.
-                </Typography></font>
+                <Typography
+                  variant="heading6"
+                  color="textPrimary"
+                  align="center"
+                  component="h6"
+                >
+                  Think Globally. <br />
+                  Act Locally. <br />
+                  Get Involved!
+                  <br />
+                  <br />
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="textPrimary"
+                  align="center"
+                  component="p"
+                >
+                  To get involved, start by posting below with other users in
+                  the Special Needs United community. Simply click the "Add
+                  Post" button on the left side of the corkboard, enter the
+                  subject and content of your message, and select the area of
+                  interest from our convenient drop-down menu. You may reply to
+                  messages posted by clicking on the "Reply" button at the top
+                  right corner of each index card. You can also use the menu at
+                  the top left corner of the page to navigate through the site.
+                </Typography>
+              </font>
             </CardContent>
             <CardMedia
               component="img"
@@ -512,7 +532,6 @@ class Bulletin extends Component {
                 variant="outlined"
                 color="primary"
                 onClick={this.sendMessage}
-                onClick={this.handleClose}
               >
                 Send
               </Button>
