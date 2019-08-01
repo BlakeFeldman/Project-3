@@ -1,6 +1,6 @@
 # Project-3
 
-Our Inspiration
+Our Inspiration 
 Everybody is born different, because of those differences, unfortunately, some children are isolated, shunned, bullied and made fun of through no fault of their own — it's not ok. Special Needs United is a web application aimed to help families with special needs children. By providing resources specific to special needs, parents, grandparents, friends, the general public, and even the children dealing with their differences can get a better understanding of their condition and learn the skills needed to live a normal everyday life. Special Needs United, providing resources that turn helpless to hopeful. Find support and unity when dealing with children with special needs. 
 We're there when you need us.
 
