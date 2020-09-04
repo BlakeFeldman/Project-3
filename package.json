@@ -44,7 +44,7 @@
     "gofundme": "^0.1.1",
     "google": "^2.1.0",
     "if-env": "^1.0.4",
-    "markdown-to-jsx": "^6.10.2",
+    "markdown-to-jsx": "^6.11.4",
     "mongoose": "^5.4.14",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
